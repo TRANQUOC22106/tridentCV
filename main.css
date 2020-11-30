@@ -1,0 +1,124 @@
+html {
+  background-color: azure;
+}
+
+/* ★ hp.html */
+.midashi {
+  color: rgba(13, 196, 187, 0.918);
+  text-align: center;
+}
+
+.link {
+  /* background-color: rgb(243, 240, 240); */
+  display: flex;
+  flex-direction: column;
+
+  /* flex-direction: column; 上から下へ垂直方向に配置。 */
+  /* https://coliss.com/articles/build-websites/operation/css/css3-flexbox-properties-by-scotch.html */
+  align-items: center;
+}
+
+.hosoku {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(75, 67, 67);
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  /* font-weight 基本700 */
+  /* 下線を消す */
+  /*  */
+  /* https://webliker.info/04303/ */
+}
+
+.saisyo {
+  background-color: #eb6100;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.tuzuki {
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.preview {
+  background-color: rgb(226, 131, 226);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+}
+
+/* ★ rirekisyo.html */
+
+.card {
+  /* margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px; */
+  background-color: rgb(243, 240, 240);
+}
+
+.preview_card,
+.sikaku_card,
+.profile_card {
+  /* line-height: 400px; */
+}
+/* line-heightとは
+line-heightプロパティを使用すると、文章の行間の広さを設定することができます。 */
+/* https://techacademy.jp/magazine/8615 */
+
+/* .profile_card {
+  width: 500px;
+  height: 600px;
+  margin: auto;
+} */
+
+#profile_layout,
+#sikaku_layout,
+#preview_layout {
+  text-align: center;
+}
+/* テキスト中央配置 */
+/* https://www.w3.org/Style/Examples/007/center.ja.html */
+
+/* #profile_layout {
+  display: none;
+} */
+#sikaku_layout {
+  display: none;
+}
+
+#preview_layout {
+  display: none;
+}
+
+/* display: none; 非表示 */
+/* https://allabout.co.jp/gm/gc/23973/#aa23973display */
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+/* ボタン両端揃え */
+/*https://maku77.github.io/web/layout/images-at-both-ends.html  */
+
+.before_button,
+.next_button {
+  font-size: 25px;
+  color: white;
+  background-color: #eb6100;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+/* border: none 枠線を消す */
+/* border-radius 角を丸くする */
+/* https://jajaaan.co.jp/css/button/ */
