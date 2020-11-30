@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    
 </head>
 
 <body>
@@ -66,7 +67,7 @@
             },
             signInFlow: 'popup',
             //ログイン成功で次の画面へ
-            signInSuccessUrl: './success.html',
+            signInSuccessUrl: '../hp.html',
             signInOptions: [
                 firebase.auth.EmailAuthProvider.PROVIDER_ID,
                 firebase.auth.GoogleAuthProvider.PROVIDER_ID,
