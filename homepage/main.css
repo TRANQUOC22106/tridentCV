@@ -71,11 +71,6 @@ a {
   background-color: rgb(243, 240, 240);
 }
 
-#preview_card,
-#shikaku_card,
-#profile_card {
-  /* line-height: 400px; */
-}
 /* line-heightとは
 line-heightプロパティを使用すると、文章の行間の広さを設定することができます。 */
 /* https://techacademy.jp/magazine/8615 */
