@@ -1,0 +1,113 @@
+<!DOCTYPE >
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>TridentCV</title>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="patora/patora10.png" />
+    <!-- ファビコン -->
+    <!-- https://techacademy.jp/magazine/30972 -->
+  </head>
+  <body>
+    <div class="rirekisyo">
+      <div class="card">
+        <div id="profile_card">
+          <div class="profile_header">
+            <h1 class="profile_layout">プロフィール</h1>
+          </div>
+          <form name="profile_form" action="" method="POST">
+            <div class="simei">氏名</div>
+            <div class="simei_edit">
+              <input type="text" name="simei" value="" />
+            </div>
+            <div class="furigana">フリガナ</div>
+            <div class="firagana_edit">
+              <input type="text" name="furigana" value="" />
+            </div>
+            <div class="seinenngappi">生年月日</div>
+            <div class="seinenngappi_edit">
+              <input type="number" name="toshi" value="" />
+              <span>年</span>
+              <input type="number" name="tuki" value="" />
+              <span>月</span>
+              <input type="number" name="hi" value="" />
+              <span>日</span>
+            </div>
+            <div class="nennrei">年齢</div>
+            <div class="nennrei_edit">
+              <input type="number" name="nennrei" value="" />
+              <span>歳</span>
+            </div>
+            <div class="seibetu">性別</div>
+            <div class="seibetu_radio">
+              <input type="radio" name="seibetu" value="" />男性
+              <input type="radio" name="seibetu" value="" />
+              女性
+            </div>
+            <!-- ラジオボタン -->
+            <!-- https://techacademy.jp/magazine/5867 -->
+          </form>
+        </div>
+        <div id="juusho_card">
+          <div class="juusho_header">
+            <h1 class="juusho_layout">住所</h1>
+          </div>
+          <form name="juusho_form" action="" method="POST">
+            <div class="yuubin">郵便番号</div>
+            <div class="yuubin_edit">
+              <input type="tel" name="yuubin" value="" />
+            </div>
+            <div class="todoufuken">都道府県・市区町村・番地</div>
+            <div class="todouh fuken_edit">
+              <input type="text" name="todouhuken" value="" />
+            </div>
+            <div class="juusho_furigana">住所フリガナ</div>
+            <div class="juusho_furigana_edit">
+              <input type="text" name="juusho_furigana" value="" />
+            </div>
+          </form>
+        </div>
+
+        <div id="rennrakusaki_card">
+          <div class="rennrakusaki_header">
+            <h1 class="rennrakusaki_layout">連絡先</h1>
+          </div>
+          <form name="rennrakusaki_form" action="" method="POST">
+            <div class="dennwa">電話番号</div>
+            <div class="dennwa_edit">
+              <input type="number" name="dennwa_1" value="" />
+              <span>-</span>
+              <input type="number" name="dennwa_2" value="" />
+              <span>-</span>
+              <input type="number" name="dennwa_3" value="" />
+            </div>
+            <div class="e-mail">e-mail</div>
+            <div class="e-mail_edit">
+              <input type="email" name="e-mail" value="" />
+            </div>
+            <div class="reigai">上記以外の連絡先</div>
+          </form>
+        </div>
+
+        <div id="shikaku_card">
+          <h1 class="shikaku_layout">資格・免許</h1>
+        </div>
+        <div id="preview_card">
+          <h1 class="preview_layout">プレビュー</h1>
+        </div>
+        <div class="button">
+          <button class="before_button" type="button" onclick="before()">
+            前へ
+          </button>
+
+          <button class="next_button" type="button" onclick="next()">
+            次へ
+          </button>
+          <!-- ボタン -->
+          <!-- https://code-kitchen.dev/html/button/ -->
+        </div>
+      </div>
+    </div>
+    <script src="text.js"></script>
+  </body>
+</html>

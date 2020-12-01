@@ -36,12 +36,17 @@ a {
   /* https://webliker.info/04303/ */
 }
 
-.saisyo {
+.saisho {
   background-color: #eb6100;
   border-radius: 5px;
   padding: 5px;
   margin: 20px;
 }
+
+/* .link_saisyo {
+  border-bottom: solid 5px #cc5907;
+} */
+/* ボタンを立体的に見せる */
 
 .tuzuki {
   background-color: cadetblue;
@@ -66,37 +71,47 @@ a {
   background-color: rgb(243, 240, 240);
 }
 
-.preview_card,
-.sikaku_card,
-.profile_card {
+#preview_card,
+#shikaku_card,
+#profile_card {
   /* line-height: 400px; */
 }
 /* line-heightとは
 line-heightプロパティを使用すると、文章の行間の広さを設定することができます。 */
 /* https://techacademy.jp/magazine/8615 */
 
-/* .profile_card {
+/* #profile_card {
   width: 500px;
   height: 600px;
   margin: auto;
 } */
 
-#profile_layout,
-#sikaku_layout,
-#preview_layout {
+.profile_layout,
+.juusho_layout,
+.rennrakusaki .shikaku_layout,
+.preview_layout {
   text-align: center;
 }
 /* テキスト中央配置 */
 /* https://www.w3.org/Style/Examples/007/center.ja.html */
 
-/* #profile_layout {
+/* #profile_card {
   display: none;
 } */
-#sikaku_layout {
+
+#juusho_card {
   display: none;
 }
 
-#preview_layout {
+#rennrakusaki_card {
+  display: none;
+}
+
+#shikaku_card {
+  display: none;
+}
+
+#preview_card {
   display: none;
 }
 
