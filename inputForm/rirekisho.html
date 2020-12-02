@@ -11,6 +11,7 @@
   <body>
     <div class="rirekisyo">
       <div class="card">
+        <!-- ★プロフィール画面 -->
         <div id="profile_card">
           <div class="profile_header">
             <h1 class="profile_layout">プロフィール</h1>
@@ -48,6 +49,8 @@
             <!-- https://techacademy.jp/magazine/5867 -->
           </form>
         </div>
+
+        <!-- ★住所画面 -->
         <div id="juusho_card">
           <div class="juusho_header">
             <h1 class="juusho_layout">住所</h1>
@@ -68,6 +71,7 @@
           </form>
         </div>
 
+        <!-- ★連絡先画面 -->
         <div id="rennrakusaki_card">
           <div class="rennrakusaki_header">
             <h1 class="rennrakusaki_layout">連絡先</h1>
@@ -86,16 +90,39 @@
               <input type="email" name="e-mail" value="" />
             </div>
             <div class="reigai">上記以外の連絡先</div>
+            <div class="dennwa_edit">
+              <input type="number" name="dennwa_r1" value="" />
+              <span>-</span>
+              <input type="number" name="dennwa_r2" value="" />
+              <span>-</span>
+              <input type="number" name="dennwa_r3" value="" />
+            </div>
+            <div class="e-mail">e-mail</div>
+            <div class="e-mail_edit">
+              <input type="email" name="e-mail_r" value="" />
+            </div>
+          </form>
+        </div>
+
+        <!-- ★備考画面 -->
+        <div id="bikou_card">
+          <div class="bikou_header">
+            <h1 class="bikou_layout">備考</h1>
+          </div>
+          <form name="bikou_form" action="" method="POST">
+            <input type="textarea" name="bikouran" value="" />
           </form>
         </div>
 
         <div id="shikaku_card">
           <h1 class="shikaku_layout">資格・免許</h1>
         </div>
+
+        <!-- ★プレビュー画面 -->
         <div id="preview_card">
           <h1 class="preview_layout">プレビュー</h1>
         </div>
-        <div class="button">
+        <div class="button_shift">
           <button class="before_button" type="button" onclick="before()">
             前へ
           </button>
@@ -106,6 +133,11 @@
           <!-- ボタン -->
           <!-- https://code-kitchen.dev/html/button/ -->
         </div>
+      </div>
+      <div class="preview_shift">
+        <button class="preview_button" type="button" onclick="preview()">
+          プレビュー
+        </button>
       </div>
     </div>
     <script src="text.js"></script>
