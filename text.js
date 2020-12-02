@@ -1,22 +1,42 @@
 'use strict';
 
 function before() {
-    var now_layout = document.getElementById('juusho_card');
-    now_layout.style.display = 'none';
-    var next_layout = document.getElementById('profile_card');
-    next_layout.style.display = 'block';
+    var now_card = document.getElementById('rennrakusaki_card');
+    now_card.style.display = 'none';
+
+    var preview_card = document.getElementById('preview_card');
+    preview_card.style.display = 'none';
+
+    var next_card = document.getElementById('profile_card');
+    next_card.style.display = 'block';
 }
 
 // 「前へ」ボタンを押したとき
 
 function next() {
-    var now_layout = document.getElementById('profile_card');
-    now_layout.style.display = 'none';
-    var next_layout = document.getElementById('juusho_card');
-    next_layout.style.display = 'block';
+    var now_card = document.getElementById('profile_card');
+    now_card.style.display = 'none';
+
+    var preview_card = document.getElementById('preview_card');
+    preview_card.style.display = 'none';
+
+    var next_card = document.getElementById('rennrakusaki_card');
+    next_card.style.display = 'block';
 }
 
 // 「次へ」ボタンを押したとき
+
+function preview() {
+    var now_card = document.getElementById('profile_card');
+    now_card.style.display = 'none';
+
+    var preview_card = document.
+        getElementById('preview_card');
+    preview_card.style.display = 'block';
+
+    var next_card = document.getElementById('rennrakusaki_card');
+    next_card.style.display = 'none';
+}
 
 // getElementByIdとは、指定したid値を持つ要素をElementオブジェクトとして返すメソッドです。
 

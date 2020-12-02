@@ -69,13 +69,17 @@ a {
   margin-left: 100px;
   margin-right: 100px; */
   background-color: rgb(243, 240, 240);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 50px;
 }
 
-#preview_card,
+/* #preview_card,
 #shikaku_card,
 #profile_card {
   /* line-height: 400px; */
-}
+/* } */
 /* line-heightとは
 line-heightプロパティを使用すると、文章の行間の広さを設定することができます。 */
 /* https://techacademy.jp/magazine/8615 */
@@ -88,7 +92,9 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 
 .profile_layout,
 .juusho_layout,
-.rennrakusaki .shikaku_layout,
+.rennrakusaki_layout,
+.bikou_layout,
+.shikaku_layout,
 .preview_layout {
   text-align: center;
 }
@@ -115,10 +121,14 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
   display: none;
 }
 
+#bikou_card {
+  display: none;
+}
+
 /* display: none; 非表示 */
 /* https://allabout.co.jp/gm/gc/23973/#aa23973display */
 
-.button {
+.button_shift {
   display: flex;
   justify-content: space-between;
 }
@@ -127,6 +137,8 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 
 .before_button,
 .next_button {
+  display: flex;
+  justify-content: space-between;
   font-size: 25px;
   color: white;
   background-color: #eb6100;
@@ -134,6 +146,43 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
   padding: 5px;
   border: none;
 }
+
+.preview_button {
+  font-size: 25px;
+  color: white;
+  background-color: rgb(226, 131, 226);
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+
+  margin-top: 20px;
+}
+
+.preview_shift {
+  text-align: center;
+}
 /* border: none 枠線を消す */
 /* border-radius 角を丸くする */
 /* https://jajaaan.co.jp/css/button/ */
+
+input {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 70px;
+}
+/* intput type=number の横幅 */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+/* input type=number のスピンボタンを削除 */
+
+/* input[type="textarea"] {
+} */
