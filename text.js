@@ -1,5 +1,47 @@
 'use strict';
 
+// #profile_card 
+//  #juusho_card 
+//   #rennrakusaki_card
+//   #shikaku_card   
+//   #preview_card
+//   #bikou_card
+//   #preview_card
+
+// var profile_card =
+//     document.getElementById("profile_card")
+//         .style.display = "none";
+
+var juusho_card =
+    document.getElementById("juusho_card")
+        .style.display = "none";
+
+var rennrakusaki_card =
+    document.getElementById("rennrakusaki_card")
+        .style.display = "none";
+
+var shikaku_card =
+
+    document.getElementById("shikaku_card")
+        .style.display = "none";
+
+var bikou_card =
+
+    document.getElementById("bikou_card")
+        .style.display = "none";
+
+var preview_card =
+
+    document.getElementById("preview_card")
+        .style.display = "none";
+
+// 変数にそれぞれの変数と同じの名のcardのIDを代入、非表示にする
+
+var array_card = new Array(profile_card, juusho_card, rennrakusaki_card, shikaku_card, bikou_card, preview_card);
+
+// 上記の変数を一つの配列に格納する
+
+
 function before() {
     var now_card = document.getElementById('rennrakusaki_card');
     now_card.style.display = 'none';

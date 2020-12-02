@@ -68,11 +68,13 @@ a {
   /* margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px; */
-  background-color: rgb(243, 240, 240);
+  background-color: whitesmoke;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 50px;
+  width: 700px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 /* #preview_card,
@@ -101,11 +103,11 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* テキスト中央配置 */
 /* https://www.w3.org/Style/Examples/007/center.ja.html */
 
-/* #profile_card {
+/* #profile_card { 
   display: none;
 } */
 
-#juusho_card {
+/* #juusho_card {
   display: none;
 }
 
@@ -123,7 +125,7 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 
 #bikou_card {
   display: none;
-}
+} */
 
 /* display: none; 非表示 */
 /* https://allabout.co.jp/gm/gc/23973/#aa23973display */
@@ -139,7 +141,7 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 .next_button {
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   background-color: #eb6100;
   border-radius: 5px;
@@ -148,7 +150,7 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 }
 
 .preview_button {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   background-color: rgb(226, 131, 226);
   border-radius: 5px;
@@ -171,10 +173,21 @@ input {
   margin-bottom: 10px;
 }
 
+input[type="text"] {
+  line-height: 30px;
+}
+
 input[type="number"] {
   width: 70px;
+  /* intput type=number の横幅 */
+  text-align: center;
+  line-height: 30px;
 }
-/* intput type=number の横幅 */
+
+input[type="tel"] {
+  text-align: center;
+  line-height: 30px;
+}
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
