@@ -7,6 +7,10 @@
     <link rel="icon" type="image/x-icon" href="patora/patora10.png" />
     <!-- ファビコン -->
     <!-- https://techacademy.jp/magazine/30972 -->
+
+    <!-- githubAPIから繋げる -->
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+
   </head>
   <body>
     <div class="rirekisyo">
@@ -55,7 +59,17 @@
           <div class="juusho_header">
             <h1 class="juusho_layout">住所</h1>
           </div>
-          <form name="juusho_form" action="" method="POST">
+          <form class="h-adr">
+            <span class="p-country-name" style="display:none;">Japan</span>
+  
+            〒郵便番号<input type="text" class="p-postal-code" size="12" maxlength="8"><br>
+  
+            都道府県・市区町村・番地<input type="text" class="p-region p-locality p-street-address p-extended-address" /><br>
+          </form>
+          <!-- 
+            曽我くんのコード元
+            
+            <form name="juusho_form" action="" method="POST">
             <div class="yuubin">郵便番号</div>
             <div class="yuubin_edit">
               <input type="tel" name="yuubin" value="" />
@@ -68,7 +82,7 @@
             <div class="juusho_furigana_edit">
               <input type="text" name="juusho_furigana" value="" />
             </div>
-          </form>
+          </form> -->
         </div>
 
         <!-- ★連絡先画面 -->
