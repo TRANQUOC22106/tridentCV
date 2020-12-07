@@ -92,3 +92,5 @@ function preview() {
 
 // display noneの場合には、要素は無くなったものと見なされ、次にある要素が詰めて表示されることになります。
 // https://allabout.co.jp/gm/gc/23973/#aa23973display
+
+// q
