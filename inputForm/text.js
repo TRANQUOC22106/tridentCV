@@ -62,7 +62,7 @@ function next() {
     var preview_card = document.getElementById('preview_card');
     preview_card.style.display = 'none';
 
-    var next_card = document.getElementById('rennrakusaki_card');
+    var next_card = document.getElementById('juusho_card');
     next_card.style.display = 'block';
 }
 
