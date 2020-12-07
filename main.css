@@ -95,8 +95,17 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 .profile_layout,
 .juusho_layout,
 .rennrakusaki_layout,
-.bikou_layout,
+.gakureki_layout,
+.kamoku_layout,
+.shumi_layout,
+.tokutyou_layout,
+.etakoto_layout,
+.seikatu_layout,
+.douki_layout,
 .shikaku_layout,
+.bikou_layout,
+.sakuseibi_layout,
+.kakuninn_layout,
 .preview_layout {
   text-align: center;
 }
@@ -187,6 +196,12 @@ input[type="number"] {
 input[type="tel"] {
   text-align: center;
   line-height: 30px;
+}
+
+.row-5 {
+  width: 700px;
+  height: calc(1.3em * 5);
+  line-height: 1.3;
 }
 
 input::-webkit-inner-spin-button,

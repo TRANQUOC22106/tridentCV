@@ -20,14 +20,45 @@ var rennrakusaki_card =
     document.getElementById("rennrakusaki_card")
         .style.display = "none";
 
-var shikaku_card =
+var gakureki_card =
+    document.getElementById("gakureki_card")
+        .style.display = "none";
 
+var kamoku_card =
+    document.getElementById("kamoku_card")
+        .style.display = "none";
+
+var shumi_card =
+    document.getElementById("shumi_card")
+        .style.display = "none";
+
+var tokutyou_card =
+    document.getElementById("tokutyou_card")
+        .style.display = "none";
+
+var etakoto_card =
+    document.getElementById("etakoto_card")
+        .style.display = "none";
+
+var douki_card =
+    document.getElementById("douki_card")
+        .style.display = "none";
+
+var shikaku_card =
     document.getElementById("shikaku_card")
         .style.display = "none";
 
 var bikou_card =
 
     document.getElementById("bikou_card")
+        .style.display = "none";
+
+var sakuseibi_card =
+    document.getElementById("sakuseibi_card")
+        .style.display = "none";
+
+var kakuninn_card =
+    document.getElementById("kakuninn_card")
         .style.display = "none";
 
 var preview_card =
@@ -43,7 +74,7 @@ var array_card = new Array(profile_card, juusho_card, rennrakusaki_card, shikaku
 
 
 function before() {
-    var now_card = document.getElementById('rennrakusaki_card');
+    var now_card = document.getElementById('bikou_card');
     now_card.style.display = 'none';
 
     var preview_card = document.getElementById('preview_card');
@@ -62,7 +93,7 @@ function next() {
     var preview_card = document.getElementById('preview_card');
     preview_card.style.display = 'none';
 
-    var next_card = document.getElementById('rennrakusaki_card');
+    var next_card = document.getElementById('bikou_card');
     next_card.style.display = 'block';
 }
 
@@ -76,7 +107,8 @@ function preview() {
         getElementById('preview_card');
     preview_card.style.display = 'block';
 
-    var next_card = document.getElementById('rennrakusaki_card');
+    var next_card = document.
+        getElementById('bikou_card');
     next_card.style.display = 'none';
 }
 
