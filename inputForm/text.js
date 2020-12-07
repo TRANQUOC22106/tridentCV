@@ -43,7 +43,7 @@ var array_card = new Array(profile_card, juusho_card, rennrakusaki_card, shikaku
 
 
 function before() {
-    var now_card = document.getElementById('rennrakusaki_card');
+    var now_card = document.getElementById('juusho_card');
     now_card.style.display = 'none';
 
     var preview_card = document.getElementById('preview_card');
@@ -62,7 +62,7 @@ function next() {
     var preview_card = document.getElementById('preview_card');
     preview_card.style.display = 'none';
 
-    var next_card = document.getElementById('rennrakusaki_card');
+    var next_card = document.getElementById('juusho_card');
     next_card.style.display = 'block';
 }
 
@@ -76,7 +76,7 @@ function preview() {
         getElementById('preview_card');
     preview_card.style.display = 'block';
 
-    var next_card = document.getElementById('rennrakusaki_card');
+    var next_card = document.getElementById('juusho_card');
     next_card.style.display = 'none';
 }
 
