@@ -2,6 +2,11 @@ h1 {
     padding-left: 100px;
 }
 
+.table {
+    padding: 10px;
+    padding-left: 100px;
+}
+
 .preview {
     text-align: center;
 }
@@ -10,16 +15,37 @@ p {
     padding-left: 100px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 500px;
+    border: solid 2px black;
+}
+
+table th , td {
+    border: solid 1px;
+}
+
+/* table .nentuki {
+    border-left: dashed 1px;
+} */
+
 .button {
     padding-top: 10px;
 }
 
 .btn1 {
     text-align: right;
+    padding-right: 100px;
 }
 
 .btn2 {
     text-align: left; 
+    padding-left: 100px;
+}
+
+.kousei {
+    text-align: right;
+    padding-right: 210px;
 }
 
 #seinenngappi , #saisyuugakureki {
@@ -40,3 +66,6 @@ p {
     padding-top: 10px;
 }
 
+.daiitisibou {
+    padding-left: 100px;
+}
