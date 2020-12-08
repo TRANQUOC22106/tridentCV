@@ -53,14 +53,6 @@ var bikou_card =
     document.getElementById("bikou_card")
         .style.display = "none";
 
-var sakuseibi_card =
-    document.getElementById("sakuseibi_card")
-        .style.display = "none";
-
-var kakuninn_card =
-    document.getElementById("kakuninn_card")
-        .style.display = "none";
-
 var preview_card =
 
     document.getElementById("preview_card")
