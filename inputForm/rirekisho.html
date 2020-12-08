@@ -13,6 +13,12 @@
       src="https://yubinbango.github.io/yubinbango/yubinbango.js"
       charset="UTF-8"
     ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="../config.js"></script>
   </head>
   <body>
     <div class="rirekisyo">
@@ -24,12 +30,12 @@
           </div>
           <form name="profile_form" action="" method="POST">
             <div class="simei">氏名</div>
-            <div class="simei_edit">
-              <input type="text" name="simei" value="" />
+            <div class="simei_edit" >
+              <input type="text" id="simei" name="simei" value="" />
             </div>
             <div class="furigana">フリガナ</div>
             <div class="firagana_edit">
-              <input type="text" name="furigana" value="" />
+              <input type="text" id="furigana" name="furigana" value="" />
             </div>
             <div class="seinenngappi">生年月日</div>
             <div class="seinenngappi_edit">
@@ -242,11 +248,13 @@
         </div>
       </div>
       <div class="preview_shift">
-        <button class="preview_button" type="button" onclick="preview()">
+        <button class="preview_button" id="preview_button" type="button" onclick="preview()">
           プレビュー
         </button>
       </div>
     </div>
-    <script src="text.js"></script>
+    
   </body>
+  <script src="text.js"></script>
+  <script src="../database/setData.js"></script>
 </html>
