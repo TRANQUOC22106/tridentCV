@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+table {
+    border-collapse: collapse;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.flex{
+    width: 160mm;
+    display: flex;
+    border: solid 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.ruby .label {
+    width: 22mm;
+    height: 6mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ruby .input {
+    width: 84mm;
+    height: 6mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*名前・生年月日・性別*/
+.profile table {
+    border: solid 2px;
+}
+
+.profile td {
+    border: solid 1px;
+}
+
+.gender {
+    width: 10mm;
+    height: 28mm;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.name .label {
+    width: 22mm;
+    height: 22mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.name .input {
+    width: 84mm;
+    height: 22mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.birthday .label {
+    width: 22mm;
+    height: 12mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.birthday .input {
+    width: 94mm;
+    height: 12mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*住所・連絡先・電話*/
+.address table {
+    border: solid 2px;
+}
+
+.address td {
+    border: solid 1px;
+}
+
+.address .input {
+    width: 101mm;
+}
+
+.denwa .input {
+    width: 37mm;
+    /*    height: 17mm;*/
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.genjuusyo .label {
+    width: 22mm;
+    height: 26mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.genjuusyo .input {
+    width: 101mm;
+    height: 26mm;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.keitai {
+    width: 37mm;
+    /*    height: 22mm;*/
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.email .label {
+    width: 22mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.email .input {
+    width: 101mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.renrakusaki .label {
+    width: 22mm;
+    height: 22mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.renrakusaki .input {
+    width: 101mm;
+    height: 22mm;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+.subdenwa .input {
+    width: 37mm;
+    /*    height: 28mm;*/
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+/*学歴・職歴*/
+.history {
+    border: solid 2px;
+}
+.history td{
+    border: solid 1px;
+}
+.history .nen {
+    width: 20mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.history .tuki {
+    width: 10mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.history .reki {
+    width: 130mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*科目~備考*/
+.rirekisho-table .label {
+    width: 30mm;
+    border-right: solid 2px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.rirekisho-table .input {
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.input1,.input2,.input3,.input4 {
+    width: 130mm;
+    height: 8mm;
+    border-bottom: dashed 1px;
+}
+.kamoku .label{
+    height: 12mm;
+    width: 30mm
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.kamoku .input{
+    height: 12mm;
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.syumi .label{
+    height: 24mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.syumi .input{
+    height: 24mm;
+    width: 130mm;
+    text-align: center;
+    display:b;
+    vertical-align: middle;
+}
+.tokutyou .label{
+    height: 40mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.tokutyou .input{
+    height: 12mm;
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.gakuseiseikatu .label{
+    height: 40mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.gakuseiseikatu .input{
+    height: 40mm;
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.douki .label{
+    height: 40mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.douki .input{
+    height: 40mm;
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bikou .label{
+    height: 18mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill {
+    border: solid 2px;
+}
+.skill td{
+    border: solid 1px;
+}
+.skill .nen {
+    width: 20mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill .tuki {
+    width: 10mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill .skillname {
+    width: 130mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bikou .input{
+    height: 18mm;
+    width: 130mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
