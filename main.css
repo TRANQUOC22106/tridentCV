@@ -1,6 +1,9 @@
 html {
   background-color: azure;
 }
+.container-fluid{
+  background-image: url("image/background.jpg ");
+}
 
 /* ★ hp.html */
 .midashi {
