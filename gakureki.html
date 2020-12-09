@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="gakureki">
+    <div id="gakureki_card" style="display: block;">
         <h1>学歴</h1>
         <p>「自動入力」を使うと、入学卒業年度を自動で計算されます</p>
     </div>
@@ -21,55 +22,27 @@
                 <th width="10%" >月</th>
                 <th width="70%" >学歴・職歴</th>
             </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
         </table>
     </div>
-    <div class="preview">
+    <div class="preview_card">
         <button type="button">プレビュー</button>
     </div>
 
-    <div class="jidounyuuryoku1">
+    <div id="jidounyuuryoku1_card">
     <div class="title">
         <h1>学歴自動入力</h1>
         <p>生年月日と在籍年数をもとに、入学・卒業年を自動計算します</p>
@@ -191,7 +164,7 @@
     <div class="kamoku">
         <h1>好きな科目</h1>
         <p><input type="text"></p>
-        <div class="preview">
+        <div class="preview_cardd">
             <button type="button">プレビュー</button>
         </div>
     </div>
@@ -205,7 +178,7 @@
         <div>
             <p><textarea name="teuti" id="teuti" cols="55" rows="5" maxlength="150"></textarea></p>
         </div>
-        <div class="preview">
+        <div class="preview_cardd">
             <button type="button">プレビュー</button>
         </div>
     </div>
@@ -218,7 +191,7 @@
         <div>
             <p><textarea name="teuti" id="teuti" cols="55" rows="5" maxlength="150"></textarea></p>
         </div>
-        <div class="preview">
+        <div class="preview_cardd">
             <button type="button">プレビュー</button>
         </div>
     </div>
@@ -231,7 +204,7 @@
         <div>
             <p><textarea name="teuti" id="teuti" cols="55" rows="5" maxlength="150"></textarea></p>
         </div>
-        <div class="preview">
+        <div class="preview_cardd">
             <button type="button">プレビュー</button>
         </div>
     </div>
@@ -247,22 +220,68 @@
         <div>
             <p><textarea name="teuti" id="teuti" cols="55" rows="5" maxlength="150"></textarea></p>
         </div>
-        <div class="preview">
+        <div class="preview_cardd">
             <button type="button">プレビュー</button>
         </div>
     </div>
 
-    <div class="gakureki">
+    <div class="menkyo">
         <h1>免許・資格</h1>
         <p>主要な免許・資格は例文から選択可能ですよ</p>
     </div>
     <div class="btn1">
-        <button type="button">自動入力</button>
+        <button type="button" class="reibuntuika">例文から追加</button>
     </div>
-    <div class="preview">
+    <div class="table">
+        <table>
+            <tr>
+                <th>年</th>
+                <th>月</th>
+                <th>免許・資格</th>
+            </tr>
+            <tr><td><!--<input type="text" placeholder="2000" maxlength="4" min="2000" max="2023">-->&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        </table>
+    </div>
+    <div class="preview_card">
         <button type="button">プレビュー</button>
     </div>
 
+    <div id="reibun" style="top: auto; left: 0px; width: auto; height: auto;">
+        <div class="title">
+            <h1>例文を選ぶ</h1>
+        </div>
+        <div class="title">
+            <p>選択した例文が追加されます</p>
+        </div>
+        <ul class="menkyojidou" >
+            <li><div class="titlejidou">自動車免許</div>
+                <div class="body">普通自動車第一種運転免許取得</div>
+            </li>
+            <li><div class="titlejidou">自動車免許(AT限定)</div>
+                <div class="body">普通自動車第一種運転免許(AT限定)取得</div>
+            </li>
+            <li><div class="titlejidou">原付免許</div>
+                <div class="body">原動機付自転車免許取得</div>
+            </li>
+            <li><div class="titlejidou">英検</div>
+                <div class="body">実用英語技能検定〇級合格</div>
+            </li>
+            <li><div class="titlejidou">基本情報</div>
+                <div class="body">基本情報技術者試験</div>
+            </li>
+            <li><div class="titlejidou">応用情報</div>
+                <div class="body">応用情報技術者試験</div>
+            </li>
+        </ul>
+        <div class="btn1">
+            <button type="button">閉じる</button>
+        </div>
+    </div>
 
     <div class="button">
         <div class="btn1">
