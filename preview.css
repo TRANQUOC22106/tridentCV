@@ -80,6 +80,7 @@ table {
 /*住所・連絡先・電話*/
 .address table {
     border: solid 2px;
+    height: 67mm;
 }
 
 .address td {
@@ -90,9 +91,27 @@ table {
     width: 101mm;
 }
 
-.denwa .input {
+.number .denwa .input {
     width: 37mm;
-    /*    height: 17mm;*/
+    height: 17mm;
+    border-bottom: solid 1px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.number .keitai .input {
+    width: 37mm;
+    height: 22mm;
+    border-bottom: solid 1px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.number .subdenwa .input{
+    width: 37mm;
+    height: 28mm;
     text-align: left;
     display: table-cell;
     vertical-align: top;
@@ -109,14 +128,6 @@ table {
 .genjuusyo .input {
     width: 101mm;
     height: 26mm;
-    text-align: left;
-    display: table-cell;
-    vertical-align: top;
-}
-
-.keitai {
-    width: 37mm;
-    /*    height: 22mm;*/
     text-align: left;
     display: table-cell;
     vertical-align: top;
@@ -149,13 +160,6 @@ table {
 .renrakusaki .input {
     width: 101mm;
     height: 22mm;
-    text-align: left;
-    display: table-cell;
-    vertical-align: top;
-}
-.subdenwa .input {
-    width: 37mm;
-    /*    height: 28mm;*/
     text-align: left;
     display: table-cell;
     vertical-align: top;
