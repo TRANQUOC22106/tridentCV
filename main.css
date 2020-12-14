@@ -112,29 +112,10 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* テキスト中央配置 */
 /* https://www.w3.org/Style/Examples/007/center.ja.html */
 
-/* #profile_card { 
-  display: none;
-} */
-
-/* #juusho_card {
-  display: none;
+.kamoku_edit,
+.shikaku_edit {
+  text-align: center;
 }
-
-#rennrakusaki_card {
-  display: none;
-}
-
-#shikaku_card {
-  display: none;
-}
-
-#preview_card {
-  display: none;
-}
-
-#bikou_card {
-  display: none;
-} */
 
 /* display: none; 非表示 */
 /* https://allabout.co.jp/gm/gc/23973/#aa23973display */
@@ -175,6 +156,15 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* border: none 枠線を消す */
 /* border-radius 角を丸くする */
 /* https://jajaaan.co.jp/css/button/ */
+
+.kousei_button {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.kousei {
+  text-align: right;
+}
 
 input {
   font-size: 20px;
