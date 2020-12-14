@@ -1,6 +1,6 @@
 //保存ボタンに繋げているけど、今、ボタンをおわっていないです
 
-// let button = document.getElementById("preview_button");
+let button = document.getElementById("preview_button");
 button.addEventListener("click", function (){
     // get the values which the user types
     let simei = document.getElementById("simei").value;
