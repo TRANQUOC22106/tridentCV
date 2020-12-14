@@ -73,6 +73,7 @@ var array_card = new Array(profile_card, juusho_card, rennrakusaki_card, shikaku
 // 上記の変数を一つの配列に格納する
 
 
+
 function before() {
     var now_card = document.getElementById('bikou_card');
     now_card.style.display = 'none';
