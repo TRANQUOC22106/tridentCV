@@ -49,7 +49,8 @@ button.addEventListener("click", function (){
         var database = firebase.database();
 
         //which gets the database
-        var ref = database.ref(userId + '/nyuryokufomu').set(data);
+        // var ref = database.ref(userId + '/nyuryokufomu').set(data);
+        firebase.database().ref(userId + '/nyuryokufomu').update(data);
         
     }
 })
