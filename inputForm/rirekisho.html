@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>TridentCV</title>
-    <!-- <link href="../main.css" rel="stylesheet" /> -->
+    <link href="../main.css" rel="stylesheet" />
 
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,7 @@
     <!-- ファビコン -->
     <!-- https://techacademy.jp/magazine/30972 -->
   </head>
-  <body>
+  <body class="body">
     <div class="row">
       <div class="col-2">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -39,6 +39,7 @@
           <a class="nav-link" id="v-pills-manandakoto-tab" data-toggle="pill" href="#v-pills-manandakoto" role="tab" aria-controls="v-pills-manandakoto" aria-selected="false">学校から学んだこと</a>
           <a class="nav-link" id="v-pills-shikaku-tab" data-toggle="pill" href="#v-pills-shikaku" role="tab" aria-controls="v-pills-shikaku" aria-selected="false">資格</a>
           <a class="nav-link" id="v-pills-sanko-tab" data-toggle="pill" href="#v-pills-sanko" role="tab" aria-controls="v-pills-sanko" aria-selected="false">参考</a>
+          <a class="nav-link" id="v-pills-preview-tab" data-toggle="pill" href="#v-pills-download" role="tab" aria-controls="v-pills-download" aria-selected="false">ダウンロード</a>
           <a class="nav-link" id="v-pills-preview-tab" data-toggle="pill" href="#v-pills-preview" role="tab" aria-controls="v-pills-preview" aria-selected="false">プレービュー</a>
         </div>
       </div>
@@ -156,9 +157,10 @@
           <div class="tab-pane fade" id="v-pills-manandakoto" role="tabpanel" aria-labelledby="v-pills-manandakoto-tab">8</div>
           <div class="tab-pane fade" id="v-pills-shikaku" role="tabpanel" aria-labelledby="v-pills-shikaku-tab">9</div>
           <div class="tab-pane fade" id="v-pills-sanko" role="tabpanel" aria-labelledby="v-pills-sanko-tab">10</div>
-          <div class="tab-pane fade" id="v-pills-preview" role="tabpanel" aria-labelledby="v-pills-preview-tab">
+          <div class="tab-pane fade" id="v-pills-download" role="tabpanel" aria-labelledby="v-pills-download-tab">
             <button type="button" class="btn btn-primary" id="preview_button">保存</button>
           </div>
+          <div class="tab-pane fade" id="v-pills-preview" role="tabpanel" aria-labelledby="v-pills-preview-tab"></div>
         </div>
       </div>
     </div>
