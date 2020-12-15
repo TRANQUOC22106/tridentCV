@@ -20,10 +20,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
     <script src="../config.js"></script>
-
-    <link rel="icon" type="image/x-icon" href="../image/patora10.png" />
-    <!-- ファビコン -->
-    <!-- https://techacademy.jp/magazine/30972 -->
   </head>
   <body class="body">
     <div class="row">
@@ -67,19 +63,31 @@
         $("#datepicker").datepicker();
     </script>
 
-                  <div class="nennrei">年齢</div>
-                  <div class="nennrei_edit">
-                      <input type="number" name="nennrei" value="" />
+                  <div class="nenrei">年齢</div>
+                  <div class="nenrei_edit">
+                      <input type="number" name="nenrei" id="nenrei_rirekisho" value="" />
                       <span>歳</span>
                   </div>
                   <div class="seibetu">性別</div>
                   <div class="seibetu_radio">
-                      <input type="radio" name="seibetu" value="" />男性
-                      <input type="radio" name="seibetu" value="" />
-                      女性
+                      <input type="radio" name="seibetu" value="男性" />男性
+                      <input type="radio" name="seibetu" value="女性" />女性
                   </div>
-                  <!-- ラジオボタン -->
-                  <!-- https://techacademy.jp/magazine/5867 -->
+
+                  <form>
+                    <p>希望する連絡方法を選択してください。</p>
+                    <div>
+                      <input type="radio" id="contactChoice1"
+                       name="contact" value="email">
+                      <label for="contactChoice1">電子メール</label>
+                  
+                      <input type="radio" id="contactChoice2"
+                       name="contact" value="phone">
+                      <label for="contactChoice2">電話</label>
+                    </div>
+                  </form>
+                  </div>
+                  </div>
                   </form>
               </div>
           </div>
