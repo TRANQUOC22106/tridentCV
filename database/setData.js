@@ -7,7 +7,10 @@ button.addEventListener("click", function (){
     let furigana = document.getElementById("furigana").value;
     let seinengappi = document.getElementById("datepicker").value;
     let nenrei = document.getElementById("nenrei_rirekisho").value;
-    
+    let yubinbango = document.getElementById("p-postal-code").value;
+    let jyusho = document.getElementById("jyusho").value;
+    let jyusho_furigana = document.getElementById("jyusho_furigana").value;
+    let keitaibango = document.getElementById("keitaibango").value;
 
     var userId = firebase.auth().currentUser.uid;
 
@@ -19,17 +22,18 @@ button.addEventListener("click", function (){
             simei: simei,
             furigana:furigana,
             seinengappi:seinengappi,
-            nenrei:nenrei
+            nenrei:nenrei,
+            yubinbango:yubinbango,
+            jyusho:jyusho,
+            jyusho_furigana:jyusho_furigana,
+            keitaibango:keitaibango
             //プロジェクトに必要なデータ
             
     //        ,
     //        gakuseiID:gakuseiID,
     //        hizuke:hizuke,
     //        simei:simei,
-    //        seibetu:seibetu,
-    //        nenrei:nenrei,
-    //        yubinbango:yubinbango,				
-    //        jyusho:jyusho,			
+    //        seibetu:seibetu,			
     //        meru:meru,			
     //        keitaibango:keitaibango,
     //        denwabango:denwabango,
