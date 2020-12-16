@@ -25,7 +25,8 @@
           <div class="profile_header">
             <h1 class="profile_layout">プロフィール</h1>
           </div>
-          <form name="profile_form" action="" method="POST">
+          <form id="profile_form"
+          name="profile_form" action="" method="POST">
             <div class="simei">氏名</div>
             <div class="simei_edit">
               <input type="text" name="simei" value="" />
@@ -36,16 +37,24 @@
             </div>
             <div class="seinenngappi">生年月日</div>
             <div class="seinenngappi_edit">
-              <input type="number" name="toshi" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+               name="toshi" value="" />
               <span>年</span>
-              <input type="number" name="tuki" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="tuki" value="" />
               <span>月</span>
-              <input type="number" name="hi" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="hi" value="" />
               <span>日</span>
             </div>
             <div class="nennrei">年齢</div>
             <div class="nennrei_edit">
-              <input type="number" name="nenrei" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="nenrei" value="" />
               <span>歳</span>
             </div>
             <div class="seibetu">性別</div>
@@ -67,7 +76,8 @@
           <form name="juusho_form" action="" method="POST">
             <div class="yuubin">郵便番号</div>
             <div class="yuubin_edit">
-              <input type="tel" name="yubinbango" value="" />
+              <input type="tel"
+              class="hannkaku_desu" name="yubinbango" value="" />
             </div>
             <div class="todoufuken">都道府県・市区町村・番地</div>
             <div class="todouh fuken_edit">
@@ -80,24 +90,38 @@
 
             <div class="dennwa">電話番号</div>
             <div class="dennwa_edit">
-              <input type="number" name="dennwabango_1" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+               name="dennwabango_1" value="" />
               <span>-</span>
-              <input type="number" name="dennwabango_2" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+              name="dennwabango_2" value="" />
               <span>-</span>
-              <input type="number" name="dennwabango_3" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+              name="dennwabango_3" value="" />
             </div>
 
             <div class="keitai">携帯番号</div>
             <div class="dennwa_edit">
-              <input type="number" name="keitaibango_1" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="keitaibango_1" value="" />
               <span>-</span>
-              <input type="number" name="keitaibango_2" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+              name="keitaibango_2" value="" />
               <span>-</span>
-              <input type="number" name="keitaibango_3" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="keitaibango_3" value="" />
             </div>
             <div class="e-mail">e-mail</div>
             <div class="e-mail_edit">
-              <input type="email" name="e-mail" value="" />
+              <input type="email" 
+              class="hannkaku_desu"
+              name="e-mail" value="" />
             </div>
           </form>
         </div>
@@ -111,7 +135,9 @@
 
             <div class="yuubin">郵便番号</div>
             <div class="yuubin_edit">
-              <input type="tel" name="renrakusaki_yubinbango" value="" />
+              <input type="tel" 
+              class="hannkaku_desu"
+              name="renrakusaki_yubinbango" value="" />
             </div>
             <div class="todoufuken">都道府県・市区町村・番地</div>
             <div class="todouh fuken_edit">
@@ -123,11 +149,17 @@
             </div>
             <div class="dennwa">電話番号</div>
             <div class="dennwa_edit">
-              <input type="number" name="renrakusaki_dennwabango_1" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="renrakusaki_dennwabango_1" value="" />
               <span>-</span>
-              <input type="number" name="renrakusaki_dennwabango_2" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+              name="renrakusaki_dennwabango_2" value="" />
               <span>-</span>
-              <input type="number" name="renrakusaki_dennwabango_3" value="" />
+              <input type="number"
+              class="hannkaku_desu"
+              name="renrakusaki_dennwabango_3" value="" />
             </div>
            
             
@@ -142,16 +174,20 @@
 
             <div class="tuika">
               <button class="tuika_button"
-              id="clone"
+              id="aaa"
               >入力欄を追加</button>
             </div>
 
             <form name="gakureki_form" action="" method="POST"></form>
 
             <div class="gakureki_edit">
-              <input type="number" name="gakureki_toshi" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="gakureki_toshi" value="" />
               <span>年</span>
-              <input type="number" name="gakureki_tuki" value="" />
+              <input type="number" 
+              class="hannkaku_desu"
+              name="gakureki_tuki" value="" />
               <span>月</span></br>
               <input type="text"
               id="gakureki_rann" name="gakureki"

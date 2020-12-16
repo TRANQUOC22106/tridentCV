@@ -1,11 +1,39 @@
-// $(function () {
-//     $("#clone").on("click", function () {
-//         $(this).clone(true).appendTo(".this");
-//     });
-// });
+jQuery(document).on('keydown', '.hannkaku_desu', function (e) {
+    let k = e.keyCode;
+    let str = String.fromCharCode(k);
+    if (!(str.match(/[0-9]/) || (37 <= k && k <= 40) || k === 8 || k === 46)) {
+        return false;
+    }
+});
+
+// 削除キーや制御キーの入力を許可する
+
+jQuery(document).on('keyup', '.hannkaku_desu', function (e) {
+    this.value = this.value.replace(/[^0-9]+/i, '');
+});
+
+// キーを押したとき、全角文字を消去する
+
+jQuery(document).on('blur', '.hannkaku_desu', function () {
+    this.value = this.value.replace(/[^0-9]+/i, '');
+});
+
+// フォーカスから外れたとき、押したとき、全角文字を消去する
+
+// https://pisuke-code.com/jquery-input-number-only/
+
+
+/* <script>
+    function getAge( birthday ) 
+    {
+        var today = new Date();
+        var tdate = ( today.getFullYear() * 10000 ) + (( today.getMonth() + 1 ) * 100 ) + today.getDate() ;
+        return( Math.floor(( tdate - birthday ) / 10000 )) ;
+    }
+</script> */
 
 $("#aaa").on("click", function () {
-    alert("クリックされました");
+    alert(a);
 });
 
 $("#clone").on("click", function () {
