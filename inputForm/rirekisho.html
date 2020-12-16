@@ -22,27 +22,50 @@
     <script src="../config.js"></script>
   </head>
   <body class="body">
-    <div class="row">
-      <div class="col-2">
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">プロファイル</a>
-          <a class="nav-link" id="v-pills-address-tab" data-toggle="pill" href="#v-pills-address" role="tab" aria-controls="v-pills-address" aria-selected="false">住所</a>
-          <a class="nav-link" id="v-pills-renrakusaki-tab" data-toggle="pill" href="#v-pills-renrakusaki" role="tab" aria-controls="v-pills-renrakusaki" aria-selected="false">連絡先</a>
-          <a class="nav-link" id="v-pills-gakureki-tab" data-toggle="pill" href="#v-pills-gakureki" role="tab" aria-controls="v-pills-gakureki" aria-selected="false">学歴</a>
-          <a class="nav-link" id="v-pills-shumi-tab" data-toggle="pill" href="#v-pills-shumi" role="tab" aria-controls="v-pills-shumi" aria-selected="false">趣味</a>
-          <a class="nav-link" id="v-pills-jikoPr-tab" data-toggle="pill" href="#v-pills-jikoPr" role="tab" aria-controls="v-pills-jikoPr" aria-selected="false">自己PR</a>
-          <a class="nav-link" id="v-pills-tokucho-tab" data-toggle="pill" href="#v-pills-tokucho" role="tab" aria-controls="v-pills-tokucho" aria-selected="false">特長</a>
-          <a class="nav-link" id="v-pills-manandakoto-tab" data-toggle="pill" href="#v-pills-manandakoto" role="tab" aria-controls="v-pills-manandakoto" aria-selected="false">学校から学んだこと</a>
-          <a class="nav-link" id="v-pills-shikaku-tab" data-toggle="pill" href="#v-pills-shikaku" role="tab" aria-controls="v-pills-shikaku" aria-selected="false">資格</a>
-          <a class="nav-link" id="v-pills-sanko-tab" data-toggle="pill" href="#v-pills-sanko" role="tab" aria-controls="v-pills-sanko" aria-selected="false">参考</a>
-          <a class="nav-link" id="v-pills-preview-tab" data-toggle="pill" href="#v-pills-download" role="tab" aria-controls="v-pills-download" aria-selected="false">ダウンロード</a>
-          <a class="nav-link" id="v-pills-preview-tab" data-toggle="pill" href="#v-pills-preview" role="tab" aria-controls="v-pills-preview" aria-selected="false">プレービュー</a>
-        </div>
-      </div>
-      <div class="col-10">
-        <div class="tab-content" id="v-pills-tabContent">
+    <div class="">
+      <!--Control-->
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロファイル</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">住所</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-renrakusaki-tab" data-toggle="pill" href="#pills-renrakusaki" role="tab" aria-controls="pills-renrakusaki" aria-selected="false">連絡先</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-gakureki-tab" data-toggle="pill" href="#pills-gakureki" role="tab" aria-controls="pills-gakureki" aria-selected="false">学歴</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-shumi-tab" data-toggle="pill" href="#pills-shumi" role="tab" aria-controls="pills-shumi" aria-selected="false">趣味</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-jikoPr-tab" data-toggle="pill" href="#pills-jikoPr" role="tab" aria-controls="pills-jikoPr" aria-selected="false">自己PR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-tokucho-tab" data-toggle="pill" href="#pills-tokucho" role="tab" aria-controls="pills-tokucho" aria-selected="false">特長</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-manandakoto-tab" data-toggle="pill" href="#pills-manandakoto" role="tab" aria-controls="pills-manandakoto" aria-selected="false">学校から学んだこと</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-shikaku-tab" data-toggle="pill" href="#pills-shikaku" role="tab" aria-controls="pills-shikaku" aria-selected="false">資格</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-sanko-tab" data-toggle="pill" href="#pills-sanko" role="tab" aria-controls="pills-sanko" aria-selected="false">参考</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-download" role="tab" aria-controls="pills-download" aria-selected="false">ダウンロード</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレービュー</a>
+        </li>
+      </ul>
+      <!--Content-->
+      <div class="tab-content" id="pills-tabContent">
           <!-- ★プロフィール画面 -->
-          <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+          <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div id="profile_card">
                 <div class="profile_header">
                   <h1 class="profile_layout">プロフィール</h1>
@@ -80,7 +103,7 @@
               </div>
           </div>
           <!-- ★住所画面 -->
-          <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
+          <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
             <div id="juusho_card">
               <div class="juusho_header">
                 <h1 class="juusho_layout">住所</h1>
@@ -103,7 +126,7 @@
             </div>
           </div>
           <!-- ★連絡先画面 -->
-          <div class="tab-pane fade" id="v-pills-renrakusaki" role="tabpanel" aria-labelledby="v-pills-renrakusaki-tab">
+          <div class="tab-pane fade" id="pills-renrakusaki" role="tabpanel" aria-labelledby="pills-renrakusaki-tab">
               <div id="rennrakusaki_card">
                 <div class="rennrakusaki_header">
                   <h1 class="rennrakusaki_layout">連絡先</h1>
@@ -132,19 +155,18 @@
                 </form>
               </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-gakureki" role="tabpanel" aria-labelledby="v-pills-gakureki-tab">4</div>
-          <div class="tab-pane fade" id="v-pills-shumi" role="tabpanel" aria-labelledby="v-pills-shumi-tab">5</div>
-          <div class="tab-pane fade" id="v-pills-jikoPr" role="tabpanel" aria-labelledby="v-pills-jikoPr-tab">6</div>
-          <div class="tab-pane fade" id="v-pills-tokucho" role="tabpanel" aria-labelledby="v-pills-tokucho-tab">7</div>
-          <div class="tab-pane fade" id="v-pills-manandakoto" role="tabpanel" aria-labelledby="v-pills-manandakoto-tab">8</div>
-          <div class="tab-pane fade" id="v-pills-shikaku" role="tabpanel" aria-labelledby="v-pills-shikaku-tab">9</div>
-          <div class="tab-pane fade" id="v-pills-sanko" role="tabpanel" aria-labelledby="v-pills-sanko-tab">10</div>
-          <div class="tab-pane fade" id="v-pills-download" role="tabpanel" aria-labelledby="v-pills-download-tab">
+          <div class="tab-pane fade" id="pills-gakureki" role="tabpanel" aria-labelledby="pills-gakureki-tab">4</div>
+          <div class="tab-pane fade" id="pills-shumi" role="tabpanel" aria-labelledby="pills-shumi-tab">5</div>
+          <div class="tab-pane fade" id="pills-jikoPr" role="tabpanel" aria-labelledby="pills-jikoPr-tab">6</div>
+          <div class="tab-pane fade" id="pills-tokucho" role="tabpanel" aria-labelledby="pills-tokucho-tab">7</div>
+          <div class="tab-pane fade" id="pills-manandakoto" role="tabpanel" aria-labelledby="pills-manandakoto-tab">8</div>
+          <div class="tab-pane fade" id="pills-shikaku" role="tabpanel" aria-labelledby="pills-shikaku-tab">9</div>
+          <div class="tab-pane fade" id="pills-sanko" role="tabpanel" aria-labelledby="pills-sanko-tab">10</div>
+          <div class="tab-pane fade" id="pills-download" role="tabpanel" aria-labelledby="pills-download-tab">
             <button type="button" class="btn btn-primary" id="preview_button">保存</button>
           </div>
-          <div class="tab-pane fade" id="v-pills-preview" role="tabpanel" aria-labelledby="v-pills-preview-tab"></div>
+          <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab"></div>
         </div>
-      </div>
     </div>
     
   
