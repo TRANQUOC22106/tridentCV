@@ -72,7 +72,7 @@
                       <span>歳</span>
                   </div>
                     <div class="seibetu">性別</div>
-                      <div class="seibetu_radio">
+                      <div class="seibetu_radio" >
                           <input type="radio" name="seibetu" value="男性" />男性
                           <input type="radio" name="seibetu" value="女性" />女性
                       </div>
@@ -81,35 +81,25 @@
           </div>
           <!-- ★住所画面 -->
           <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
-
             <div id="juusho_card">
-          <div class="juusho_header">
-            <h1 class="juusho_layout">住所</h1>
-          </div>
-          <form name="juusho_form" class="h-adr" method="POST">
-            <span class="p-country-name" style="display: none">Japan</span>
-
-            <div class="yuubin">郵便番号</div>
-            <div class="yuubin_edit">
-              <input
-                type="text"
-                class="p-postal-code"
-                size="12"
-                maxlength="8"
-              />
-            </div>
-            <div class="todoufuken">都道府県・市区町村・番地</div>
-            <div class="todoufuken_edit">
-              <input
-                type="text"
-                class="p-region p-locality p-street-address p-extended-address"
-              />
-            </div>
-            <div class="juusho_furigana">住所フリガナ</div>
-            <div class="juusho_furigana_edit">
-              <input type="text" name="juusho_furigana" value="" />
-            </div>
-          </form>
+              <div class="juusho_header">
+                <h1 class="juusho_layout">住所</h1>
+              </div>
+              <form name="juusho_form" class="h-adr" method="POST">
+                <span class="p-country-name" style="display: none">Japan</span>
+                <div class="yuubin" >郵便番号</div>
+                <div class="yuubin_edit">
+                  <input type="text" class="p-postal-code" size="12" maxlength="8"/>
+                </div>
+                <div class="todoufuken">都道府県・市区町村・番地</div>
+                <div class="todoufuken_edit">
+                  <input type="text" class="p-region p-locality p-street-address p-extended-address"/>
+                </div>
+                <div class="juusho_furigana">住所フリガナ</div>
+                <div class="juusho_furigana_edit">
+                  <input type="text" name="juusho_furigana" value="" />
+                </div>
+              </form>
             </div>
           </div>
           <!-- ★連絡先画面 -->
