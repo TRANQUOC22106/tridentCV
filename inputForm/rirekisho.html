@@ -89,15 +89,15 @@
                 <span class="p-country-name" style="display: none">Japan</span>
                 <div class="yuubin" >郵便番号</div>
                 <div class="yuubin_edit">
-                  <input type="text" class="p-postal-code" size="12" maxlength="8"/>
+                  <input type="text" id="p-postal-code" class="p-postal-code" size="12" maxlength="8"/>
                 </div>
                 <div class="todoufuken">都道府県・市区町村・番地</div>
                 <div class="todoufuken_edit">
-                  <input type="text" class="p-region p-locality p-street-address p-extended-address"/>
+                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"/>
                 </div>
                 <div class="juusho_furigana">住所フリガナ</div>
                 <div class="juusho_furigana_edit">
-                  <input type="text" name="juusho_furigana" value="" />
+                  <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" />
                 </div>
               </form>
             </div>
@@ -111,11 +111,7 @@
                 <form name="rennrakusaki_form" action="" method="POST">
                   <div class="dennwa">電話番号</div>
                   <div class="dennwa_edit">
-                    <input type="number" name="dennwa_1" value="" />
-                    <span>-</span>
-                    <input type="number" name="dennwa_2" value="" />
-                    <span>-</span>
-                    <input type="number" name="dennwa_3" value="" />
+                    <input type="number" id="keitaibango" name="dennwa_1" value="" />
                   </div>
                   <div class="e-mail">e-mail</div>
                   <div class="e-mail_edit">
