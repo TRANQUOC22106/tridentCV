@@ -12,59 +12,59 @@
 //     document.getElementById("profile_card")
 //         .style.display = "none";
 
-var juusho_card =
-    document.getElementById("juusho_card")
-        .style.display = "none";
+// var juusho_card =
+//     document.getElementById("juusho_card")
+//         .style.display = "none";
 
-var rennrakusaki_card =
-    document.getElementById("rennrakusaki_card")
-        .style.display = "none";
+// var rennrakusaki_card =
+//     document.getElementById("rennrakusaki_card")
+//         .style.display = "none";
 
-var gakureki_card =
-    document.getElementById("gakureki_card")
-        .style.display = "none";
+// var gakureki_card =
+//     document.getElementById("gakureki_card")
+//         .style.display = "none";
 
-var kamoku_card =
-    document.getElementById("kamoku_card")
-        .style.display = "none";
+// var kamoku_card =
+//     document.getElementById("kamoku_card")
+//         .style.display = "none";
 
-var shumi_card =
-    document.getElementById("shumi_card")
-        .style.display = "none";
+// var shumi_card =
+//     document.getElementById("shumi_card")
+//         .style.display = "none";
 
-var tokutyou_card =
-    document.getElementById("tokutyou_card")
-        .style.display = "none";
+// var tokutyou_card =
+//     document.getElementById("tokutyou_card")
+//         .style.display = "none";
 
-var etakoto_card =
-    document.getElementById("etakoto_card")
-        .style.display = "none";
+// var etakoto_card =
+//     document.getElementById("etakoto_card")
+//         .style.display = "none";
 
-var douki_card =
-    document.getElementById("douki_card")
-        .style.display = "none";
+// var douki_card =
+//     document.getElementById("douki_card")
+//         .style.display = "none";
 
-var shikaku_card =
-    document.getElementById("shikaku_card")
-        .style.display = "none";
+// var shikaku_card =
+//     document.getElementById("shikaku_card")
+//         .style.display = "none";
 
-var bikou_card =
+// var bikou_card =
 
-    document.getElementById("bikou_card")
-        .style.display = "none";
+//     document.getElementById("bikou_card")
+//         .style.display = "none";
 
-var sakuseibi_card =
-    document.getElementById("sakuseibi_card")
-        .style.display = "none";
+// var sakuseibi_card =
+//     document.getElementById("sakuseibi_card")
+//         .style.display = "none";
 
-var kakuninn_card =
-    document.getElementById("kakuninn_card")
-        .style.display = "none";
+// var kakuninn_card =
+//     document.getElementById("kakuninn_card")
+//         .style.display = "none";
 
-var preview_card =
+// var preview_card =
 
-    document.getElementById("preview_card")
-        .style.display = "none";
+//     document.getElementById("preview_card")
+//         .style.display = "none";
 
 // 変数にそれぞれの変数と同じの名のcardのIDを代入、非表示にする
 
