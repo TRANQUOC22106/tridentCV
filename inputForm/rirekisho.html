@@ -44,14 +44,17 @@
           <!-- ★プロフィール画面 -->
           <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div id="profile_card">
-                  <div class="profile_header">
+                <div class="profile_header">
                   <h1 class="profile_layout">プロフィール</h1>
-                  </div>
-                  <form name="profile_form" action="" method="POST">
+                </div>
+
+                <form name="profile_form" action="" method="POST">
                   <div class="simei">氏名</div>
+
                   <div class="simei_edit" >
                       <input type="text" id="simei" name="simei" value="" />
                   </div>
+
                   <div class="furigana">フリガナ</div>
                   <div class="firagana_edit">
                       <input type="text" id="furigana" name="furigana" value="" />
@@ -59,42 +62,27 @@
 
                   <div class="seinenngappi">生年月日</div>
                   <input type="text" id="datepicker" placeholder="日付を選択してください">
-    <script>
-        $("#datepicker").datepicker();
-    </script>
+                    <script>
+                        $("#datepicker").datepicker();
+                    </script>
 
                   <div class="nenrei">年齢</div>
                   <div class="nenrei_edit">
                       <input type="number" name="nenrei" id="nenrei_rirekisho" value="" />
                       <span>歳</span>
                   </div>
-                  <div class="seibetu">性別</div>
-                  <div class="seibetu_radio">
-                      <input type="radio" name="seibetu" value="男性" />男性
-                      <input type="radio" name="seibetu" value="女性" />女性
-                  </div>
-
-                  <form>
-                    <p>希望する連絡方法を選択してください。</p>
-                    <div>
-                      <input type="radio" id="contactChoice1"
-                       name="contact" value="email">
-                      <label for="contactChoice1">電子メール</label>
-                  
-                      <input type="radio" id="contactChoice2"
-                       name="contact" value="phone">
-                      <label for="contactChoice2">電話</label>
-                    </div>
-                  </form>
-                  </div>
-                  </div>
-                  </form>
+                    <div class="seibetu">性別</div>
+                      <div class="seibetu_radio">
+                          <input type="radio" name="seibetu" value="男性" />男性
+                          <input type="radio" name="seibetu" value="女性" />女性
+                      </div>
+                </form>
               </div>
           </div>
           <!-- ★住所画面 -->
           <div class="tab-pane fade" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab">
 
-      <div id="juusho_card">
+            <div id="juusho_card">
           <div class="juusho_header">
             <h1 class="juusho_layout">住所</h1>
           </div>
@@ -122,7 +110,7 @@
               <input type="text" name="juusho_furigana" value="" />
             </div>
           </form>
-        </div>
+            </div>
           </div>
           <!-- ★連絡先画面 -->
           <div class="tab-pane fade" id="v-pills-renrakusaki" role="tabpanel" aria-labelledby="v-pills-renrakusaki-tab">
