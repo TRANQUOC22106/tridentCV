@@ -1,0 +1,398 @@
+@charset "utf-8";
+/* A3 size
+   height:297mm
+   width:420mm */
+.page {
+    display: flex;
+    align-items: flex-end;
+}
+.pageone {
+    margin: 8px;
+}
+.pagetwo {
+    margin: 8px;
+}
+
+.flex {
+    width: 160mm;
+    display: flex;
+    border: solid 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.rirekisho-table {
+    width: 160mm;
+}
+.rirekisho-table .label {
+    width: 30mm;
+    border-right: solid 2px;
+    text-align: center;
+}
+.rirekisho-table .input {
+    width: 130mm;
+    text-align: center;
+}
+.rirekisyo-box {
+    text-align: center;
+}
+
+.date {
+    text-align: end;
+}
+/*名前・生年月日・性別*/
+.profile .flex {
+    width: 116mm;
+}
+.profile .label{
+    width: 22mm;
+    border-right: solid 2px;
+}
+.profile .input {
+    width: 84mm;
+}
+.profile .gender {
+    width: 10mm;
+}
+.profile .namelabel,.birthdaylabel,.nameinput,.birthdayinput{
+    border-top: solid 1px;
+}
+.label .namerubylabel {
+    width: 22mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .namelabel{
+    width: 22mm;
+    height: 22mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .birthdaylabel{
+    width: 22mm;
+    height: 12mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .namerubyinput {
+    width: 84mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .nameinput {
+    width: 84mm;
+    height: 22mm;
+    display: flex;
+}
+.input .nameinput .inputone {
+    width: 74mm;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.input .nameinput .inn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5mm;
+}
+.input .birthdayinput {
+    width: 94mm;
+    height: 12mm;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gender {
+    width: 10mm;
+    height: 28mm;
+    text-align: center;
+    border-left: solid 1px;
+}
+
+/*住所・連絡先・電話*/
+.address .label {
+    width: 22mm;
+}
+.address .input {
+    width: 101mm;
+    border-right: solid 1px;
+}
+.address .number {
+    width: 37mm;
+}
+.address .genjuusyolabel,.emaillabel,.renrakusakirubylabel,.renrakusakilabel,.genjuusyoinput,.emailinput,.renrakusakirubyinput,.renrakusakiinput,.keitainumber,.subdenwanumber {
+    border-top: solid 1px;
+}
+
+.label .genjuusyorubylabel {
+    width: 22mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .genjuusyolabel {
+    width: 22mm;
+    height: 26mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .emaillabel {
+    width: 22mm;
+    height: 7mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .renrakusakirubylabel {
+    width: 22mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label .renrakusakilabel {
+    width: 22mm;
+    height: 22mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .genjuusyorubyinput {
+    width: 101mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .genjuusyoinput {
+    width: 101mm;
+    height: 26mm;
+    text-align: left;
+}
+.input .emailinput {
+    width: 101mm;
+    height: 7mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .renrakusakirubyinput {
+    width: 101mm;
+    height: 6mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input .renrakusakiinput {
+    width: 101mm;
+    height: 22mm;
+    text-align: left;
+}
+.number .denwanumber {
+    width: 37mm;
+    height: 17mm;
+}
+
+.number .keitainumber {
+    width: 37mm;
+    height: 22mm;
+}
+
+.number .subdenwanumber {
+    width: 37mm;
+    height: 28mm;
+}
+.number .denwanumberinput {
+    width: 37mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number .keitainumberinput {
+    width: 37mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number .subdenwanumberinput {
+    width: 37mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*学歴・職歴*/
+.history .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,.nen7,.nen8,.nen9,.nen10,.nen11,.nen12,.nen13,.nen14,
+.tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6,.tuki7,.tuki8,.tuki9,.tuki10,.tuki11,.tuki12,.tuki13,.tuki14,
+.reki1,.reki2,.reki3,.reki4,.reki5,.reki6,.reki7,.reki8,.reki9,.reki10,.reki11,.reki12,.reki13,.reki14 {
+    border-top: solid 1px;
+}
+
+.history .nen {
+    width: 20mm;
+    height: 7mm;
+    border-right: solid 1px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.history .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,.nen7,.nen8,.nen9,.nen10,.nen11,.nen12,.nen13,.nen14 {
+    width: 20mm;
+    height: 7mm;
+}
+.history .tuki {
+    width: 10mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.history .tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6,.tuki7,.tuki8,.tuki9,.tuki10,.tuki11,.tuki12,.tuki13,.tuki14 {
+    width: 10mm;
+    height: 7mm;
+}
+.history .reki {
+    width: 130mm;
+    height: 7mm;
+    text-align: center;
+}
+.history .reki1,.reki2,.reki3,.reki4,.reki5,.reki6,.reki7,.reki8,.reki9,.reki10,.reki11,.reki12,.reki13,.reki14 {
+    width: 130mm;
+    height: 7mm;
+}
+
+/*科目~備考*/
+.input1,.input2,.input3,.input4 {
+    height: 8mm;
+    border-bottom: dashed 1px;
+}
+.input0 {
+    height: 8mm;
+}
+.kamoku .label {
+    height: 12mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kamoku .input {
+    height: 12mm;
+    width: 130mm;
+    text-align: left;
+}
+.syumi .label {
+    height: 24mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.syumi .input {
+    height: 24mm;
+    width: 130mm;
+    text-align: left;
+}
+.tokutyou .label {
+    height: 40mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tokutyou .input {
+    height: 12mm;
+    width: 130mm;
+    text-align: left;
+}
+.gakuseiseikatu .label {
+    height: 40mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gakuseiseikatu .input {
+    height: 40mm;
+    width: 130mm;
+    text-align: left;
+}
+.douki .label {
+    height: 40mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.douki .input {
+    height: 40mm;
+    width: 130mm;
+    text-align: left;
+}
+
+.skill .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,
+.tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6,
+.skillname1,.skillname2,.skillname3,.skillname4,.skillname5,.skillname6 {
+    border-top: solid 1px;
+}
+.skill .nen {
+    width: 20mm;
+    height: 7mm;
+    border-right: solid 1px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill .nen1,.nen2,.nen3,.nen4,.nen5,.nen6 {
+    width: 20mm;
+    height: 7mm;
+}
+.skill .tuki {
+    width: 10mm;
+    height: 7mm;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.skill .tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6 {
+    width: 10mm;
+    height: 7mm;
+}
+.skill .skillname {
+    width: 130mm;
+    height: 7mm;
+    text-align: center;
+}
+.skill .skillname1,.skillname2,.skillname3,.skillname4,.skillname5,.skillname6 {
+    width: 130mm;
+    height: 7mm;
+}
+.bikou .label{
+    height: 18mm;
+    width: 30mm;
+    border-right: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bikou .input{
+    height: 18mm;
+    width: 130mm;
+    text-align: left;
+}

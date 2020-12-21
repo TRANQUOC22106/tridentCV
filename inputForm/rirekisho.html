@@ -1,0 +1,351 @@
+<!DOCTYPE >
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>TridentCV</title>
+    <link href="../main.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="../image/TriCVLogo.svg" />
+
+    <!-- BOOTSTRAP --> 
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+    <!--JQUERY-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/jquery/jquery-ui/master/ui/i18n/datepicker-ja.js"></script>
+
+    <!--Firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="../config.js"></script>
+  </head>
+  <body class="body">
+    <div class="">
+      <!--Control-->
+      <div class="bootstrap">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロフィール</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">住所</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-renrakusaki-tab" data-toggle="pill" href="#pills-renrakusaki" role="tab" aria-controls="pills-renrakusaki" aria-selected="false">連絡先</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-gakureki-tab" data-toggle="pill" href="#pills-gakureki" role="tab" aria-controls="pills-gakureki" aria-selected="false">学歴</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-kamoku-tab" data-toggle="pill" href="#pills-kamoku" role="tab" aria-controls="pills-kamoku" aria-selected="false">好きな科目</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-shumi-tab" data-toggle="pill" href="#pills-shumi" role="tab" aria-controls="pills-shumi" aria-selected="false">趣味</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-jikoPr-tab" data-toggle="pill" href="#pills-jikoPr" role="tab" aria-controls="pills-jikoPr" aria-selected="false">私の特長</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-manandakoto-tab" data-toggle="pill" href="#pills-manandakoto" role="tab" aria-controls="pills-manandakoto" aria-selected="false">学校生活を通じて得たこと</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-shiboudoki-tab" data-toggle="pill" href="#pills-shiboudoki" role="tab" aria-controls="pills-shiboudoki" aria-selected="false">志望動機</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-shikaku-tab" data-toggle="pill" href="#pills-shikaku" role="tab" aria-controls="pills-shikaku" aria-selected="false">資格・免許</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-sanko-tab" data-toggle="pill" href="#pills-sanko" role="tab" aria-controls="pills-sanko" aria-selected="false">備考</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-sakuseibi-tab" data-toggle="pill" href="#pills-sakuseibi" role="tab" aria-controls="pills-sakuseibi" aria-selected="false">作成日</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-saisyukakuninn-tab" data-toggle="pill" href="#pills-saisyukakuninn" role="tab" aria-controls="pills-saisyukakuninn" aria-selected="false">最終確認</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレビュー</a>
+        </li>
+      </ul>
+    </div>
+      <!--Content-->
+      <div class="tab-content" id="pills-tabContent">
+          <!-- ★プロフィール画面 -->
+          <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div id="profile_card">
+                <div class="profile_header">
+                  <h1 class="profile_layout">プロフィール</h1>
+                </div>
+
+                <form name="profile_form" action="" method="POST">
+                  <div class="simei">氏名</div>
+
+                  <div class="simei_edit" >
+                      <input type="text" id="simei" name="simei" value="" />
+                  </div>
+
+                  <div class="furigana">フリガナ</div>
+                  <div class="firagana_edit">
+                      <input type="text" id="furigana" name="furigana" value="" />
+                  </div>
+
+                  <div class="seinenngappi">生年月日</div>
+                  <input type="text" id="datepicker" placeholder="日付を選択してください">
+                    <script>
+                        $("#datepicker").datepicker();
+                    </script>
+
+                  <div class="nenrei">年齢</div>
+                  <div class="nenrei_edit">
+                      <input type="number" name="nenrei" id="nenrei_rirekisho" value="" />
+                      <span>歳</span>
+                  </div>
+                    <div class="seibetu">性別</div>
+                      <div class="seibetu_radio" >
+                          <input type="radio" name="seibetu" value="男性" onchange="chg(this.value)" />男性
+                          <input type="radio" name="seibetu" value="女性" onchange="chg(this.value)" />女性
+                      </div>
+                </form>
+              </div>
+          </div>
+          <!-- ★住所画面 -->
+          <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+            <div id="juusho_card">
+              <div class="juusho_header">
+                <h1 class="juusho_layout">住所</h1>
+              </div>
+              <form name="juusho_form" class="h-adr" method="POST">
+                <span class="p-country-name" style="display: none">Japan</span>
+                <div class="yuubin" >郵便番号</div>
+                <div class="yuubin_edit">
+                  <input type="text" id="p-postal-code" class="p-postal-code" size="12" maxlength="8"/>
+                </div>
+                <div class="todoufuken">都道府県・市区町村・番地</div>
+                <div class="todoufuken_edit">
+                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"/>
+                </div>
+                <div class="juusho_furigana">住所フリガナ</div>
+                <div class="juusho_furigana_edit">
+                  <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ★連絡先画面 -->
+          <div class="tab-pane fade" id="pills-renrakusaki" role="tabpanel" aria-labelledby="pills-renrakusaki-tab">
+              <div id="rennrakusaki_card">
+                <div class="rennrakusaki_header">
+                  <h1 class="rennrakusaki_layout">連絡先</h1>
+                </div>
+                <form name="rennrakusaki_form" action="" method="POST">
+                  <div class="dennwa">電話番号</div>
+                  <div class="dennwa_edit">
+                    <input type="number" id="keitaibango" name="dennwa_1" value="" />
+                  </div>
+                  <div class="e-mail">e-mail</div>
+                  <div class="e-mail_edit">
+                    <input type="email" id="email" name="e-mail" value="" />
+                  </div>
+                  <div class="reigai">上記以外の連絡先</div>
+                  <div class="dennwa_edit">
+                    <input type="number" id="renrakusaki_denwabango" name="dennwa_r1" value="" />
+                  </div>
+                  <div class="e-mail">e-mail</div>
+                  <div class="e-mail_edit">
+                    <input type="email" id="renrakusaki_meru" name="e-mail_r" value="" />
+                  </div>
+                </form>
+              </div>
+          </div>
+           <!-- ★学歴画面 -->
+          <div class="tab-pane fade" id="pills-gakureki" role="tabpanel" aria-labelledby="pills-gakureki-tab">
+            <div id="gakureki_card">
+              <div class="gakureki_header">
+                <h1 class="gakureki_layout">学歴</h1>
+              </div>
+              <!-- <div class="tuika">
+                <button class="tuika_button" id="aaa">入力欄を追加</button>
+              </div> -->
+              <div class="gakureki_edit">
+              <input type="number" class="hannkaku_desu" name="gakureki_toshi" value="" />
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" name="gakureki_tuki" value="" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value="">
+            </div>
+          </div>
+          </div>
+          <!-- ★好きな科目画面 -->
+          <div class="tab-pane fade" id="pills-kamoku" role="tabpanel" aria-labelledby="pills-kamoku-tab">  
+            <div id="kamoku_card">
+              <div class="kamoku_header">
+                <h1 class="kamoku_layout">好きな科目</h1>
+              </div>
+              <div class="tuika">
+                <button class="tuika_button" id="clone_2">例文から追加</button>
+              </div>
+              <div class="kamoku_edit">
+                <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""/>
+              </div>
+            </div>
+          </div>
+          <!-- ★趣味・特技画面 -->
+          <div class="tab-pane fade" id="pills-shumi" role="tabpanel" aria-labelledby="pills-shumi-tab">     
+            <div id="shumi_card">
+              <div class="shumi_header">
+                <h1 class="shumi_layout">趣味・特技</h1>
+                <div class="kousei">
+                  <button class="kousei_button">校正</button>
+                </div>
+                <form name="shumi_form" action="" method="POST">
+                  <input type="textarea" id="shumi" class="row-5" name="shumi" value="" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- ★私の特長画面 -->
+          <div class="tab-pane fade" id="pills-jikoPr" role="tabpanel" aria-labelledby="pills-jikoPr-tab">
+            <div id="tokutyou_card">
+              <div class="tokutyou_header">
+                <h1 class="tokutyou_layout">私の特長</h1>
+                <div class="kousei">
+                  <button class="kousei_button">校正</button>
+                </div>
+              </div>
+              <form name="tokutyou_form" action="" method="POST">
+                <div class="tokutyou_edit"> 
+                  <input type="textarea" id="tokutyo" class="row-5" name="tokutyo" value="" />
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ★学生生活を通じて得たこと画面 -->
+          <div class="tab-pane fade" id="pills-manandakoto" role="tabpanel" aria-labelledby="pills-manandakoto-tab">
+            <div id="etakoto_card">
+              <div class="etakoto_header">
+                <h1 class="etakoto_layout">学生生活を通じて得たこと</h1>
+              </div>
+              <div class="kousei">
+                <button class="kousei_button">校正</button>
+              </div>
+              <form name="etakoto_form" action="" method="POST">
+                <input type="textarea" id="gakuseiseikatu" class="row-5" name="gakuseiseikatu" value="" />
+              </form>
+            </div>
+          </div>
+          <!-- ★志望動機 -->
+          <div class="tab-pane fade" id="pills-shiboudoki" role="tabpanel" aria-labelledby="pills-shiboudoki-tab">
+            <div id="douki_card">
+              <div class="douki_header">
+                <h1 class="douki_layout">学歴</h1>
+              </div>
+              <div class="kousei">
+                <button class="kousei_button">校正</button>
+              </div>
+              <form name="douki_form" action="" method="POST">
+                  
+                <input type="textarea" id="siboudouki" class="row-5" name="shiboudoki" value="" />
+              </form>
+            </div>
+          </div>
+          <!-- ★免許・資格 -->
+          <div class="tab-pane fade" id="pills-shikaku" role="tabpanel" aria-labelledby="pills-shikaku-tab">
+            <div id="shikaku_card">
+              <div class="shikaku_header">
+                <h1 class="shikaku_layout">免許・資格</h1>
+              </div>
+              <div class="tuika">
+                <button class="tuika_button" id="clone_3">例文から追加</button>
+              </div>
+              <form name="shikaku_form" action="" method="POST">
+                <div class="shikaku_edit">
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""/>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ★備考画面 -->
+          <div class="tab-pane fade" id="pills-sanko" role="tabpanel" aria-labelledby="pills-sanko-tab">
+            <div id="bikou_card">
+              <div class="bikou_header">
+                <h1 class="bikou_layout">備考</h1>
+              </div>
+              <div class="kousei">
+                <button class="kousei_button">校正</button>
+              </div>
+              <form name="bikou_form" action="" method="POST">
+                <input type="textarea" id="biko" class="row-5" name="biko" value="" />
+              </form>
+            </div>
+          </div>
+          <!-- ★作成日画面 -->
+          <div class="tab-pane fade" id="pills-sakuseibi" role="tabpanel" aria-labelledby="pills-sakuseibi-tab">
+            <div id="sakuseibi_card">
+              <div class="sakuseibi_header">
+                <h1 class="sakuseibi_layout">作成日</h1>
+              </div>
+              <form name="sakuseibi_form" action="" method="POST"></form>
+              <div class="sakuseibi">
+                <div class="kyou">
+                  <button class="kyou_button">今日の日付</button>
+                </div>
+                <div class="ashita">
+                  <button class="ashita_button">明日の日付</button>
+                </div>
+                <div class="sakuseibi_edit">
+                  <input type="text" class="sakuseibi_rann" name="hizuke" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ★最終確認画面 -->
+          <div class="tab-pane fade" id="pills-saisyukakuninn" role="tabpanel" aria-labelledby="pills-saisyukakuninn-tab">
+            <div id="kakuninn_card">
+              <div class="kakuninn_header">
+                <h1 class="kakuninn_layout">最終確認</h1>
+              </div>
+              <div class="saisyukakuninn">
+                <div class="daunrodo">
+                  <button type="button" class="btn btn-primary" id="daunrodo_button">ダウンロード</button>
+                </div>
+                <div class="teishutu">
+                  <button type="button" class="btn btn-primary" id="teishutu_button">印刷</button>
+                </div>
+              </div>
+            </div>
+            <!-- <button type="button" class="btn btn-primary" id="preview_button">保存</button> -->
+          </div>
+          <!-- ★プレビュー画面 -->
+          <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">
+            <div id="preview_card">
+              <h1 class="preview_layout">プレビュー</h1>
+              <div class="preview_page">
+                <iframe class="preview_frame" src="preview.html" width="1280px" height="980px"></iframe>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+  
+  <!-- <script src="text.js"></script> -->
+  <script src="../database/setData.js"></script>
+
+  <!--Jquery-->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- githubAPIから繋げる -->
+<script
+src="https://yubinbango.github.io/yubinbango/yubinbango.js"
+charset="UTF-8"
+></script>
+
+
+</body>
+</html>
