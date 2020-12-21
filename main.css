@@ -1,4 +1,4 @@
-.body {
+html {
   background-color: azure;
 }
 
@@ -26,7 +26,7 @@
 }
 
 a {
-
+  font-size: 30px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 900;
@@ -64,11 +64,24 @@ a {
 
 /* ★ rirekisyo.html */
 
-.card {
+#profile_card,
+#juusho_card,
+#rennrakusaki_card,
+#gakureki_card,
+#kamoku_card,
+#shumi_card,
+#tokutyou_card,
+#etakoto_card,
+#douki_card,
+#shikaku_card,
+#shumi_card,
+#bikou_card,
+#sakuseibi_card,
+#kakuninn_card {
   /* margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px; */
-  background-color: whitesmoke;
+  background-color: rgb(255, 249, 249);
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -77,11 +90,15 @@ a {
   margin-top: 50px;
 }
 
-/* #preview_card,
-#shikaku_card,
-#profile_card {
-  /* line-height: 400px; */
-/* } */
+#preview_card {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
 /* line-heightとは
 line-heightプロパティを使用すると、文章の行間の広さを設定することができます。 */
 /* https://techacademy.jp/magazine/8615 */
@@ -112,29 +129,15 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* テキスト中央配置 */
 /* https://www.w3.org/Style/Examples/007/center.ja.html */
 
-/* #profile_card { 
-  display: none;
-} */
-
-/* #juusho_card {
-  display: none;
+.kamoku_edit,
+.shikaku_edit {
+  text-align: center;
 }
 
-#rennrakusaki_card {
-  display: none;
+.sakuseibi,
+.saisyukakuninn {
+  text-align: center;
 }
-
-#shikaku_card {
-  display: none;
-}
-
-#preview_card {
-  display: none;
-}
-
-#bikou_card {
-  display: none;
-} */
 
 /* display: none; 非表示 */
 /* https://allabout.co.jp/gm/gc/23973/#aa23973display */
@@ -146,8 +149,8 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* ボタン両端揃え */
 /*https://maku77.github.io/web/layout/images-at-both-ends.html  */
 
-.before_button,
-.next_button {
+#before_button,
+#next_button {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
@@ -158,7 +161,18 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
   border: none;
 }
 
-.preview_button {
+iframe {
+  background-color: white;
+}
+
+.preview_page {
+  text-align: center;
+}
+.preview_frame {
+  margin: 10px;
+}
+
+#preview_button {
   font-size: 20px;
   color: white;
   background-color: rgb(226, 131, 226);
@@ -175,6 +189,64 @@ line-heightプロパティを使用すると、文章の行間の広さを設定
 /* border: none 枠線を消す */
 /* border-radius 角を丸くする */
 /* https://jajaaan.co.jp/css/button/ */
+
+.kousei_button {
+  color: white;
+  font-size: 20px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.kousei {
+  text-align: right;
+}
+
+.tuika_button {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(21, 177, 21);
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.tuika {
+  text-align: right;
+}
+
+.kyou_button {
+  font-size: 20px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.ashita_button {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.sakuseibi_rann {
+  width: 300px;
+}
+
+#daunrodo_button,
+#teishutu_button {
+  font-size: 20px;
+  margin-top: 15px;
+  width: 300px;
+  color: white;
+  background-color: indianred;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
 
 input {
   font-size: 20px;
@@ -202,6 +274,10 @@ input[type="tel"] {
   width: 700px;
   height: calc(1.3em * 5);
   line-height: 1.3;
+}
+
+#gakureki_rann {
+  width: 100%;
 }
 
 input::-webkit-inner-spin-button,

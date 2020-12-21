@@ -5,8 +5,8 @@
     <title>TridentCV</title>
     <link href="../main.css" rel="stylesheet" />
 
-    <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- BOOTSTRAP --> 
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     
     <!--JQUERY-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -24,6 +24,7 @@
   <body class="body">
     <div class="">
       <!--Control-->
+      <div class="bootstrap">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロフィール</a>
@@ -68,6 +69,7 @@
           <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレビュー</a>
         </li>
       </ul>
+    </div>
       <!--Content-->
       <div class="tab-content" id="pills-tabContent">
           <!-- ★プロフィール画面 -->
@@ -317,14 +319,14 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-primary" id="preview_button">保存</button>
+            <!-- <button type="button" class="btn btn-primary" id="preview_button">保存</button> -->
           </div>
           <!-- ★プレビュー画面 -->
           <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">
             <div id="preview_card">
               <h1 class="preview_layout">プレビュー</h1>
               <div class="preview_page">
-                <iframe class="preview_frame" src="preview.html" width="100%" height="100%"></iframe>
+                <iframe class="preview_frame" src="preview.html" width="1280px" height="980px"></iframe>
               </div>
             </div>
           </div>
