@@ -1,5 +1,9 @@
 //保存ボタンに繋げているけど、今、ボタンをおわっていないです
 
+function chg(val){
+    seibetu = val;
+}
+
 let button = document.getElementById("preview_button");
 button.addEventListener("click", function (){
     // get the values which the user types
@@ -26,7 +30,8 @@ button.addEventListener("click", function (){
             yubinbango:yubinbango,
             jyusho:jyusho,
             jyusho_furigana:jyusho_furigana,
-            keitaibango:keitaibango
+            keitaibango:keitaibango,
+            seibetu:seibetu
             //プロジェクトに必要なデータ
             
     //        ,
