@@ -1,7 +1,8 @@
 //保存ボタンに繋げているけど、今、ボタンをおわっていないです
 
-let button = document.getElementById("preview_button");
-button.addEventListener("click", function (){
+let button = document.getElementById("pills-tabContent");
+button.addEventListener("change", function (){
+    // alert('保存された');
     // get the values which the user types
     let simei = document.getElementById("simei").value;
     let furigana = document.getElementById("furigana").value;
@@ -26,9 +27,9 @@ button.addEventListener("click", function (){
 
     var userId = firebase.auth().currentUser.uid;
 
-    if(simei == "" || furigana == ""){
-        alert("Please enter the fields");
-    }else{
+    // if(simei == "" || furigana == ""){
+    //     alert("Please enter the fields");
+    // }else{
         //make the object
         var data = {
             simei: simei,
@@ -71,6 +72,4 @@ button.addEventListener("click", function (){
         //which gets the database
         // var ref = database.ref(userId + '/nyuryokufomu').set(data);
         firebase.database().ref(userId + '/nyuryokufomu').update(data);
-        
-    }
 })
