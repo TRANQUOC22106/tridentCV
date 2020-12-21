@@ -15,6 +15,18 @@ button.addEventListener("click", function (){
     let jyusho = document.getElementById("jyusho").value;
     let jyusho_furigana = document.getElementById("jyusho_furigana").value;
     let keitaibango = document.getElementById("keitaibango").value;
+    let renrakusaki_meru = document.getElementById("renrakusaki_meru").value;
+    let email = document.getElementById("email").value;
+    let renrakusaki_denwabango = document.getElementById("renrakusaki_denwabango").value;
+    let gakureki_rann = document.getElementById("gakureki_rann").value;
+    let kamoku = document.getElementById("kamoku").value;
+    let shumi = document.getElementById("shumi").value;
+    let tokutyo = document.getElementById("tokutyo").value;
+    let gakuseiseikatu = document.getElementById("gakuseiseikatu").value;
+    let siboudouki = document.getElementById("siboudouki").value;
+    let sikaku = document.getElementById("sikaku").value;
+    let biko = document.getElementById("biko").value;
+
 
     var userId = firebase.auth().currentUser.uid;
 
@@ -31,28 +43,28 @@ button.addEventListener("click", function (){
             jyusho:jyusho,
             jyusho_furigana:jyusho_furigana,
             keitaibango:keitaibango,
-            seibetu:seibetu
+            seibetu:seibetu,
+            renrakusaki_meru:renrakusaki_meru,
+            email:email,
+            renrakusaki_denwabango:renrakusaki_denwabango,
+            gakureki_rann:gakureki_rann,
+            kamoku:kamoku,
+            shumi:shumi,
+            tokutyo:tokutyo,
+            gakuseiseikatu:gakuseiseikatu,
+            siboudouki:siboudouki,
+            sikaku:sikaku,
+            biko:biko
             //プロジェクトに必要なデータ
             
-    //        ,
     //        gakuseiID:gakuseiID,
     //        hizuke:hizuke,
-    //        simei:simei,
-    //        seibetu:seibetu,			
-    //        meru:meru,			
-    //        keitaibango:keitaibango,
-    //        denwabango:denwabango,
+    //        seibetu:seibetu,						
     //        renrakusaki_yubinbango:renrakusaki_yubinbango,
     //        renrakusaki_jyusho:renrakusaki_jyusho,
-    //        renrakusaki_denwabango:renrakusaki_denwabango,
-    //        gakureki:gakureki,
     //        gakureki_nengappi:gakureki_nengappi,
-    //        kamoku:kamoku,
-    //        shumi:shumi,
-    //        tokutyo:tokutyo,
     //        gakuseiseikatu:gakuseiseikatu,
     //        siboudouki:siboudouki,
-    //        sikaku:sikaku,
     //        sikaku_hiduke:sikaku_hiduke,
     //        biko:biko,
     //        sibousaki:sibousaki

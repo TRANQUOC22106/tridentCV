@@ -5,8 +5,10 @@
     <title>TridentCV</title>
     <link href="../main.css" rel="stylesheet" />
 
-    <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../image/TriCVLogo.svg" />
+
+    <!-- BOOTSTRAP --> 
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     
     <!--JQUERY-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -24,9 +26,10 @@
   <body class="body">
     <div class="">
       <!--Control-->
+      <div class="bootstrap">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロファイル</a>
+          <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロフィール</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">住所</a>
@@ -44,19 +47,19 @@
           <a class="nav-link" id="pills-shumi-tab" data-toggle="pill" href="#pills-shumi" role="tab" aria-controls="pills-shumi" aria-selected="false">趣味</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-jikoPr-tab" data-toggle="pill" href="#pills-jikoPr" role="tab" aria-controls="pills-jikoPr" aria-selected="false">自己PR</a>
+          <a class="nav-link" id="pills-jikoPr-tab" data-toggle="pill" href="#pills-jikoPr" role="tab" aria-controls="pills-jikoPr" aria-selected="false">私の特長</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-manandakoto-tab" data-toggle="pill" href="#pills-manandakoto" role="tab" aria-controls="pills-manandakoto" aria-selected="false">学校から学んだこと</a>
+          <a class="nav-link" id="pills-manandakoto-tab" data-toggle="pill" href="#pills-manandakoto" role="tab" aria-controls="pills-manandakoto" aria-selected="false">学校生活を通じて得たこと</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-shiboudoki-tab" data-toggle="pill" href="#pills-shiboudoki" role="tab" aria-controls="pills-shiboudoki" aria-selected="false">志望動機</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-shikaku-tab" data-toggle="pill" href="#pills-shikaku" role="tab" aria-controls="pills-shikaku" aria-selected="false">資格</a>
+          <a class="nav-link" id="pills-shikaku-tab" data-toggle="pill" href="#pills-shikaku" role="tab" aria-controls="pills-shikaku" aria-selected="false">資格・免許</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-sanko-tab" data-toggle="pill" href="#pills-sanko" role="tab" aria-controls="pills-sanko" aria-selected="false">参考</a>
+          <a class="nav-link" id="pills-sanko-tab" data-toggle="pill" href="#pills-sanko" role="tab" aria-controls="pills-sanko" aria-selected="false">備考</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-sakuseibi-tab" data-toggle="pill" href="#pills-sakuseibi" role="tab" aria-controls="pills-sakuseibi" aria-selected="false">作成日</a>
@@ -65,9 +68,10 @@
           <a class="nav-link" id="pills-saisyukakuninn-tab" data-toggle="pill" href="#pills-saisyukakuninn" role="tab" aria-controls="pills-saisyukakuninn" aria-selected="false">最終確認</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレービュー</a>
+          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレビュー</a>
         </li>
       </ul>
+    </div>
       <!--Content-->
       <div class="tab-content" id="pills-tabContent">
           <!-- ★プロフィール画面 -->
@@ -144,19 +148,15 @@
                   </div>
                   <div class="e-mail">e-mail</div>
                   <div class="e-mail_edit">
-                    <input type="email" name="e-mail" value="" />
+                    <input type="email" id="email" name="e-mail" value="" />
                   </div>
                   <div class="reigai">上記以外の連絡先</div>
                   <div class="dennwa_edit">
-                    <input type="number" name="dennwa_r1" value="" />
-                    <span>-</span>
-                    <input type="number" name="dennwa_r2" value="" />
-                    <span>-</span>
-                    <input type="number" name="dennwa_r3" value="" />
+                    <input type="number" id="renrakusaki_denwabango" name="dennwa_r1" value="" />
                   </div>
                   <div class="e-mail">e-mail</div>
                   <div class="e-mail_edit">
-                    <input type="email" name="e-mail_r" value="" />
+                    <input type="email" id="renrakusaki_meru" name="e-mail_r" value="" />
                   </div>
                 </form>
               </div>
@@ -189,7 +189,7 @@
                 <button class="tuika_button" id="clone_2">例文から追加</button>
               </div>
               <div class="kamoku_edit">
-                <input type="text" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""/>
+                <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""/>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@
                   <button class="kousei_button">校正</button>
                 </div>
                 <form name="shumi_form" action="" method="POST">
-                  <input type="textarea" class="row-5" name="shumi" value="" />
+                  <input type="textarea" id="shumi" class="row-5" name="shumi" value="" />
                 </form>
               </div>
             </div>
@@ -218,7 +218,7 @@
               </div>
               <form name="tokutyou_form" action="" method="POST">
                 <div class="tokutyou_edit"> 
-                  <input type="textarea" class="row-5" name="tokutyo" value="" />
+                  <input type="textarea" id="tokutyo" class="row-5" name="tokutyo" value="" />
                 </div>
               </form>
             </div>
@@ -233,7 +233,7 @@
                 <button class="kousei_button">校正</button>
               </div>
               <form name="etakoto_form" action="" method="POST">
-                <input type="textarea" class="row-5" name="gakuseiseikatu" value="" />
+                <input type="textarea" id="gakuseiseikatu" class="row-5" name="gakuseiseikatu" value="" />
               </form>
             </div>
           </div>
@@ -248,7 +248,7 @@
               </div>
               <form name="douki_form" action="" method="POST">
                   
-                <input type="textarea" class="row-5" name="shiboudoki" value="" />
+                <input type="textarea" id="siboudouki" class="row-5" name="shiboudoki" value="" />
               </form>
             </div>
           </div>
@@ -263,7 +263,7 @@
               </div>
               <form name="shikaku_form" action="" method="POST">
                 <div class="shikaku_edit">
-                  <input type="text" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""/>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""/>
                 </div>
               </form>
             </div>
@@ -278,7 +278,7 @@
                 <button class="kousei_button">校正</button>
               </div>
               <form name="bikou_form" action="" method="POST">
-                <input type="textarea" class="row-5" name="biko" value="" />
+                <input type="textarea" id="biko" class="row-5" name="biko" value="" />
               </form>
             </div>
           </div>
@@ -317,14 +317,14 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-primary" id="preview_button">保存</button>
+            <!-- <button type="button" class="btn btn-primary" id="preview_button">保存</button> -->
           </div>
           <!-- ★プレビュー画面 -->
           <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">
             <div id="preview_card">
               <h1 class="preview_layout">プレビュー</h1>
               <div class="preview_page">
-                <iframe class="preview_frame" src="preview.html" width="100%" height="100%"></iframe>
+                <iframe class="preview_frame" src="preview.html" width="1280px" height="980px"></iframe>
               </div>
             </div>
           </div>
