@@ -3,6 +3,13 @@
 function chg(val){
     seibetu = val;
 }
+function date(){
+    var nowdate = new Date();
+    var year = nowdate.getFullYear();     // 年(4桁の西暦)
+    var mon  = nowdate.getMonth() + 1;    // 月(1～12)
+    var date = nowdate.getDate();  
+    document.getElementById("hizuke").value=year+"年"+mon+"月"+date+"日";
+}
 
 let button = document.getElementById("preview_button");
 button.addEventListener("click", function (){
@@ -26,7 +33,7 @@ button.addEventListener("click", function (){
     let siboudouki = document.getElementById("siboudouki").value;
     let sikaku = document.getElementById("sikaku").value;
     let biko = document.getElementById("biko").value;
-
+    let hizuke = document.getElementsById("hizuke").value;
 
     var userId = firebase.auth().currentUser.uid;
 
@@ -54,7 +61,8 @@ button.addEventListener("click", function (){
             gakuseiseikatu:gakuseiseikatu,
             siboudouki:siboudouki,
             sikaku:sikaku,
-            biko:biko
+            biko:biko,
+            hizuke:hizuke
             //プロジェクトに必要なデータ
             
     //        gakuseiID:gakuseiID,

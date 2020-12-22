@@ -291,13 +291,13 @@
               <form name="sakuseibi_form" action="" method="POST"></form>
               <div class="sakuseibi">
                 <div class="kyou">
-                  <button class="kyou_button">今日の日付</button>
+                  <button class="kyou_buttlon" onclick="date()">今日の日付</button>
                 </div>
                 <div class="ashita">
                   <button class="ashita_button">明日の日付</button>
                 </div>
                 <div class="sakuseibi_edit">
-                  <input type="text" class="sakuseibi_rann" name="hizuke" value="">
+                  <input type="text" class="sakuseibi_rann" id="hizuke" value="">
                 </div>
               </div>
             </div>
@@ -317,7 +317,7 @@
                 </div>
               </div>
             </div>
-            <!-- <button type="button" class="btn btn-primary" id="preview_button">保存</button> -->
+            <button type="button" class="btn btn-primary" id="preview_button">保存</button>
           </div>
           <!-- ★プレビュー画面 -->
           <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">
