@@ -103,7 +103,17 @@ $(function () {
 //     });
 // });
 
-// $("#aaa").click(function () {
-//     $("#gakureki_edit").clone().insertAfter(".gakureki_edit");
+// $("#kyou_button").click(function () {
+//     var nowdate = new Date();
+//     var year = nowdate.getFullYear();     // 年(4桁の西暦)
+//     var mon = nowdate.getMonth() + 1;    // 月(1～12)
+//     var date = nowdate.getDate();
+
+//     $("#hizuke").text(year + "/" + mon + "/" + date);
+
 // });
+
+$("#hizuke").datepicker({
+
+});
 

@@ -338,16 +338,19 @@
               <div class="sakuseibi_header">
                 <h1 class="sakuseibi_layout">作成日</h1>
               </div>
-              <form name="sakuseibi_form" action="" method="POST"></form>
               <div class="sakuseibi">
-                <div class="kyou">
+                <!-- <div class="kyou">
                   <button id="kyou_button">今日の日付</button>
                 </div>
                 <div class="ashita">
                   <button class="ashita_button">明日の日付</button>
-                </div>
+                </div> -->
                 <div class="sakuseibi_edit">
-                  <input type="text" class="sakuseibi_rann" name="hizuke" value="">
+                  <form name="sakuseibi_form" action="" method="POST">
+                  <input type="text" 
+                  id="hizuke"
+                  class="sakuseibi_rann" name="hizuke" value="">
+                </form>
                 </div>
               </div>
             </div>
