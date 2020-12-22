@@ -59,15 +59,29 @@ $("#shiboudouki").on("input", function () {
 });
 // 志望動機の文字数カウント
 
-// $("#aaa").click(function () {
+$("#clone_1").click(function () {
 
-//     var obj = $(".gakureki_edit").clone();
+    $("#gakureki_form").clone().insertAfter("#gakureki_form");
 
-//     $(".gakureki_edit").insertAfter(obj);
 
-// });
-
+});
 // 学歴入力欄追加
+
+$("#clone_2").click(function () {
+
+    $("#kamoku_form").clone().insertAfter("#kamoku_form");
+
+
+});
+// 好きな科目入力欄追加
+
+$("#clone_3").click(function () {
+
+    $("#shikaku_form").clone().insertAfter("#shikaku_form");
+
+
+});
+// 免許・資格入力欄追加
 
 $("#datepicker").datepicker({
 
@@ -92,3 +106,4 @@ $(function () {
 // $("#aaa").click(function () {
 //     $("#gakureki_edit").clone().insertAfter(".gakureki_edit");
 // });
+

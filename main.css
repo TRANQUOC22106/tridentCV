@@ -217,7 +217,7 @@ iframe {
   text-align: right;
 }
 
-.kyou_button {
+#kyou_button {
   font-size: 20px;
   width: 300px;
   border-radius: 5px;

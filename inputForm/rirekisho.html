@@ -177,9 +177,12 @@
                 <h1 class="gakureki_layout">学歴</h1>
               </div>
               <div class="tuika">
-                <button class="tuika_button" id="aaa">入力欄を追加</button>
+                <button class="tuika_button" id="clone_1">入力欄を追加</button>
               </div>
               <div class="gakureki_edit">
+                <form 
+                id="gakureki_form"
+                name="gakureki_form" action="" method="POST">
               <input type="number" class="hannkaku_desu"
               id="gakureki_toshi" name="gakureki_toshi" value="" 
               placeholder="2013"/>
@@ -192,6 +195,7 @@
               <input type="text" id="gakureki_rann" name="gakureki" value=""
               placeholder="○○中学校卒業">
               <div id="clone_edit"></div>
+            </form>
             </div>
           </div>
           </div>
@@ -205,8 +209,11 @@
                 <button class="tuika_button" id="clone_2">入力欄を追加</button>
               </div>
               <div class="kamoku_edit">
+                <form id="kamoku_form" name="kamoku_form"
+                action="" method="POST">
                 <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
                 placeholder="Java"/>
+              </form>
               </div>
             </div>
           </div>
@@ -301,12 +308,12 @@
               <div class="tuika">
                 <button class="tuika_button" id="clone_3">例文から追加</button>
               </div>
-              <form name="shikaku_form" action="" method="POST">
                 <div class="shikaku_edit">
+                  <form id="shikaku_form" name="shikaku_form" action="" method="POST">
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="基本情報技術者試験"/>
+                </form>
                 </div>
-              </form>
             </div>
           </div>
           <!-- ★備考画面 -->
@@ -334,7 +341,7 @@
               <form name="sakuseibi_form" action="" method="POST"></form>
               <div class="sakuseibi">
                 <div class="kyou">
-                  <button class="kyou_button">今日の日付</button>
+                  <button id="kyou_button">今日の日付</button>
                 </div>
                 <div class="ashita">
                   <button class="ashita_button">明日の日付</button>
@@ -405,7 +412,7 @@
                       <div class="rirekisho-table address">
                           <div class="flex">
                               <div class="label">
-                                  <div class="genjuusyorubylabel">フリガナ</div>
+                            <div class="genjuusyorubylabel">フリガナ</div>
                                   <div class="genjuusyolabel">現住所</div>
                                   <div class="emaillabel">Email</div>
                                   <div class="renrakusakirubylabel">フリガナ</div>
