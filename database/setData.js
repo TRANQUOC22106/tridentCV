@@ -43,6 +43,7 @@ button.addEventListener("change", function (){
             jyusho:jyusho,
             jyusho_furigana:jyusho_furigana,
             keitaibango:keitaibango,
+            seibetu:seibetu,
             renrakusaki_meru:renrakusaki_meru,
             email:email,
             renrakusaki_denwabango:renrakusaki_denwabango,
