@@ -24,6 +24,9 @@ button.addEventListener("change", function (){
     let sikaku = document.getElementById("sikaku").value;
     let biko = document.getElementById("biko").value;
 
+    document.getElementById("inputName").textContent = simei;
+    document.getElementById("inputFurigana").textContent = furigana;
+
 
     var userId = firebase.auth().currentUser.uid;
 
