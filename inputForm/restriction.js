@@ -63,9 +63,11 @@ $("#shiboudouki").on("input", function () {
 
 //     var obj = $(".gakureki_edit").clone();
 
-//     $(".gakureki_edit").after(obj);
+//     $(".gakureki_edit").insertAfter(obj);
 
 // });
+
+// 学歴入力欄追加
 
 $("#datepicker").datepicker({
 
@@ -87,3 +89,6 @@ $(function () {
 //     });
 // });
 
+// $("#aaa").click(function () {
+//     $("#gakureki_edit").clone().insertAfter(".gakureki_edit");
+// });
