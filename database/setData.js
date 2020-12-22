@@ -1,7 +1,10 @@
-//保存ボタンに繋げているけど、今、ボタンをおわっていないです
+function chg(val){
+    seibetu = val;
+}
 
-let button = document.getElementById("preview_button");
-button.addEventListener("click", function (){
+let button = document.getElementById("pills-tabContent");
+button.addEventListener("change", function (){
+    // alert('保存された');
     // get the values which the user types
     let simei = document.getElementById("simei").value;
     let furigana = document.getElementById("furigana").value;
@@ -23,12 +26,15 @@ button.addEventListener("click", function (){
     let sikaku = document.getElementById("sikaku").value;
     let biko = document.getElementById("biko").value;
 
+    document.getElementById("inputName").textContent = simei;
+    document.getElementById("inputFurigana").textContent = furigana;
+
 
     var userId = firebase.auth().currentUser.uid;
 
-    if(simei == "" || furigana == ""){
-        alert("Please enter the fields");
-    }else{
+    // if(simei == "" || furigana == ""){
+    //     alert("Please enter the fields");
+    // }else{
         //make the object
         var data = {
             simei: simei,
@@ -39,6 +45,7 @@ button.addEventListener("click", function (){
             jyusho:jyusho,
             jyusho_furigana:jyusho_furigana,
             keitaibango:keitaibango,
+            seibetu:seibetu,
             renrakusaki_meru:renrakusaki_meru,
             email:email,
             renrakusaki_denwabango:renrakusaki_denwabango,
@@ -71,6 +78,4 @@ button.addEventListener("click", function (){
         //which gets the database
         // var ref = database.ref(userId + '/nyuryokufomu').set(data);
         firebase.database().ref(userId + '/nyuryokufomu').update(data);
-        
-    }
 })
