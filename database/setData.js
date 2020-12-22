@@ -1,4 +1,6 @@
-//保存ボタンに繋げているけど、今、ボタンをおわっていないです
+function chg(val){
+    seibetu = val;
+}
 
 let button = document.getElementById("pills-tabContent");
 button.addEventListener("change", function (){
