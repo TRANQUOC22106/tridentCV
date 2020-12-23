@@ -90,7 +90,42 @@ $("#datepicker").datepicker({
 
 $("#daunrodo_button").click(function () {
 
+
+    $(".bootstrap").hide();
+    $("#profile_card").hide();
+    $("#juusho_card").hide();
+    $("#rennrakusaki_card").hide();
+    $("#gakureki_card").hide();
+    $("#kamoku_card").hide();
+    $("#shumi_card").hide();
+    $("#tokutyou_card").hide();
+    $("#etakoto_card").hide();
+    $("#douki_card").hide();
+    $("#shikaku_card").hide();
+    $("#shumi_card").hide();
+    $("#bikou_card").hide();
+    $("#sakuseibi_card").hide();
+    $("#kakuninn_card").hide();
+
     window.print();
+
+    $(".bootstrap").show();
+    $("#profile_card").show();
+    $("#juusho_card").show();
+    $("#rennrakusaki_card").show();
+    $("#gakureki_card").show();
+    $("#kamoku_card").show();
+    $("#shumi_card").show();
+    $("#tokutyou_card").show();
+    $("#etakoto_card").show();
+    $("#douki_card").show();
+    $("#shikaku_card").show();
+    $("#shumi_card").show();
+    $("#bikou_card").show();
+    $("#sakuseibi_card").show();
+    $("#kakuninn_card").show();
+
+
 
 })
 //PDF化、印刷 
