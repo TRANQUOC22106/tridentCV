@@ -2,9 +2,7 @@ function chg(val){
     seibetu = val;
 }
 
-let button = document.getElementById("pills-tabContent");
-button.addEventListener("change", function (){
-    // alert('保存された');
+function updateData(){
     // get the values which the user types
     let simei = document.getElementById("simei").value;
     let furigana = document.getElementById("furigana").value;
@@ -175,4 +173,4 @@ button.addEventListener("change", function (){
         //which gets the database
         // var ref = database.ref(userId + '/nyuryokufomu').set(data);
         firebase.database().ref(userId + '/nyuryokufomu').update(data);
-})
+}
