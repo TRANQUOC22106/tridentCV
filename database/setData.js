@@ -1,7 +1,3 @@
-function chg(val){
-    seibetu = val;
-}
-
 function updateData(){
     // get the values which the user types
     let simei = document.getElementById("simei").value;
@@ -140,7 +136,6 @@ function updateData(){
             jyusho:jyusho,
             jyusho_furigana:jyusho_furigana,
             keitaibango:keitaibango,
-            seibetu:seibetu,
             renrakusaki_meru:renrakusaki_meru,
             email:email,
             renrakusaki_denwabango:renrakusaki_denwabango,
