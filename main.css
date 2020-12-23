@@ -237,8 +237,7 @@ iframe {
   width: 300px;
 }
 
-#daunrodo_button,
-#teishutu_button {
+#daunrodo_button {
   font-size: 20px;
   margin-top: 15px;
   width: 300px;
@@ -356,8 +355,14 @@ textarea {
 }
 /* 学歴フォーム */
 
-#sikaku {
-  width: 350px;
+#shikaku_toshi {
+  width: 100px;
 }
 
+#shikaku_tuki {
+  width: 50px;
+}
+#sikaku {
+  width: 100%;
+}
 /* 免許・資格フォーム */
