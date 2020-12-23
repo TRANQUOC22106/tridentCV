@@ -61,7 +61,7 @@ $("#shiboudouki").on("input", function () {
 
 $("#clone_1").click(function () {
 
-    $("#gakureki_form").clone().insertAfter("#gakureki_form");
+    $("#gakureki_form").eq(0).clone().insertAfter("#gakureki_form");
 
 
 });
@@ -69,7 +69,7 @@ $("#clone_1").click(function () {
 
 $("#clone_2").click(function () {
 
-    $("#kamoku_form").clone().insertAfter("#kamoku_form");
+    $("#kamoku_form").eq(0).clone().insertAfter("#kamoku_form");
 
 
 });
@@ -77,7 +77,7 @@ $("#clone_2").click(function () {
 
 $("#clone_3").click(function () {
 
-    $("#shikaku_form").clone().insertAfter("#shikaku_form");
+    $("#shikaku_form").eq(0).clone().insertAfter("#shikaku_form");
 
 
 });
