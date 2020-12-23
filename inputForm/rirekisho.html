@@ -127,7 +127,7 @@
                 </div>
                 <div class="todoufuken">都道府県・市区町村・番地</div>
                 <div class="todoufuken_edit">
-                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"/>
+                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address" value=""/>
                 </div>
                 <div class="juusho_furigana">住所フリガナ</div>
                 <div class="juusho_furigana_edit">
@@ -337,18 +337,18 @@
                               </div>
                               <div class="flex">
                                   <div class="label">
-                                      <div class="namerubylabel" >フリガナ</div>
-                                      <div class="namelabel">氏名</div>
+                                      <div class="simeirubylabel">フリガナ</div>
+                                      <div class="simeilabel">氏名</div>
                                       <div class="birthdaylabel">生年月日</div>
                                   </div>
                                   <div class="input">
-                                      <div class="namerubyinput" id="inputFurigana"></div>
-                                      <div class="nameinput">
-                                          <div class="inputone" id="inputName">100</div>
+                                      <div class="simeirubyinput" id="pv_Furigana"></div>
+                                      <div class="simeiinput">
+                                          <div class="inputone" id="pv_Simei"></div>
                                           <div class="inn">印</div>
                                       </div>
-                                      <div class="birthdayinput">
-                                          <span class="year"></span>　年　<span class="month"></span>月　<span class="day"></span>日（満　<span class="age"></span> 歳）
+                                      <div class="birthdayinput" id="pv_birthday_nenrei">
+                                        <span class="year"></span>　年　<span class="month"></span>月　<span class="day"></span>日（満　<span class="age"></span> 歳）
                                       </div>
                                   </div>
                                   <div class="gender">
@@ -370,29 +370,30 @@
                                   <div class="renrakusakilabel">連絡先</div>
                               </div>
                               <div class="input">
-                                  <div class="genjuusyorubyinput"></div>
+                                  <div class="genjuusyorubyinput" id="pv_jyusho_Furigana"></div>
                                   <div class="genjuusyoinput">
-                                      <div class="genjuusyonumberinput">〒
-                                          <div class="genjuusyotextinput"></div>
+                                      <div class="genjuusyonumberinput" id="pv_jyusho_Number">〒
+                                          
                                       </div>
+                                      <div class="genjuusyotextinput" id="pv_jyusho"></div>
                                   </div>
-                                  <div class="emailinput"></div>
-                                  <div class="renrakusakirubyinput"></div>
-                                  <div class="renrakusakiinput">
-                                      <div class="renrakusakinumberinput">〒
-                                          <div class="renrakusakitextinput"></div>
+                                  <div class="emailinput" id="pv_Mail"></div>
+                                  <div class="renrakusakirubyinput" id="pv_renrakusaki_Furigana"></div>
+                                  <div class="renrakusakiinput" >
+                                      <div class="renrakusakinumberinput" id="pv_renrakusaki_Number">〒
+                                          <div class="renrakusakitextinput" id="pv_renrakusaki"></div>
                                       </div>
                                   </div>
                               </div>
                               <div class="number">
                                   <div class="denwanumber">電話
-                                      <div class="denwanumberinput"></div>
+                                      <div class="denwanumberinput" id="pv_denwa_Number"></div>
                                   </div>
                                   <div class="keitainumber">携帯
-                                      <div class="keitainumberinput"></div>
+                                      <div class="keitainumberinput" id="pv_keitai_Number"></div>
                                   </div>
                                   <div class="subdenwanumber">電話
-                                      <div class="subdenwanumberinput"></div>
+                                      <div class="subdenwanumberinput" id="pv_subdenwa_Number"></div>
                                   </div>
                               </div>
                           </div>
@@ -402,53 +403,53 @@
                           <div class="flex">
                               <div class="label">
                                   <div class="nen">年
-                                      <div class="nen1"></div>
-                                      <div class="nen2"></div>
-                                      <div class="nen3"></div>
-                                      <div class="nen4"></div>
-                                      <div class="nen5"></div>
-                                      <div class="nen6"></div>
-                                      <div class="nen7"></div>
-                                      <div class="nen8"></div>
-                                      <div class="nen9"></div>
-                                      <div class="nen10"></div>
-                                      <div class="nen11"></div>
-                                      <div class="nen12"></div>
-                                      <div class="nen13"></div>
-                                      <div class="nen14"></div>
+                                      <div class="nen1" id="pv_hidtory_Nen1"></div>
+                                      <div class="nen2" id="pv_hidtory_Nen2"></div>
+                                      <div class="nen3" id="pv_hidtory_Nen3"></div>
+                                      <div class="nen4" id="pv_hidtory_Nen4"></div>
+                                      <div class="nen5" id="pv_hidtory_Nen5"></div>
+                                      <div class="nen6" id="pv_hidtory_Nen6"></div>
+                                      <div class="nen7" id="pv_hidtory_Nen7"></div>
+                                      <div class="nen8" id="pv_hidtory_Nen8"></div>
+                                      <div class="nen9" id="pv_hidtory_Nen9"></div>
+                                      <div class="nen10" id="pv_hidtory_Nen10"></div>
+                                      <div class="nen11" id="pv_hidtory_Nen11"></div>
+                                      <div class="nen12" id="pv_hidtory_Nen12"></div>
+                                      <div class="nen13" id="pv_hidtory_Nen13"></div>
+                                      <div class="nen14" id="pv_hidtory_Nen14"></div>
                                   </div>
                                   <div class="tuki">月
-                                      <div class="tuki1"></div>
-                                      <div class="tuki2"></div>
-                                      <div class="tuki3"></div>
-                                      <div class="tuki4"></div>
-                                      <div class="tuki5"></div>
-                                      <div class="tuki6"></div>
-                                      <div class="tuki7"></div>
-                                      <div class="tuki8"></div>
-                                      <div class="tuki9"></div>
-                                      <div class="tuki10"></div>
-                                      <div class="tuki11"></div>
-                                      <div class="tuki12"></div>
-                                      <div class="tuki13"></div>
-                                      <div class="tuki14"></div>
+                                      <div class="tuki1" id="pv_history_Tuki1"></div>
+                                      <div class="tuki2" id="pv_history_Tuki2"></div>
+                                      <div class="tuki3" id="pv_history_Tuki3"></div>
+                                      <div class="tuki4" id="pv_history_Tuki4"></div>
+                                      <div class="tuki5" id="pv_history_Tuki5"></div>
+                                      <div class="tuki6" id="pv_history_Tuki6"></div>
+                                      <div class="tuki7" id="pv_history_Tuki7"></div>
+                                      <div class="tuki8" id="pv_history_Tuki8"></div>
+                                      <div class="tuki9" id="pv_history_Tuki9"></div>
+                                      <div class="tuki10" id="pv_history_Tuki10"></div>
+                                      <div class="tuki11" id="pv_history_Tuki11"></div>
+                                      <div class="tuki12" id="pv_history_Tuki12"></div>
+                                      <div class="tuki13" id="pv_history_Tuki13"></div>
+                                      <div class="tuki14" id="pv_history_Tuki14"></div>
                                   </div>
                               </div>
                               <div class="reki">学歴・職歴
-                                  <div class="reki1"></div>
-                                  <div class="reki2"></div>
-                                  <div class="reki3"></div>
-                                  <div class="reki4"></div>
-                                  <div class="reki5"></div>
-                                  <div class="reki6"></div>
-                                  <div class="reki7"></div>
-                                  <div class="reki8"></div>
-                                  <div class="reki9"></div>
-                                  <div class="reki10"></div>
-                                  <div class="reki11"></div>
-                                  <div class="reki12"></div>
-                                  <div class="reki13"></div>
-                                  <div class="reki14"></div>
+                                  <div class="reki1" id="pv_history_Reki1"></div>
+                                  <div class="reki2" id="pv_history_Reki2"></div>
+                                  <div class="reki3" id="pv_history_Reki3"></div>
+                                  <div class="reki4" id="pv_history_Reki4"></div>
+                                  <div class="reki5" id="pv_history_Reki5"></div>
+                                  <div class="reki6" id="pv_history_Reki6"></div>
+                                  <div class="reki7" id="pv_history_Reki7"></div>
+                                  <div class="reki8" id="pv_history_Reki8"></div>
+                                  <div class="reki9" id="pv_history_Reki9"></div>
+                                  <div class="reki10" id="pv_history_Reki10"></div>
+                                  <div class="reki11" id="pv_history_Reki11"></div>
+                                  <div class="reki12" id="pv_history_Reki12"></div>
+                                  <div class="reki13" id="pv_history_Reki13"></div>
+                                  <div class="reki14" id="pv_history_Reki14"></div>
                               </div>
                           </div>
                       </div>
@@ -458,17 +459,17 @@
                       <div class="rirekisho-table kamoku ">
                           <div class="flex">
                               <div class="label">好きな科目</div>
-                              <div class="input"></div>
+                              <div class="input" id="pv_kamoku"></div>
                           </div>
                       </div>
           
-                      <div class="rirekisho-table syumi">
+                      <div class="rirekisho-table shumi">
                           <div class="flex">
                               <div class="label">趣味・特技</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_shumi_1"></div>
+                                  <div class="input2" id="pv_shumi_2"></div>
+                                  <div class="input0" id="pv_shumi_0"></div>
                               </div>
                           </div>
                       </div>
@@ -477,11 +478,11 @@
                           <div class="flex">
                               <div class="label">私の特長</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_tokutyou1"></div>
+                                  <div class="input2" id="pv_tokutyou2"></div>
+                                  <div class="input3" id="pv_tokutyou3"></div>
+                                  <div class="input4" id="pv_tokutyou4"></div>
+                                  <div class="input0" id="pv_tokutyou0"></div>
                               </div>
                           </div>
                       </div>
@@ -490,11 +491,11 @@
                           <div class="flex">
                               <div class="label">学生生活を通じて得たこと</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_gakuseiseikatu1"></div>
+                                  <div class="input2" id="pv_gakuseiseikatu2"></div>
+                                  <div class="input3" id="pv_gakuseiseikatu3"></div>
+                                  <div class="input4" id="pv_gakuseiseikatu4"></div>
+                                  <div class="input0" id="pv_gakuseiseikatu0"></div>
                               </div>
                           </div>
                       </div>
@@ -503,7 +504,7 @@
                           <div class="flex">
                               <div class="label">志望動機</div>
                               <div class="input">
-                                  <div class="input1"></div>
+                                  <div class="input1" id="pv_siboudouki1"></div>
                                   <div class="input2"></div>
                                   <div class="input3"></div>
                                   <div class="input4"></div>
@@ -512,41 +513,41 @@
                           </div>
                       </div>
           
-                      <div class="rirekisho-table skill">
+                      <div class="rirekisho-table sikaku">
                           <div class="flex">
                               <div class="label">
                                   <div class="nen">年
-                                      <div class="nen1"></div>
-                                      <div class="nen2"></div>
-                                      <div class="nen3"></div>
-                                      <div class="nen4"></div>
-                                      <div class="nen5"></div>
-                                      <div class="nen6"></div>
+                                      <div class="nen1" id="pv_sikaku_Nen1"></div>
+                                      <div class="nen2" id="pv_sikaku_Nen2"></div>
+                                      <div class="nen3" id="pv_sikaku_Nen3"></div>
+                                      <div class="nen4" id="pv_sikaku_Nen4"></div>
+                                      <div class="nen5" id="pv_sikaku_Nen5"></div>
+                                      <div class="nen6" id="pv_sikaku_Nen6"></div>
                                   </div>
                                   <div class="tuki">月
-                                      <div class="tuki1"></div>
-                                      <div class="tuki2"></div>
-                                      <div class="tuki3"></div>
-                                      <div class="tuki4"></div>
-                                      <div class="tuki5"></div>
-                                      <div class="tuki6"></div>
+                                      <div class="tuki1" id="pv_sikaku_Tuki1"></div>
+                                      <div class="tuki2" id="pv_sikaku_Tuki2"></div>
+                                      <div class="tuki3" id="pv_sikaku_Tuki3"></div>
+                                      <div class="tuki4" id="pv_sikaku_Tuki4"></div>
+                                      <div class="tuki5" id="pv_sikaku_Tuki5"></div>
+                                      <div class="tuki6" id="pv_sikaku_Tuki6"></div>
                                   </div>
                               </div>
-                              <div class="skillname">資格・免許
-                                  <div class="skillname1"></div>
-                                  <div class="skillname2"></div>
-                                  <div class="skillname3"></div>
-                                  <div class="skillname4"></div>
-                                  <div class="skillname5"></div>
-                                  <div class="skillname6"></div>
+                              <div class="sikakuname">資格・免許
+                                  <div class="sikakuname1" id="pv_sikaku_Reki1"></div>
+                                  <div class="sikakuname2" id="pv_sikaku_Reki2"></div>
+                                  <div class="sikakuname3" id="pv_sikaku_Reki3"></div>
+                                  <div class="sikakuname4" id="pv_sikaku_Reki4"></div>
+                                  <div class="sikakuname5" id="pv_sikaku_Reki5"></div>
+                                  <div class="sikakuname6" id="pv_sikaku_Reki6"></div>
                               </div>
                           </div>
                       </div>
           
-                      <div class="rirekisho-table bikou">
+                      <div class="rirekisho-table biko">
                           <div class="flex">
                               <div class="label">備考</div>
-                              <div class="input"></div>
+                              <div class="input" id="pv_biko"></div>
                           </div>
                       </div>
                   </div>
