@@ -88,6 +88,13 @@ $("#datepicker").datepicker({
 });
 // 生年月日 カレンダー表示
 
+$("#daunrodo_button").click(function () {
+
+    window.print();
+
+})
+//PDF化、印刷 
+
 $(function () {
     $.fn.autoKana('#simei', '#furigana', {
         katakana: true  //true：カタカナ、false：ひらがな（デフォルト）
@@ -116,4 +123,6 @@ $(function () {
 $("#hizuke").datepicker({
 
 });
+
+
 
