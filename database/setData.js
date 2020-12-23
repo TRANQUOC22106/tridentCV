@@ -22,7 +22,7 @@ button.addEventListener("change", function (){
     let shumi = document.getElementById("shumi").value;
     let tokutyo = document.getElementById("tokutyo").value;
     let gakuseiseikatu = document.getElementById("gakuseiseikatu").value;
-    let siboudouki = document.getElementById("siboudouki").value;
+    let shiboudouki = document.getElementById("shiboudouki").value;
     let sikaku = document.getElementById("sikaku").value;
     let biko = document.getElementById("biko").value;
 
@@ -54,7 +54,7 @@ button.addEventListener("change", function (){
             shumi:shumi,
             tokutyo:tokutyo,
             gakuseiseikatu:gakuseiseikatu,
-            siboudouki:siboudouki,
+            shiboudouki:shiboudouki,
             sikaku:sikaku,
             biko:biko
             //プロジェクトに必要なデータ
