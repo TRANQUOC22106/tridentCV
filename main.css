@@ -359,6 +359,10 @@ textarea {
   width: 100px;
 }
 
+.shikaku_day {
+  text-align: left;
+}
+
 #shikaku_tuki {
   width: 50px;
 }
