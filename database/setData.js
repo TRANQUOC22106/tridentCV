@@ -11,7 +11,6 @@ function updateData(){
     let yubinbango = document.getElementById("p-postal-code").value;
     let jyusho = document.getElementById("jyusho").value;
     let jyusho_furigana = document.getElementById("jyusho_furigana").value;
-    let jyusho_furigana = document.getElementById("jyusho_furigana").value;
     let keitaibango = document.getElementById("keitaibango").value;
     let renrakusaki_meru = document.getElementById("renrakusaki_meru").value;
     let email = document.getElementById("email").value;
