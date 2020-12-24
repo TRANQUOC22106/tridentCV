@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../image/TriCVLogo.svg" />
 
     <!-- BOOTSTRAP --> 
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     
     <!--JQUERY-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -136,6 +136,25 @@
                 <div class="juusho_furigana_edit">
                   <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" placeholder="アイチケンナゴヤシナカムラクメイエキ３チョウメ２４－１５"/>
                 </div>
+
+                <div class="dennwa">電話番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
+                  placeholder="00011112222"
+/>
+                </div>
+
+                <div class="dennwa">携帯番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_2" value="" 
+                  placeholder="00011112222"
+/>
+                </div>
+                <div class="e-mail">e-mail</div>
+                <div class="e-mail_edit">
+                  <input type="email" class="hannkaku_desu" id="email" name="e-mail" value=""
+                  placeholder="aaabbbccc@trident.com" />
+                </div>
               </form>
             </div>
           </div>
@@ -146,27 +165,31 @@
                   <h1 class="rennrakusaki_layout">連絡先</h1>
                 </div>
                 <form name="rennrakusaki_form" action="" method="POST">
-                  <div class="dennwa">電話番号</div>
-                  <div class="dennwa_edit">
-                    <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
-                    placeholder="00011112222"
+
+                  <span class="p-country-name" style="display: none">Japan</span>
+                <div class="yuubin" >郵便番号</div>
+                <div class="yuubin_edit">
+                  <input type="text"  id="p-postal-code" class="p-postal-code hannkaku_desu" size="12" maxlength="8"
+                  placeholder="01234567"/>
+                </div>
+
+                <div class="todoufuken">都道府県・市区町村・番地</div>
+                <div class="todoufuken_edit">
+                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"
+                  placeholder="同上"/>
+                </div>
+                <div id="juusho_furigana">住所フリガナ</div>
+                <div class="juusho_furigana_edit">
+                  <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" placeholder=""/>
+                </div>
+                  
+                <div class="dennwa">電話番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
+                  placeholder="00011112222"
 />
-                  </div>
-                  <div class="e-mail">e-mail</div>
-                  <div class="e-mail_edit">
-                    <input type="email" class="hannkaku_desu" id="email" name="e-mail" value=""
-                    placeholder="aaabbbccc@trident.com" />
-                  </div>
-                  <div class="reigai">上記以外の連絡先</div>
-                  <div class="dennwa_edit">
-                    <input type="number" class="hannkaku_desu" id="renrakusaki_denwabango" name="dennwa_r1" value="" 
-                    placeholder="99988887777"/>
-                  </div>
-                  <div class="e-mail">e-mail</div>
-                  <div class="e-mail_edit">
-                    <input type="email" class="hannkaku_desu" id="renrakusaki_meru" name="e-mail_r" value=""
-                    placeholder="zzzyyyxxx@trident.com" />
-                  </div>
+                </div>
+                  
                 </form>
               </div>
           </div>
@@ -176,9 +199,9 @@
               <div class="gakureki_header">
                 <h1 class="gakureki_layout">学歴</h1>
               </div>
-              <div class="tuika">
+              <!-- <div class="tuika">
                 <button class="tuika_button" id="clone_1">入力欄を追加</button>
-              </div>
+              </div> -->
               <div class="gakureki_edit">
                 <form 
                 id="gakureki_form"
@@ -194,7 +217,167 @@
               <span>月</span></br>
               <input type="text" id="gakureki_rann" name="gakureki" value=""
               placeholder="○○中学校卒業">
-              <div id="clone_edit"></div>
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="4" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○高等学校入学">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2019"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○高等学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2019"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="4" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="トライデントコンピュータ専門学校入学">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2022"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="トライデントコンピュータ専門学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              <input type="number" class="hannkaku_desu"
+              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              placeholder="2013"/>
+              <span>年</span>
+              <input type="number" class="hannkaku_desu" 
+              id="gakureki_tuki"
+              name="gakureki_tuki" value=""
+              placeholder="3" />
+              <span>月</span></br>
+              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              placeholder="○○中学校卒業">
+
+              
+
+              
+              
             </form>
             </div>
           </div>
@@ -205,14 +388,19 @@
               <div class="kamoku_header">
                 <h1 class="kamoku_layout">好きな科目</h1>
               </div>
-              <div class="tuika">
+              <!-- <div class="tuika">
                 <button class="tuika_button" id="clone_2">入力欄を追加</button>
-              </div>
+              </div> -->
               <div class="kamoku_edit">
                 <form id="kamoku_form" name="kamoku_form"
                 action="" method="POST">
                 <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
                 placeholder="Java"/>
+
+                <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
+                placeholder="Linux"/>
+
+                
               </form>
               </div>
             </div>
@@ -303,11 +491,12 @@
               <div class="shikaku_header">
                 <h1 class="shikaku_layout">免許・資格</h1>
               </div>
-              <div class="tuika">
+              <!-- <div class="tuika">
                 <button class="tuika_button" id="clone_3">例文から追加</button>
-              </div>
+              </div> -->
                 <div class="shikaku_edit">
                   <form id="shikaku_form" name="shikaku_form" action="" method="POST">
+                    <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
                     id="shikaku_toshi" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
@@ -316,9 +505,75 @@
                     id="shikaku_tuki"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
-                    <span>月</span></br>
+                    <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="基本情報技術者試験"/>
+
+                  <div class="shikaku_day">
+                    <input type="number" class="hannkaku_desu"
+                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    placeholder="2013"/>
+                    <span>年</span>
+                    <input type="number" class="hannkaku_desu" 
+                    id="shikaku_tuki"
+                    name="shikaku_tuki" value=""
+                    placeholder="3" />
+                    <span>月</span></div>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  placeholder="応用情報技術者試験"/>
+
+                  <div class="shikaku_day">
+                    <input type="number" class="hannkaku_desu"
+                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    placeholder="2013"/>
+                    <span>年</span>
+                    <input type="number" class="hannkaku_desu" 
+                    id="shikaku_tuki"
+                    name="shikaku_tuki" value=""
+                    placeholder="3" />
+                    <span>月</span></div>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  placeholder="普通自動車第一種免許"/>
+
+                  <div class="shikaku_day">
+                    <input type="number" class="hannkaku_desu"
+                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    placeholder="2013"/>
+                    <span>年</span>
+                    <input type="number" class="hannkaku_desu" 
+                    id="shikaku_tuki"
+                    name="shikaku_tuki" value=""
+                    placeholder="3" />
+                    <span>月</span></div>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  placeholder="実用英語技能検定３級合格"/>
+
+                  <div class="shikaku_day">
+                    <input type="number" class="hannkaku_desu"
+                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    placeholder="2013"/>
+                    <span>年</span>
+                    <input type="number" class="hannkaku_desu" 
+                    id="shikaku_tuki"
+                    name="shikaku_tuki" value=""
+                    placeholder="3" />
+                    <span>月</span></div>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  placeholder="基本情報技術者試験"/>
+
+                  <div class="shikaku_day">
+                    <input type="number" class="hannkaku_desu"
+                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    placeholder="2013"/>
+                    <span>年</span>
+                    <input type="number" class="hannkaku_desu" 
+                    id="shikaku_tuki"
+                    name="shikaku_tuki" value=""
+                    placeholder="3" />
+                    <span>月</span></div>
+                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  placeholder="基本情報技術者試験"/>
+
                 </form>
                 </div>
             </div>
@@ -371,13 +626,10 @@
               <div class="saisyukakuninn">
                 <div class="daunrodo">
                   <button type="button" class="btn btn-primary" id="daunrodo_button">ダウンロード・印刷</button>
-                <!-- </div>
-                <div class="teishutu">
-                  <button type="button" class="btn btn-primary" id="teishutu_button">印刷</button>
-                </div> -->
+                
               </div>
             </div>
-            <!-- <button type="button" class="btn btn-primary" id="preview_button">保存</button> -->
+            </div>
           </div>
           <!-- ★プレビュー画面 -->
           <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">

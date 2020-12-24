@@ -21,6 +21,8 @@ jQuery(document).on('blur', '.hannkaku_desu', function () {
 
 
 
+
+
 $('form').attr('autocomplete', 'off');
 // 入力候補、履歴を非表示
 
@@ -59,29 +61,29 @@ $("#shiboudouki").on("input", function () {
 });
 // 志望動機の文字数カウント
 
-$("#clone_1").click(function () {
+// $("#clone_1").click(function () {
 
-    $("#gakureki_form").clone().insertAfter("#gakureki_form");
+//     $("#gakureki_form").eq(0).clone().insertAfter("#gakureki_form");
 
 
-});
+// });
 // 学歴入力欄追加
 
-$("#clone_2").click(function () {
+// $("#clone_2").click(function () {
 
-    $("#kamoku_form").clone().insertAfter("#kamoku_form");
+//     $("#kamoku_form").eq(0).clone().insertAfter("#kamoku_form");
 
 
-});
+// });
 // 好きな科目入力欄追加
 
-$("#clone_3").click(function () {
+// $("#clone_3").click(function () {
 
-    $("#shikaku_form").clone().insertAfter("#shikaku_form");
+//     $("#shikaku_form").eq(0).clone().insertAfter("#shikaku_form");
 
 
-});
-// 免許・資格入力欄追加
+// });
+// // 免許・資格入力欄追加
 
 $("#datepicker").datepicker({
 
@@ -90,7 +92,42 @@ $("#datepicker").datepicker({
 
 $("#daunrodo_button").click(function () {
 
+
+    $(".bootstrap").hide();
+    $("#profile_card").hide();
+    $("#juusho_card").hide();
+    $("#rennrakusaki_card").hide();
+    $("#gakureki_card").hide();
+    $("#kamoku_card").hide();
+    $("#shumi_card").hide();
+    $("#tokutyou_card").hide();
+    $("#etakoto_card").hide();
+    $("#douki_card").hide();
+    $("#shikaku_card").hide();
+    $("#shumi_card").hide();
+    $("#bikou_card").hide();
+    $("#sakuseibi_card").hide();
+    $("#kakuninn_card").hide();
+
     window.print();
+
+    $(".bootstrap").show();
+    $("#profile_card").show();
+    $("#juusho_card").show();
+    $("#rennrakusaki_card").show();
+    $("#gakureki_card").show();
+    $("#kamoku_card").show();
+    $("#shumi_card").show();
+    $("#tokutyou_card").show();
+    $("#etakoto_card").show();
+    $("#douki_card").show();
+    $("#shikaku_card").show();
+    $("#shumi_card").show();
+    $("#bikou_card").show();
+    $("#sakuseibi_card").show();
+    $("#kakuninn_card").show();
+
+
 
 })
 //PDF化、印刷 
