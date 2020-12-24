@@ -21,6 +21,8 @@ jQuery(document).on('blur', '.hannkaku_desu', function () {
 
 
 
+
+
 $('form').attr('autocomplete', 'off');
 // 入力候補、履歴を非表示
 
