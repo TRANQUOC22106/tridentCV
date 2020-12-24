@@ -108,7 +108,7 @@
                   </div>
                     <div class="seibetu">性別</div>
                       <div class="seibetu_radio" >
-                          <input type="radio" name="seibetu" value="男性" checked onchange="chg(this.value)" />男性
+                          <input type="radio" name="seibetu" value="男性"  onchange="chg(this.value)" />男性
                           <input type="radio" name="seibetu" value="女性" onchange="chg(this.value)" />女性
                       </div>
                 </form>
@@ -290,10 +290,8 @@
               </div>
               <div id="douki_form">
               <form name="douki_form" action="" method="POST">
-                  
                 <textarea id="shiboudouki" class="row-5" name="shiboudoki" value="" 
                 maxlength="140">
-
                 </textarea>
               </form>
             </div>
@@ -393,7 +391,7 @@
                               <div class="title">履歴書</div>
                           </div>
                           <div class="profile">
-                              <div class="date">
+                              <div class="date" id="pv_hizuke">
                                   <span>年 月 日</span> 現在
                               </div>
                               <div class="flex">
@@ -413,7 +411,7 @@
                                       </div>
                                   </div>
                                   <div class="gender">
-                                      <span class="man">男</span>
+                                      <span class="man" id="pv_Man">男</span>
                                       <br>・
                                       <span class="woman">女</span>
                                   </div>
@@ -565,11 +563,11 @@
                           <div class="flex">
                               <div class="label">志望動機</div>
                               <div class="input">
-                                  <div class="input1" id="pv_siboudouki1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_shiboudouki1"></div>
+                                  <div class="input2" id="pv_shiboudouki2"></div>
+                                  <div class="input3" id="pv_shiboudouki3"></div>
+                                  <div class="input4" id="pv_shiboudouki4"></div>
+                                  <div class="input0" id="pv_shiboudouki0"></div>
                               </div>
                           </div>
                       </div>
