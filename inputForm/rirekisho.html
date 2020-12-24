@@ -136,6 +136,25 @@
                 <div class="juusho_furigana_edit">
                   <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" placeholder="アイチケンナゴヤシナカムラクメイエキ３チョウメ２４－１５"/>
                 </div>
+
+                <div class="dennwa">電話番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
+                  placeholder="00011112222"
+/>
+                </div>
+
+                <div class="dennwa">携帯番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_2" value="" 
+                  placeholder="00011112222"
+/>
+                </div>
+                <div class="e-mail">e-mail</div>
+                <div class="e-mail_edit">
+                  <input type="email" class="hannkaku_desu" id="email" name="e-mail" value=""
+                  placeholder="aaabbbccc@trident.com" />
+                </div>
               </form>
             </div>
           </div>
@@ -146,27 +165,31 @@
                   <h1 class="rennrakusaki_layout">連絡先</h1>
                 </div>
                 <form name="rennrakusaki_form" action="" method="POST">
-                  <div class="dennwa">電話番号</div>
-                  <div class="dennwa_edit">
-                    <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
-                    placeholder="00011112222"
+
+                  <span class="p-country-name" style="display: none">Japan</span>
+                <div class="yuubin" >郵便番号</div>
+                <div class="yuubin_edit">
+                  <input type="text"  id="p-postal-code" class="p-postal-code hannkaku_desu" size="12" maxlength="8"
+                  placeholder="01234567"/>
+                </div>
+
+                <div class="todoufuken">都道府県・市区町村・番地</div>
+                <div class="todoufuken_edit">
+                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"
+                  placeholder="同上"/>
+                </div>
+                <div id="juusho_furigana">住所フリガナ</div>
+                <div class="juusho_furigana_edit">
+                  <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" placeholder=""/>
+                </div>
+                  
+                <div class="dennwa">電話番号</div>
+                <div class="dennwa_edit">
+                  <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
+                  placeholder="00011112222"
 />
-                  </div>
-                  <div class="e-mail">e-mail</div>
-                  <div class="e-mail_edit">
-                    <input type="email" class="hannkaku_desu" id="email" name="e-mail" value=""
-                    placeholder="aaabbbccc@trident.com" />
-                  </div>
-                  <div class="reigai">上記以外の連絡先</div>
-                  <div class="dennwa_edit">
-                    <input type="number" class="hannkaku_desu" id="renrakusaki_denwabango" name="dennwa_r1" value="" 
-                    placeholder="99988887777"/>
-                  </div>
-                  <div class="e-mail">e-mail</div>
-                  <div class="e-mail_edit">
-                    <input type="email" class="hannkaku_desu" id="renrakusaki_meru" name="e-mail_r" value=""
-                    placeholder="zzzyyyxxx@trident.com" />
-                  </div>
+                </div>
+                  
                 </form>
               </div>
           </div>
