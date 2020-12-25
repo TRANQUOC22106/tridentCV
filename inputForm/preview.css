@@ -273,9 +273,21 @@
 .input1,.input2,.input3,.input4 {
     height: 8mm;
     border-bottom: dashed 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+    font-size: 1.05rem;
 }
 .input0 {
     height: 8mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+    font-size: 1.05rem;
 }
 .kamoku .label {
     height: 12mm;
@@ -303,7 +315,6 @@
 .shumi .input {
     height: 24mm;
     width: 130mm;
-    text-align: left;
 }
 .tokutyou .label {
     height: 40mm;
@@ -316,7 +327,6 @@
 .tokutyou .input {
     height: 12mm;
     width: 130mm;
-    text-align: left;
 }
 .gakuseiseikatu .label {
     height: 40mm;
@@ -329,7 +339,6 @@
 .gakuseiseikatu .input {
     height: 40mm;
     width: 130mm;
-    text-align: left;
 }
 .douki .label {
     height: 40mm;
@@ -342,7 +351,6 @@
 .douki .input {
     height: 40mm;
     width: 130mm;
-    text-align: left;
 }
 
 .sikaku .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,
