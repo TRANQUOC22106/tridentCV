@@ -90,46 +90,15 @@ $("#datepicker").datepicker({
 });
 // 生年月日 カレンダー表示
 
-$("#daunrodo_button").click(function () {
+$("#download_button").click(function () {
 
-
-    $(".bootstrap").hide();
-    $("#profile_card").hide();
-    $("#juusho_card").hide();
-    $("#rennrakusaki_card").hide();
-    $("#gakureki_card").hide();
-    $("#kamoku_card").hide();
-    $("#shumi_card").hide();
-    $("#tokutyou_card").hide();
-    $("#etakoto_card").hide();
-    $("#douki_card").hide();
-    $("#shikaku_card").hide();
-    $("#shumi_card").hide();
-    $("#bikou_card").hide();
-    $("#sakuseibi_card").hide();
-    $("#kakuninn_card").hide();
+    $(".tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, .preview_layout").hide();
 
     window.print();
 
-    $(".bootstrap").show();
-    $("#profile_card").show();
-    $("#juusho_card").show();
-    $("#rennrakusaki_card").show();
-    $("#gakureki_card").show();
-    $("#kamoku_card").show();
-    $("#shumi_card").show();
-    $("#tokutyou_card").show();
-    $("#etakoto_card").show();
-    $("#douki_card").show();
-    $("#shikaku_card").show();
-    $("#shumi_card").show();
-    $("#bikou_card").show();
-    $("#sakuseibi_card").show();
-    $("#kakuninn_card").show();
+    $(".tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, .preview_layout").show();
 
-
-
-})
+});
 //PDF化、印刷 
 
 $(function () {
