@@ -390,12 +390,31 @@
                 <form id="kamoku_form" name="kamoku_form"
                 action="" method="POST">
                 <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
-                placeholder="Java"/>
+                placeholder="Java"
+                list="pulldown_1" />
 
                 <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
-                placeholder="Linux"/>
+                placeholder="Linux"
+                list="pulldown_1" />
 
-                
+                <datalist id="pulldown_1">
+                  <!-- <select name="puldown"> -->
+                      <option value="Java">Java</option>
+                      <option value="HTML&CSS">HTML&CSS</option>
+                      <option value="Webアプリ">Webアプリ</option>
+                      <option value="Oracle">Oracle</option>
+                      <option value="Linux">Linux</option>
+                      <option value="Webセキュリティ">Webセキュリティ</option>
+                      <option value="Android">Android</option>
+                      <option value="C言語">C言語</option>
+                      <option value="C++">C++</option>
+                      <option value="Python">Python</option>
+                      <option value="プロジェクト管理">プロジェクト管理</option>
+                      <option value="企業研究">企業研究</option>
+                      <option value="アルゴリズム">アルゴリズム</option>
+                  <!-- </select> -->
+                  </datalist>
+
               </form>
               </div>
             </div>
@@ -496,7 +515,8 @@
                     <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
                     id="shikaku_toshi" name="shikaku_toshi" value="" 
-                    placeholder="2013"/>
+                    placeholder="2013"
+                    />
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
                     id="shikaku_tuki"
@@ -504,7 +524,8 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="基本情報技術者試験"/>
+                  placeholder="基本情報技術者試験"
+                  list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
@@ -517,7 +538,8 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="応用情報技術者試験"/>
+                  placeholder="応用情報技術者試験"
+                  list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
@@ -530,7 +552,8 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="普通自動車第一種免許"/>
+                  placeholder="普通自動車第一種免許"
+                  list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
@@ -543,7 +566,8 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="実用英語技能検定３級合格"/>
+                  placeholder="実用英語技能検定３級合格"
+                  list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
@@ -556,7 +580,8 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="基本情報技術者試験"/>
+                  placeholder="基本情報技術者試験"
+                  list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
@@ -569,7 +594,18 @@
                     placeholder="3" />
                     <span>月</span></div>
                   <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
-                  placeholder="基本情報技術者試験"/>
+                  placeholder="基本情報技術者試験"
+                  list="pulldown_2"/>
+
+                  <datalist id="pulldown_2">
+                    <option value="普通自動車免許">普通免許</option>
+                    <option value="普通自動二輪車免許">バイク免許</option>
+                    <option value="実用英語技能検定3級">英検3級</option>
+                    <option value="日商簿記検定2級">日商簿記2級</option>
+                    <option value="TOEIC Listening & Reading Test 730点 取得">TOEIC L&R 730点</option>
+                    <option value="基本情報技術者試験">基本情報</option>
+                    <option value="応用情報技術者試験">応用情報</option>
+                   </datalist>
 
                 </form>
                 </div>
@@ -609,8 +645,7 @@
               </div>
             </div>
           </div>
-          
-         
+                  
           <!-- ★プレビュー画面 -->
           <div class="content">
             <div id="preview_card">
