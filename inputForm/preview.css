@@ -33,7 +33,7 @@
     width: 130mm;
     text-align: center;
 }
-.rirekisyo-box {
+.rirekisho-box {
     text-align: center;
 }
 
@@ -54,17 +54,17 @@
 .profile .gender {
     width: 10mm;
 }
-.profile .namelabel,.birthdaylabel,.nameinput,.birthdayinput{
+.profile .simeilabel,.birthdaylabel,.simeiinput,.birthdayinput{
     border-top: solid 1px;
 }
-.label .namerubylabel {
+.label .simeirubylabel {
     width: 22mm;
     height: 6mm;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.label .namelabel{
+.label .simeilabel{
     width: 22mm;
     height: 22mm;
     display: flex;
@@ -78,25 +78,23 @@
     justify-content: center;
     align-items: center;
 }
-.input .namerubyinput {
+.input .simeirubyinput {
     width: 84mm;
     height: 6mm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
 }
-.input .nameinput {
+.input .simeiinput {
     width: 84mm;
     height: 22mm;
     display: flex;
 }
-.input .nameinput .inputone {
+.input .simeiinput .inputone {
     width: 74mm;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.input .nameinput .inn {
+.input .simeiinput .inn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -169,9 +167,7 @@
 .input .genjuusyorubyinput {
     width: 101mm;
     height: 6mm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
 }
 .input .genjuusyoinput {
     width: 101mm;
@@ -188,9 +184,7 @@
 .input .renrakusakirubyinput {
     width: 101mm;
     height: 6mm;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
 }
 .input .renrakusakiinput {
     width: 101mm;
@@ -200,16 +194,19 @@
 .number .denwanumber {
     width: 37mm;
     height: 17mm;
+    text-align: left;
 }
 
 .number .keitainumber {
     width: 37mm;
     height: 22mm;
+    text-align: left;
 }
 
 .number .subdenwanumber {
     width: 37mm;
     height: 28mm;
+    text-align: left;
 }
 .number .denwanumberinput {
     width: 37mm;
@@ -276,9 +273,21 @@
 .input1,.input2,.input3,.input4 {
     height: 8mm;
     border-bottom: dashed 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+    font-size: 1.05rem;
 }
 .input0 {
     height: 8mm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: justify;
+    text-justify: inter-ideograph;
+    font-size: 1.05rem;
 }
 .kamoku .label {
     height: 12mm;
@@ -292,8 +301,10 @@
     height: 12mm;
     width: 130mm;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
-.syumi .label {
+.shumi .label {
     height: 24mm;
     width: 30mm;
     border-right: solid 2px;
@@ -301,10 +312,9 @@
     justify-content: center;
     align-items: center;
 }
-.syumi .input {
+.shumi .input {
     height: 24mm;
     width: 130mm;
-    text-align: left;
 }
 .tokutyou .label {
     height: 40mm;
@@ -317,7 +327,6 @@
 .tokutyou .input {
     height: 12mm;
     width: 130mm;
-    text-align: left;
 }
 .gakuseiseikatu .label {
     height: 40mm;
@@ -330,7 +339,6 @@
 .gakuseiseikatu .input {
     height: 40mm;
     width: 130mm;
-    text-align: left;
 }
 .douki .label {
     height: 40mm;
@@ -343,15 +351,14 @@
 .douki .input {
     height: 40mm;
     width: 130mm;
-    text-align: left;
 }
 
-.skill .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,
+.sikaku .nen1,.nen2,.nen3,.nen4,.nen5,.nen6,
 .tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6,
-.skillname1,.skillname2,.skillname3,.skillname4,.skillname5,.skillname6 {
+.sikakuname1,.sikakuname2,.sikakuname3,.sikakuname4,.sikakuname5,.sikakuname6 {
     border-top: solid 1px;
 }
-.skill .nen {
+.sikaku .nen {
     width: 20mm;
     height: 7mm;
     border-right: solid 1px;
@@ -359,31 +366,31 @@
     display: table-cell;
     vertical-align: middle;
 }
-.skill .nen1,.nen2,.nen3,.nen4,.nen5,.nen6 {
+.sikaku .nen1,.nen2,.nen3,.nen4,.nen5,.nen6 {
     width: 20mm;
     height: 7mm;
 }
-.skill .tuki {
+.sikaku .tuki {
     width: 10mm;
     height: 7mm;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
 }
-.skill .tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6 {
+.sikaku .tuki1,.tuki2,.tuki3,.tuki4,.tuki5,.tuki6 {
     width: 10mm;
     height: 7mm;
 }
-.skill .skillname {
+.sikaku .sikakuname {
     width: 130mm;
     height: 7mm;
     text-align: center;
 }
-.skill .skillname1,.skillname2,.skillname3,.skillname4,.skillname5,.skillname6 {
+.sikaku .sikakuname1,.sikakuname2,.sikakuname3,.sikakuname4,.sikakuname5,.sikakuname6 {
     width: 130mm;
     height: 7mm;
 }
-.bikou .label{
+.biko .label{
     height: 18mm;
     width: 30mm;
     border-right: solid 2px;
@@ -391,8 +398,10 @@
     justify-content: center;
     align-items: center;
 }
-.bikou .input{
+.biko .input{
     height: 18mm;
     width: 130mm;
     text-align: left;
+    display: flex;
+    align-items: center;
 }

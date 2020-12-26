@@ -77,7 +77,7 @@
       
     
       <!--Content-->
-     
+      <div class="tab-content" id="pills-tabContent" onchange="updateData()">
           <!-- ★プロフィール画面 -->
           <div class="content-area">
             <div class="content show">
@@ -111,8 +111,8 @@
                   </div>
                     <div class="seibetu">性別</div>
                       <div class="seibetu_radio" >
-                          <input type="radio" name="seibetu" value="男性"  onchange="chg(this.value)" />男性
-                          <input type="radio" name="seibetu" value="女性" onchange="chg(this.value)" />女性
+                          <label><input type="radio" name="seibetu" value="男性"  onchange="chg(this.value)" />男性</label>
+                          <label><input type="radio" name="seibetu" value="女性" onchange="chg(this.value)" />女性</label>
                       </div>
                 </form>
               </div>
@@ -142,7 +142,7 @@
 
                 <div class="dennwa">電話番号</div>
                 <div class="dennwa_edit">
-                  <input type="number" class="hannkaku_desu_2" id="keitaibango" name="dennwa_1" value="" 
+                  <input type="number" class="hannkaku_desu_2" id="denwabango" name="dennwa_1" value="" 
                   placeholder="000-1111-2222"/>
                 </div>
 
@@ -171,23 +171,23 @@
                   <span class="p-country-name" style="display: none">Japan</span>
                 <div class="yuubin" >郵便番号</div>
                 <div class="yuubin_edit">
-                  <input type="text"  id="p-postal-code" class="p-postal-code hannkaku_desu" size="12" maxlength="8"
+                  <input type="text"  id="renrakusaki-p-postal-code" class="p-postal-code hannkaku_desu" size="12" maxlength="8"
                   placeholder="01234567"/>
                 </div>
 
                 <div class="todoufuken">都道府県・市区町村・番地</div>
                 <div class="todoufuken_edit">
-                  <input type="text" id="jyusho" class="p-region p-locality p-street-address p-extended-address"
+                  <input type="text" id="renrakusaki" class="p-region p-locality p-street-address p-extended-address"
                   placeholder="同上"/>
                 </div>
                 <div id="juusho_furigana">住所フリガナ</div>
                 <div class="juusho_furigana_edit">
-                  <input type="text" id="jyusho_furigana" name="juusho_furigana" value="" placeholder=""/>
+                  <input type="text" id="renrakusaki_furigana" name="juusho_furigana" value="" placeholder=""/>
                 </div>
                   
                 <div class="dennwa">電話番号</div>
                 <div class="dennwa_edit">
-                  <input type="number" class="hannkaku_desu_2" id="keitaibango" name="dennwa_1" value="" 
+                  <input type="number" class="hannkaku_desu_2" id="renrakusaki_denwabango" name="dennwa_1" value="" 
                   placeholder="000-1111-2222"
 />
                 </div>
@@ -209,171 +209,171 @@
                 id="gakureki_form"
                 name="gakureki_form" action="" method="POST">
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi1" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki1"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann1" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi2" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki2"
               name="gakureki_tuki" value=""
               placeholder="4" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann2" name="gakureki" value=""
               placeholder="○○高等学校入学">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi3" name="gakureki_toshi" value="" 
               placeholder="2019"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki3"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann3" name="gakureki" value=""
               placeholder="○○高等学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi4" name="gakureki_toshi" value="" 
               placeholder="2019"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki4"
               name="gakureki_tuki" value=""
               placeholder="4" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann4" name="gakureki" value=""
               placeholder="トライデントコンピュータ専門学校入学">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi5" name="gakureki_toshi" value="" 
               placeholder="2022"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki5"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann5" name="gakureki" value=""
               placeholder="トライデントコンピュータ専門学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi6" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki6"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann6" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi7" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki7"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann7" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi8" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki8"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann8" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi9" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki9"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann9" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi10" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki10"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann10" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi11" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki11"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann11" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi12" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki12"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann12" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi13" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki13"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann13" name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi" name="gakureki_toshi" value="" 
+              id="gakureki_toshi14" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
-              id="gakureki_tuki"
+              id="gakureki_tuki14"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann" name="gakureki" value=""
+              <input type="text" id="gakureki_rann14" name="gakureki" value=""
               placeholder="○○中学校卒業">              
             </form>
             </div>
@@ -391,11 +391,11 @@
               <div class="kamoku_edit">
                 <form id="kamoku_form" name="kamoku_form"
                 action="" method="POST">
-                <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
+                <input type="text" id="kamoku1" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
                 placeholder="Java"
                 list="pulldown_1" />
 
-                <input type="text" id="kamoku" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
+                <input type="text" id="kamoku2" class="kamoku_textarea" name="kamoku" id="kamoku_ran" value=""
                 placeholder="Linux"
                 list="pulldown_1" />
 
@@ -494,10 +494,8 @@
               </div>
               <div id="douki_form">
               <form name="douki_form" action="" method="POST">
-                  
                 <textarea id="shiboudouki" class="row-5" name="shiboudoki" value="" 
                 maxlength="140">
-
                 </textarea>
               </form>
             </div>
@@ -516,86 +514,86 @@
                   <form id="shikaku_form" name="shikaku_form" action="" method="POST">
                     <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi1" name="shikaku_toshi" value="" 
                     placeholder="2013"
                     />
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki1"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name1" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="基本情報技術者試験"
                   list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi2" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki2"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name2" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="応用情報技術者試験"
                   list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi3" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki3"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name3" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="普通自動車第一種免許"
                   list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi4" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki4"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name4" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="実用英語技能検定３級合格"
                   list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi5" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki5"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name5" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="基本情報技術者試験"
                   list="pulldown_2"/>
 
                   <div class="shikaku_day">
                     <input type="number" class="hannkaku_desu"
-                    id="shikaku_toshi" name="shikaku_toshi" value="" 
+                    id="shikaku_toshi6" name="shikaku_toshi" value="" 
                     placeholder="2013"/>
                     <span>年</span>
                     <input type="number" class="hannkaku_desu" 
-                    id="shikaku_tuki"
+                    id="shikaku_tuki6"
                     name="shikaku_tuki" value=""
                     placeholder="3" />
                     <span>月</span></div>
-                  <input type="text" id="sikaku" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
+                  <input type="text" id="shikaku_name6" class="shikaku_textarea" name="shikaku" id="shikakurann" value=""
                   placeholder="基本情報技術者試験"
                   list="pulldown_2"/>
 
@@ -661,29 +659,29 @@
                               <div class="title">履歴書</div>
                           </div>
                           <div class="profile">
-                              <div class="date">
+                              <div class="date" id="pv_hizuke">
                                   <span>年 月 日</span> 現在
                               </div>
                               <div class="flex">
                                   <div class="label">
-                                      <div class="namerubylabel" >フリガナ</div>
-                                      <div class="namelabel">氏名</div>
+                                      <div class="simeirubylabel">フリガナ</div>
+                                      <div class="simeilabel">氏名</div>
                                       <div class="birthdaylabel">生年月日</div>
                                   </div>
                                   <div class="input">
-                                      <div class="namerubyinput" id="inputFurigana"></div>
-                                      <div class="nameinput">
-                                          <div class="inputone" id="inputName">100</div>
+                                      <div class="simeirubyinput" id="pv_Furigana"></div>
+                                      <div class="simeiinput">
+                                          <div class="inputone" id="pv_Simei"></div>
                                           <div class="inn">印</div>
                                       </div>
-                                      <div class="birthdayinput">
-                                          <span class="year"></span>　年　<span class="month"></span>月　<span class="day"></span>日（満　<span class="age"></span> 歳）
+                                      <div class="birthdayinput" id="pv_birthday_nenrei">
+                                        <span class="year"></span>　年　<span class="month"></span>月　<span class="day"></span>日（満　<span class="age"></span> 歳）
                                       </div>
                                   </div>
                                   <div class="gender">
-                                      <span class="man">男</span>
+                                      <span class="man" id="pv_seibetu_Man">男</span>
                                       <br>・
-                                      <span class="woman">女</span>
+                                      <span class="woman" id="pv_seibetu_Woman">女</span>
                                   </div>
                               </div>
                           </div>
@@ -699,29 +697,29 @@
                                   <div class="renrakusakilabel">連絡先</div>
                               </div>
                               <div class="input">
-                                  <div class="genjuusyorubyinput"></div>
+                                  <div class="genjuusyorubyinput" id="pv_jyusho_Furigana"></div>
                                   <div class="genjuusyoinput">
-                                      <div class="genjuusyonumberinput">〒
-                                          <div class="genjuusyotextinput"></div>
+                                      <div class="genjuusyonumberinput" id="pv_jyusho_Number">〒
+                                          
                                       </div>
+                                      <div class="genjuusyotextinput" id="pv_jyusho"></div>
                                   </div>
-                                  <div class="emailinput"></div>
-                                  <div class="renrakusakirubyinput"></div>
-                                  <div class="renrakusakiinput">
-                                      <div class="renrakusakinumberinput">〒
-                                          <div class="renrakusakitextinput"></div>
-                                      </div>
+                                  <div class="emailinput" id="pv_Mail"></div>
+                                  <div class="renrakusakirubyinput" id="pv_renrakusaki_Furigana"></div>
+                                  <div class="renrakusakiinput" >
+                                      <div class="renrakusakinumberinput" id="pv_renrakusaki_Number">〒</div>
+                                      <div class="renrakusakitextinput" id="pv_renrakusaki"></div>
                                   </div>
                               </div>
                               <div class="number">
                                   <div class="denwanumber">電話
-                                      <div class="denwanumberinput"></div>
+                                      <div class="denwanumberinput" id="pv_denwa_Number"></div>
                                   </div>
                                   <div class="keitainumber">携帯
-                                      <div class="keitainumberinput"></div>
+                                      <div class="keitainumberinput" id="pv_keitai_Number"></div>
                                   </div>
                                   <div class="subdenwanumber">電話
-                                      <div class="subdenwanumberinput"></div>
+                                      <div class="subdenwanumberinput" id="pv_subdenwa_Number"></div>
                                   </div>
                               </div>
                           </div>
@@ -731,53 +729,53 @@
                           <div class="flex">
                               <div class="label">
                                   <div class="nen">年
-                                      <div class="nen1"></div>
-                                      <div class="nen2"></div>
-                                      <div class="nen3"></div>
-                                      <div class="nen4"></div>
-                                      <div class="nen5"></div>
-                                      <div class="nen6"></div>
-                                      <div class="nen7"></div>
-                                      <div class="nen8"></div>
-                                      <div class="nen9"></div>
-                                      <div class="nen10"></div>
-                                      <div class="nen11"></div>
-                                      <div class="nen12"></div>
-                                      <div class="nen13"></div>
-                                      <div class="nen14"></div>
+                                      <div class="nen1" id="pv_history_Nen1"></div>
+                                      <div class="nen2" id="pv_history_Nen2"></div>
+                                      <div class="nen3" id="pv_history_Nen3"></div>
+                                      <div class="nen4" id="pv_history_Nen4"></div>
+                                      <div class="nen5" id="pv_history_Nen5"></div>
+                                      <div class="nen6" id="pv_history_Nen6"></div>
+                                      <div class="nen7" id="pv_history_Nen7"></div>
+                                      <div class="nen8" id="pv_history_Nen8"></div>
+                                      <div class="nen9" id="pv_history_Nen9"></div>
+                                      <div class="nen10" id="pv_history_Nen10"></div>
+                                      <div class="nen11" id="pv_history_Nen11"></div>
+                                      <div class="nen12" id="pv_history_Nen12"></div>
+                                      <div class="nen13" id="pv_history_Nen13"></div>
+                                      <div class="nen14" id="pv_history_Nen14"></div>
                                   </div>
                                   <div class="tuki">月
-                                      <div class="tuki1"></div>
-                                      <div class="tuki2"></div>
-                                      <div class="tuki3"></div>
-                                      <div class="tuki4"></div>
-                                      <div class="tuki5"></div>
-                                      <div class="tuki6"></div>
-                                      <div class="tuki7"></div>
-                                      <div class="tuki8"></div>
-                                      <div class="tuki9"></div>
-                                      <div class="tuki10"></div>
-                                      <div class="tuki11"></div>
-                                      <div class="tuki12"></div>
-                                      <div class="tuki13"></div>
-                                      <div class="tuki14"></div>
+                                      <div class="tuki1" id="pv_history_Tuki1"></div>
+                                      <div class="tuki2" id="pv_history_Tuki2"></div>
+                                      <div class="tuki3" id="pv_history_Tuki3"></div>
+                                      <div class="tuki4" id="pv_history_Tuki4"></div>
+                                      <div class="tuki5" id="pv_history_Tuki5"></div>
+                                      <div class="tuki6" id="pv_history_Tuki6"></div>
+                                      <div class="tuki7" id="pv_history_Tuki7"></div>
+                                      <div class="tuki8" id="pv_history_Tuki8"></div>
+                                      <div class="tuki9" id="pv_history_Tuki9"></div>
+                                      <div class="tuki10" id="pv_history_Tuki10"></div>
+                                      <div class="tuki11" id="pv_history_Tuki11"></div>
+                                      <div class="tuki12" id="pv_history_Tuki12"></div>
+                                      <div class="tuki13" id="pv_history_Tuki13"></div>
+                                      <div class="tuki14" id="pv_history_Tuki14"></div>
                                   </div>
                               </div>
                               <div class="reki">学歴・職歴
-                                  <div class="reki1"></div>
-                                  <div class="reki2"></div>
-                                  <div class="reki3"></div>
-                                  <div class="reki4"></div>
-                                  <div class="reki5"></div>
-                                  <div class="reki6"></div>
-                                  <div class="reki7"></div>
-                                  <div class="reki8"></div>
-                                  <div class="reki9"></div>
-                                  <div class="reki10"></div>
-                                  <div class="reki11"></div>
-                                  <div class="reki12"></div>
-                                  <div class="reki13"></div>
-                                  <div class="reki14"></div>
+                                  <div class="reki1" id="pv_history_Reki1"></div>
+                                  <div class="reki2" id="pv_history_Reki2"></div>
+                                  <div class="reki3" id="pv_history_Reki3"></div>
+                                  <div class="reki4" id="pv_history_Reki4"></div>
+                                  <div class="reki5" id="pv_history_Reki5"></div>
+                                  <div class="reki6" id="pv_history_Reki6"></div>
+                                  <div class="reki7" id="pv_history_Reki7"></div>
+                                  <div class="reki8" id="pv_history_Reki8"></div>
+                                  <div class="reki9" id="pv_history_Reki9"></div>
+                                  <div class="reki10" id="pv_history_Reki10"></div>
+                                  <div class="reki11" id="pv_history_Reki11"></div>
+                                  <div class="reki12" id="pv_history_Reki12"></div>
+                                  <div class="reki13" id="pv_history_Reki13"></div>
+                                  <div class="reki14" id="pv_history_Reki14"></div>
                               </div>
                           </div>
                       </div>
@@ -787,17 +785,17 @@
                       <div class="rirekisho-table kamoku ">
                           <div class="flex">
                               <div class="label">好きな科目</div>
-                              <div class="input"></div>
+                              <div class="input" id="pv_kamoku"></div>
                           </div>
                       </div>
           
-                      <div class="rirekisho-table syumi">
+                      <div class="rirekisho-table shumi">
                           <div class="flex">
                               <div class="label">趣味・特技</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_shumi_1"></div>
+                                  <div class="input2" id="pv_shumi_2"></div>
+                                  <div class="input0" id="pv_shumi_0"></div>
                               </div>
                           </div>
                       </div>
@@ -806,11 +804,11 @@
                           <div class="flex">
                               <div class="label">私の特長</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_tokutyou1"></div>
+                                  <div class="input2" id="pv_tokutyou2"></div>
+                                  <div class="input3" id="pv_tokutyou3"></div>
+                                  <div class="input4" id="pv_tokutyou4"></div>
+                                  <div class="input0" id="pv_tokutyou0"></div>
                               </div>
                           </div>
                       </div>
@@ -819,11 +817,11 @@
                           <div class="flex">
                               <div class="label">学生生活を通じて得たこと</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_gakuseiseikatu1"></div>
+                                  <div class="input2" id="pv_gakuseiseikatu2"></div>
+                                  <div class="input3" id="pv_gakuseiseikatu3"></div>
+                                  <div class="input4" id="pv_gakuseiseikatu4"></div>
+                                  <div class="input0" id="pv_gakuseiseikatu0"></div>
                               </div>
                           </div>
                       </div>
@@ -832,50 +830,50 @@
                           <div class="flex">
                               <div class="label">志望動機</div>
                               <div class="input">
-                                  <div class="input1"></div>
-                                  <div class="input2"></div>
-                                  <div class="input3"></div>
-                                  <div class="input4"></div>
-                                  <div class="input0"></div>
+                                  <div class="input1" id="pv_shiboudouki1"></div>
+                                  <div class="input2" id="pv_shiboudouki2"></div>
+                                  <div class="input3" id="pv_shiboudouki3"></div>
+                                  <div class="input4" id="pv_shiboudouki4"></div>
+                                  <div class="input0" id="pv_shiboudouki0"></div>
                               </div>
                           </div>
                       </div>
           
-                      <div class="rirekisho-table skill">
+                      <div class="rirekisho-table sikaku">
                           <div class="flex">
                               <div class="label">
                                   <div class="nen">年
-                                      <div class="nen1"></div>
-                                      <div class="nen2"></div>
-                                      <div class="nen3"></div>
-                                      <div class="nen4"></div>
-                                      <div class="nen5"></div>
-                                      <div class="nen6"></div>
+                                      <div class="nen1" id="pv_sikaku_Nen1"></div>
+                                      <div class="nen2" id="pv_sikaku_Nen2"></div>
+                                      <div class="nen3" id="pv_sikaku_Nen3"></div>
+                                      <div class="nen4" id="pv_sikaku_Nen4"></div>
+                                      <div class="nen5" id="pv_sikaku_Nen5"></div>
+                                      <div class="nen6" id="pv_sikaku_Nen6"></div>
                                   </div>
                                   <div class="tuki">月
-                                      <div class="tuki1"></div>
-                                      <div class="tuki2"></div>
-                                      <div class="tuki3"></div>
-                                      <div class="tuki4"></div>
-                                      <div class="tuki5"></div>
-                                      <div class="tuki6"></div>
+                                      <div class="tuki1" id="pv_sikaku_Tuki1"></div>
+                                      <div class="tuki2" id="pv_sikaku_Tuki2"></div>
+                                      <div class="tuki3" id="pv_sikaku_Tuki3"></div>
+                                      <div class="tuki4" id="pv_sikaku_Tuki4"></div>
+                                      <div class="tuki5" id="pv_sikaku_Tuki5"></div>
+                                      <div class="tuki6" id="pv_sikaku_Tuki6"></div>
                                   </div>
                               </div>
-                              <div class="skillname">資格・免許
-                                  <div class="skillname1"></div>
-                                  <div class="skillname2"></div>
-                                  <div class="skillname3"></div>
-                                  <div class="skillname4"></div>
-                                  <div class="skillname5"></div>
-                                  <div class="skillname6"></div>
+                              <div class="sikakuname">資格・免許
+                                  <div class="sikakuname1" id="pv_sikaku_Name1"></div>
+                                  <div class="sikakuname2" id="pv_sikaku_Name2"></div>
+                                  <div class="sikakuname3" id="pv_sikaku_Name3"></div>
+                                  <div class="sikakuname4" id="pv_sikaku_Name4"></div>
+                                  <div class="sikakuname5" id="pv_sikaku_Name5"></div>
+                                  <div class="sikakuname6" id="pv_sikaku_Name6"></div>
                               </div>
                           </div>
                       </div>
           
-                      <div class="rirekisho-table bikou">
+                      <div class="rirekisho-table biko">
                           <div class="flex">
                               <div class="label">備考</div>
-                              <div class="input"></div>
+                              <div class="input" id="pv_biko"></div>
                           </div>
                       </div>
                   </div>
