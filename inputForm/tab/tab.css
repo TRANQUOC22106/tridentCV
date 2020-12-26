@@ -1,6 +1,7 @@
 .tab-area {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .tab {
   flex-grow: 1;
