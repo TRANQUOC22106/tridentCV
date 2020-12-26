@@ -5,12 +5,11 @@
     <title>TridentCV</title>
     <link href="../main.css" rel="stylesheet" />
     <link rel="stylesheet" href="./preview.css">
+    <link rel="stylesheet" href="tab/tab.css">
 
     <link rel="icon" type="image/x-icon" href="../image/TriCVLogo.svg" />
 
-    <!-- BOOTSTRAP --> 
-      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    
+   
     <!--JQUERY-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -28,56 +27,58 @@
   <body class="body">
     <div class="">
       <!--Control-->
-      <div class="bootstrap">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">プロフィール</a>
+
+      <ul class="tab-area">
+        <li class="tab active">
+          プロフィール
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">住所</a>
+        <li class="tab">
+          住所
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-renrakusaki-tab" data-toggle="pill" href="#pills-renrakusaki" role="tab" aria-controls="pills-renrakusaki" aria-selected="false">連絡先</a>
+        <li class="tab">
+          連絡先
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-gakureki-tab" data-toggle="pill" href="#pills-gakureki" role="tab" aria-controls="pills-gakureki" aria-selected="false">学歴</a>
+        <li class="tab">
+          学歴
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-kamoku-tab" data-toggle="pill" href="#pills-kamoku" role="tab" aria-controls="pills-kamoku" aria-selected="false">好きな科目</a>
+        <li class="tab">
+          好きな科目
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-shumi-tab" data-toggle="pill" href="#pills-shumi" role="tab" aria-controls="pills-shumi" aria-selected="false">趣味</a>
+        <li class="tab">
+          趣味・特技
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-jikoPr-tab" data-toggle="pill" href="#pills-jikoPr" role="tab" aria-controls="pills-jikoPr" aria-selected="false">私の特長</a>
+        <div class="tab">
+          特長
+        </div>
+        <li class="tab">
+          学校生活で学んだこと
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-manandakoto-tab" data-toggle="pill" href="#pills-manandakoto" role="tab" aria-controls="pills-manandakoto" aria-selected="false">学校生活を通じて得たこと</a>
+        <li class="tab">
+          志望動機
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-shiboudoki-tab" data-toggle="pill" href="#pills-shiboudoki" role="tab" aria-controls="pills-shiboudoki" aria-selected="false">志望動機</a>
+        <li class="tab">
+          免許・資格
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-shikaku-tab" data-toggle="pill" href="#pills-shikaku" role="tab" aria-controls="pills-shikaku" aria-selected="false">資格・免許</a>
+        <li class="tab">
+          備考
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-sanko-tab" data-toggle="pill" href="#pills-sanko" role="tab" aria-controls="pills-sanko" aria-selected="false">備考</a>
+        <li class="tab">
+          作成日
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-sakuseibi-tab" data-toggle="pill" href="#pills-sakuseibi" role="tab" aria-controls="pills-sakuseibi" aria-selected="false">作成日</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-saisyukakuninn-tab" data-toggle="pill" href="#pills-saisyukakuninn" role="tab" aria-controls="pills-saisyukakuninn" aria-selected="false">最終確認</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">プレビュー</a>
+        <!-- <li class="tab">
+          最終確認
+        </li> -->
+        <li class="tab">
+          プレビュー
         </li>
       </ul>
+      
     </div>
       <!--Content-->
-      <div class="tab-content" id="pills-tabContent">
+     
           <!-- ★プロフィール画面 -->
-          <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="content-area">
+            <div class="content show">
               <div id="profile_card">
                 <div class="profile_header">
                   <h1 class="profile_layout">プロフィール</h1>
@@ -115,7 +116,7 @@
               </div>
           </div>
           <!-- ★住所画面 -->
-          <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+          <div class="content">
             <div id="juusho_card">
               <div class="juusho_header">
                 <h1 class="juusho_layout">住所</h1>
@@ -140,8 +141,7 @@
                 <div class="dennwa">電話番号</div>
                 <div class="dennwa_edit">
                   <input type="number" class="hannkaku_desu" id="keitaibango" name="dennwa_1" value="" 
-                  placeholder="00011112222"
-/>
+                  placeholder="00011112222"/>
                 </div>
 
                 <div class="dennwa">携帯番号</div>
@@ -159,7 +159,7 @@
             </div>
           </div>
           <!-- ★連絡先画面 -->
-          <div class="tab-pane fade" id="pills-renrakusaki" role="tabpanel" aria-labelledby="pills-renrakusaki-tab">
+          <div class="content">
               <div id="rennrakusaki_card">
                 <div class="rennrakusaki_header">
                   <h1 class="rennrakusaki_layout">連絡先</h1>
@@ -194,7 +194,7 @@
               </div>
           </div>
            <!-- ★学歴画面 -->
-          <div class="tab-pane fade" id="pills-gakureki" role="tabpanel" aria-labelledby="pills-gakureki-tab">
+           <div class="content">
             <div id="gakureki_card">
               <div class="gakureki_header">
                 <h1 class="gakureki_layout">学歴</h1>
@@ -372,18 +372,13 @@
               placeholder="3" />
               <span>月</span></br>
               <input type="text" id="gakureki_rann" name="gakureki" value=""
-              placeholder="○○中学校卒業">
-
-              
-
-              
-              
+              placeholder="○○中学校卒業">              
             </form>
             </div>
           </div>
           </div>
           <!-- ★好きな科目画面 -->
-          <div class="tab-pane fade" id="pills-kamoku" role="tabpanel" aria-labelledby="pills-kamoku-tab">  
+          <div class="content">
             <div id="kamoku_card">
               <div class="kamoku_header">
                 <h1 class="kamoku_layout">好きな科目</h1>
@@ -406,7 +401,7 @@
             </div>
           </div>
           <!-- ★趣味・特技画面 -->
-          <div class="tab-pane fade" id="pills-shumi" role="tabpanel" aria-labelledby="pills-shumi-tab">     
+          <div class="content">
             <div id="shumi_card">
               <div class="shumi_header">
                 <h1 class="shumi_layout">趣味・特技</h1>
@@ -427,7 +422,7 @@
             </div>
           </div>
           <!-- ★私の特長画面 -->
-          <div class="tab-pane fade" id="pills-jikoPr" role="tabpanel" aria-labelledby="pills-jikoPr-tab">
+          <div class="content">
             <div id="tokutyou_card">
               <div class="tokutyou_header">
                 <h1 class="tokutyou_layout">私の特長</h1>
@@ -449,7 +444,7 @@
             </div>
           </div>
           <!-- ★学生生活を通じて得たこと画面 -->
-          <div class="tab-pane fade" id="pills-manandakoto" role="tabpanel" aria-labelledby="pills-manandakoto-tab">
+          <div class="content">
             <div id="etakoto_card">
               <div class="etakoto_header">
                 <h1 class="etakoto_layout">学生生活を通じて得たこと</h1>
@@ -467,7 +462,7 @@
             </div>
           </div>
           <!-- ★志望動機 -->
-          <div class="tab-pane fade" id="pills-shiboudoki" role="tabpanel" aria-labelledby="pills-shiboudoki-tab">
+          <div class="content">
             <div id="douki_card">
               <div class="douki_header">
                 <h1 class="douki_layout">志望動機</h1>
@@ -488,7 +483,7 @@
             </div>
           </div>
           <!-- ★免許・資格 -->
-          <div class="tab-pane fade" id="pills-shikaku" role="tabpanel" aria-labelledby="pills-shikaku-tab">
+          <div class="content">
             <div id="shikaku_card">
               <div class="shikaku_header">
                 <h1 class="shikaku_layout">免許・資格</h1>
@@ -581,7 +576,7 @@
             </div>
           </div>
           <!-- ★備考画面 -->
-          <div class="tab-pane fade" id="pills-sanko" role="tabpanel" aria-labelledby="pills-sanko-tab">
+          <div class="content">
             <div id="bikou_card">
               <div class="bikou_header">
                 <h1 class="bikou_layout">備考</h1>
@@ -597,7 +592,7 @@
           </div>
         </div>
           <!-- ★作成日画面 -->
-          <div class="tab-pane fade" id="pills-sakuseibi" role="tabpanel" aria-labelledby="pills-sakuseibi-tab">
+          <div class="content">
             <div id="sakuseibi_card">
               <div class="sakuseibi_header">
                 <h1 class="sakuseibi_layout">作成日</h1>
@@ -620,7 +615,7 @@
             </div>
           </div>
           <!-- ★最終確認画面 -->
-          <div class="tab-pane fade" id="pills-saisyukakuninn" role="tabpanel" aria-labelledby="pills-saisyukakuninn-tab">
+          <div class="content">
             <div id="kakuninn_card">
               <div class="kakuninn_header">
                 <h1 class="kakuninn_layout">最終確認</h1>
@@ -634,7 +629,7 @@
             </div>
           </div>
           <!-- ★プレビュー画面 -->
-          <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">
+          <div class="content">
             <div id="preview_card">
               <h1 class="preview_layout">プレビュー</h1>
               <div class="preview_page">
@@ -888,6 +883,8 @@ charset="UTF-8"
 src="restriction.js"></script>
 <script
 src="jquery.autoKana.js"></script>
+
+<script src="tab/tab.js"></script>
 
 
 </body>
