@@ -215,10 +215,6 @@ input[type="email"] {
   text-align: center;
 }
 
-#gakureki_rann {
-  width: 100%;
-}
-
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -273,24 +269,72 @@ textarea {
 #jyusho_furigana {
   width: 600px;
 }
+#denwabango {
+  width: 150;
+}
+
 /* 住所フォーム */
+
+#renrakusaki-p-postal-code {
+  width: 100px;
+}
 
 #keitaibango,
 #renrakusaki_denwabango {
   width: 150px;
 }
+
+#renrakusaki,
+#renrakusaki_furigana {
+  width: 600px;
+}
 /* 連絡先フォーム */
 
-#gakureki_toshi {
+#gakureki_toshi1,
+#gakureki_toshi2,
+#gakureki_toshi3,
+#gakureki_toshi4,
+#gakureki_toshi5,
+#gakureki_toshi6,
+#gakureki_toshi7,
+#gakureki_toshi8,
+#gakureki_toshi9,
+#gakureki_toshi10,
+#gakureki_toshi11,
+#gakureki_toshi12,
+#gakureki_toshi13,
+#gakureki_toshi14 {
   width: 100px;
 }
 
-#gakureki_tuki {
+#gakureki_tuki1,
+#gakureki_tuki2,
+#gakureki_tuki3,
+#gakureki_tuki4,
+#gakureki_tuki5,
+#gakureki_tuki6,
+#gakureki_tuki7,
+#gakureki_tuki8,
+#gakureki_tuki9,
+#gakureki_tuki10,
+#gakureki_tuki11,
+#gakureki_tuki12,
+#gakureki_tuki13,
+#gakureki_tuki14 {
   width: 50px;
+}
+
+.gakureki_rann {
+  width: 100%;
 }
 /* 学歴フォーム */
 
-#shikaku_toshi {
+#shikaku_toshi1,
+#shikaku_toshi2,
+#shikaku_toshi3,
+#shikaku_toshi4,
+#shikaku_toshi5,
+#shikaku_toshi6 {
   width: 100px;
 }
 
@@ -298,10 +342,15 @@ textarea {
   text-align: left;
 }
 
-#shikaku_tuki {
+#shikaku_tuki1,
+#shikaku_tuki2,
+#shikaku_tuki3,
+#shikaku_tuki4,
+#shikaku_tuki5,
+#shikaku_tuki6 {
   width: 50px;
 }
-#sikaku {
+.shikaku_textarea {
   width: 100%;
 }
 /* 免許・資格フォーム */
