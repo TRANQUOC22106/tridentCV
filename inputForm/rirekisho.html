@@ -154,7 +154,7 @@
                 </div>
                 <div class="e-mail">e-mail</div>
                 <div class="e-mail_edit">
-                  <input type="email" class="hannkaku_desu" id="email" name="e-mail" value=""
+                  <input type="email" id="email" name="e-mail" value=""
                   placeholder="aaabbbccc@trident.com" />
                 </div>
               </form>
@@ -175,13 +175,13 @@
                   placeholder="01234567"/>
                 </div>
 
-                <div class="todoufuken">都道府県・市区町村・番地</div>
+                <span>都道府県・市区町村・番地</span>
                 <div class="todoufuken_edit">
                   <input type="text" id="renrakusaki" class="p-region p-locality p-street-address p-extended-address"
                   placeholder="同上"/>
                 </div>
                 <div id="juusho_furigana">住所フリガナ</div>
-                <div class="juusho_furigana_edit">
+                <div class="_furigana_edit">
                   <input type="text" id="renrakusaki_furigana" name="juusho_furigana" value="" placeholder=""/>
                 </div>
                   
@@ -208,16 +208,21 @@
                 <form 
                 id="gakureki_form"
                 name="gakureki_form" action="" method="POST">
-              <input type="number" class="hannkaku_desu"
+              <input type="number" class="hannkaku_desu 
+               gakureki_toshi"
               id="gakureki_toshi1" name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
-              <input type="number" class="hannkaku_desu" 
+              <input type="number" class="hannkaku_desu 
+              gakureki_tuki" 
               id="gakureki_tuki1"
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann1" name="gakureki" value=""
+              <input type="text" 
+              class="gakureki_rann" 
+              id="gakureki_rann1"
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -229,7 +234,9 @@
               name="gakureki_tuki" value=""
               placeholder="4" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann2" name="gakureki" value=""
+              <input type="text" id="gakureki_rann2" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○高等学校入学">
 
               <input type="number" class="hannkaku_desu"
@@ -241,7 +248,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann3" name="gakureki" value=""
+              <input type="text" id="gakureki_rann3" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○高等学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -253,8 +262,10 @@
               name="gakureki_tuki" value=""
               placeholder="4" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann4" name="gakureki" value=""
-              placeholder="トライデントコンピュータ専門学校入学">
+              <input type="text" id="gakureki_rann4" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
+              placeholder="トライデントコンピュータ専門学校">
 
               <input type="number" class="hannkaku_desu"
               id="gakureki_toshi5" name="gakureki_toshi" value="" 
@@ -265,8 +276,10 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann5" name="gakureki" value=""
-              placeholder="トライデントコンピュータ専門学校卒業">
+              <input type="text" id="gakureki_rann5" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
+              placeholder="高度情報学科　入学">
 
               <input type="number" class="hannkaku_desu"
               id="gakureki_toshi6" name="gakureki_toshi" value="" 
@@ -277,8 +290,10 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann6" name="gakureki" value=""
-              placeholder="○○中学校卒業">
+              <input type="text" id="gakureki_rann6" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
+              placeholder="トライデントコンピュータ専門学校">
 
               <input type="number" class="hannkaku_desu"
               id="gakureki_toshi7" name="gakureki_toshi" value="" 
@@ -289,11 +304,14 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann7" name="gakureki" value=""
-              placeholder="○○中学校卒業">
+              <input type="text" id="gakureki_rann7" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
+              placeholder="高度情報学科　卒業">
 
               <input type="number" class="hannkaku_desu"
-              id="gakureki_toshi8" name="gakureki_toshi" value="" 
+              id="gakureki_toshi8" 
+              name="gakureki_toshi" value="" 
               placeholder="2013"/>
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
@@ -301,7 +319,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann8" name="gakureki" value=""
+              <input type="text" id="gakureki_rann8" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -313,7 +333,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann9" name="gakureki" value=""
+              <input type="text" id="gakureki_rann9"
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -325,7 +347,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann10" name="gakureki" value=""
+              <input type="text" id="gakureki_rann10" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -337,7 +361,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann11" name="gakureki" value=""
+              <input type="text" id="gakureki_rann11" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -349,7 +375,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann12" name="gakureki" value=""
+              <input type="text" id="gakureki_rann12"
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -358,10 +386,13 @@
               <span>年</span>
               <input type="number" class="hannkaku_desu" 
               id="gakureki_tuki13"
+              class="gakureki_rann" 
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann13" name="gakureki" value=""
+              <input type="text" id="gakureki_rann13" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">
 
               <input type="number" class="hannkaku_desu"
@@ -373,7 +404,9 @@
               name="gakureki_tuki" value=""
               placeholder="3" />
               <span>月</span></br>
-              <input type="text" id="gakureki_rann14" name="gakureki" value=""
+              <input type="text" id="gakureki_rann14" 
+              class="gakureki_rann" 
+              name="gakureki" value=""
               placeholder="○○中学校卒業">              
             </form>
             </div>
