@@ -367,20 +367,14 @@
   height: 8mm;
   border-bottom: dashed 1px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align-last: justify;
-  text-justify: inter-ideograph;
-  font-size: 1.05rem;
+  justify-content: start;
+  font-size: 1.08rem;
 }
 .input0 {
   height: 8mm;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align-last: justify;
-  text-justify: inter-ideograph;
-  font-size: 1.05rem;
+  justify-content: start;
+  font-size: 1.08rem;
 }
 .kamoku .label {
   height: 12mm;

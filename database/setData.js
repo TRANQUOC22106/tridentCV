@@ -156,7 +156,7 @@ function updateData() {
     document.getElementById("pv_history_Reki12").textContent = gakureki_rann12;
     document.getElementById("pv_history_Reki13").textContent = gakureki_rann13;
     document.getElementById("pv_history_Reki14").textContent = gakureki_rann14;
-    document.getElementById("pv_kamoku").textContent = "　　" + kamoku1 + "　　　　" + kamoku2;
+    document.getElementById("pv_kamoku").textContent = "　" + kamoku1 + "　" + kamoku2;
     document.getElementById("pv_shumi_1").textContent = "　" + shumi.substr(0, 28);
     document.getElementById("pv_shumi_2").textContent = shumi.substr(28, 28);
     document.getElementById("pv_shumi_0").textContent = shumi.substr(56, 28);
