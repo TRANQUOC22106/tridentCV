@@ -290,5 +290,21 @@ function readData(){
           document.getElementById("shumi").value = childData.shumi;
           document.getElementById("tokutyo").value = childData.tokutyo;
           document.getElementById("p-postal-code").value = childData.yubinbango;
-    });
+            let array1 = childData.gakureki_rann[0];
+            document.getElementById('gakureki_toshi1').value = array1[0];
+            document.getElementById('gakureki_tuki1').value = array1[1];
+            document.getElementById('gakureki_rann1').value = array1[2];
+            let array2 = childData.gakureki_rann[1];
+            document.getElementById('gakureki_toshi2').value = array2[0];
+            document.getElementById('gakureki_tuki2').value = array2[1];
+            document.getElementById('gakureki_rann2').value = array2[2];
+            let shikaku1 = childData.shikaku[0];
+            document.getElementById('shikaku_toshi1').value = shikaku1[0];
+            document.getElementById('shikaku_tuki1').value = shikaku1[1];
+            document.getElementById('shikaku_name1').value = shikaku1[2];
+            let shikaku2 = childData.shikaku[0];
+            document.getElementById('shikaku_toshi2').value = shikaku2[0];
+            document.getElementById('shikaku_tuki2').value = shikaku2[1];
+            document.getElementById('shikaku_name2').value = shikaku2[2];
+        });
 }
