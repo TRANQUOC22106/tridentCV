@@ -92,11 +92,11 @@ $("#datepicker").datepicker({
 
 $("#download_button").click(function () {
 
-    $("#tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, #preview_layout").hide();
+    $("#tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, #preview_layout,#testReadData").hide();
 
     window.print();
 
-    $("#tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, #preview_layout").show();
+    $("#tab-area, #profile_card,#juusho_card, #rennrakusaki_card, #gakureki_card, #kamoku_card, #shumi_card, #tokutyou_card, #etakoto_card, #douki_card, #shikaku_card, #shumi_card, #bikou_card, #sakuseibi_card, #kakuninn_card, #download, #preview_layout,#testReadData").show();
 
 });
 //PDF化、印刷 

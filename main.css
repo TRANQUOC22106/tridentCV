@@ -353,3 +353,18 @@ textarea {
   width: 100%;
 }
 /* 免許・資格フォーム */
+
+#save{
+  text-align: center;
+}
+
+#testReadData{
+
+  font-size: 20px;
+  color: white;
+  background-color: #eb6100;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+
+}
