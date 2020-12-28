@@ -90,28 +90,25 @@ function updateData() {
 
     // プレビューに挿入
 
-    // if (seibetu == "男性") {
-    //     seibetu_Id_true = "pv_seibetu_Man";
-    //     seibetu_Id_false = "pv_seibetu_Woman";
-    // } else {
-    //     seibetu_Id_true = "pv_seibetu_Woman";
-    //     seibetu_Id_false = "pv_seibetu_Man";
-    // }
     if (seibetu == "男性") {
         seibetu_Id_true = "pv_seibetu_Man";
         seibetu_Id_false = "pv_seibetu_Woman";
+        document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
+        document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
+        document.getElementById(seibetu_Id_false).style.border = 'none';
+        document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
     } else if(seibetu == "女性"){
         seibetu_Id_true = "pv_seibetu_Woman";
         seibetu_Id_false = "pv_seibetu_Man";
+        document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
+        document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
+        document.getElementById(seibetu_Id_false).style.border = 'none';
+        document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
     }
     
     document.getElementById("pv_Furigana").textContent = furigana;
     document.getElementById("pv_Simei").textContent = simei;
     document.getElementById("pv_birthday_nenrei").textContent = seinengappi.substr(0, 4) + "年　" + seinengappi.substr(5, 2) + "月　" + seinengappi.substr(8, 2) + "日　" + "（満　" + nenrei + "歳）";
-    document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
-    document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
-    document.getElementById(seibetu_Id_false).style.border = 'none';
-    document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
     document.getElementById("pv_jyusho_Furigana").textContent = jyusho_furigana;
     document.getElementById("pv_jyusho_Number").textContent = "〒" + yubinbango.substr(0, 3) + "-" + yubinbango.substr(3, 4);
     document.getElementById("pv_jyusho").textContent = jyusho;
@@ -203,6 +200,16 @@ function updateData() {
     document.getElementById("pv_sikaku_Name6").textContent = shikaku_name6;
     document.getElementById("pv_biko").textContent = "　" + biko;
     document.getElementById("pv_hizuke").textContent = hizuke.substr(0, 4) + "年 " + hizuke.substr(5, 2) + "月 " + hizuke.substr(8, 2) + "日 " + "現在";
+
+    if (renrakusaki == "同上"){
+    document.getElementById("pv_renrakusaki_Furigana").textContent = "";
+    document.getElementById("pv_renrakusaki_Number").textContent = "〒";
+    document.getElementById("pv_renrakusaki").textContent = renrakusaki;
+    document.getElementById("pv_renrakusaki").style.display = "flex";
+    document.getElementById("pv_renrakusaki").style.justifyContent = "center";
+    document.getElementById("pv_renrakusaki").style.alignItems = "center";
+    document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango;
+    }
 
     let gakureki_rann = [[gakureki_toshi1, gakureki_tuki1, gakureki_rann1],
     [gakureki_toshi2, gakureki_tuki2, gakureki_rann2],
