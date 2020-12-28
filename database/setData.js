@@ -90,13 +90,21 @@ function updateData() {
 
     // プレビューに挿入
 
+    // if (seibetu == "男性") {
+    //     seibetu_Id_true = "pv_seibetu_Man";
+    //     seibetu_Id_false = "pv_seibetu_Woman";
+    // } else {
+    //     seibetu_Id_true = "pv_seibetu_Woman";
+    //     seibetu_Id_false = "pv_seibetu_Man";
+    // }
     if (seibetu == "男性") {
         seibetu_Id_true = "pv_seibetu_Man";
         seibetu_Id_false = "pv_seibetu_Woman";
-    } else {
+    } else if(seibetu == "女性"){
         seibetu_Id_true = "pv_seibetu_Woman";
         seibetu_Id_false = "pv_seibetu_Man";
     }
+    
     document.getElementById("pv_Furigana").textContent = furigana;
     document.getElementById("pv_Simei").textContent = simei;
     document.getElementById("pv_birthday_nenrei").textContent = seinengappi.substr(0, 4) + "年　" + seinengappi.substr(5, 2) + "月　" + seinengappi.substr(8, 2) + "日　" + "（満　" + nenrei + "歳）";
