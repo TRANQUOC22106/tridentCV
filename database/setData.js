@@ -108,17 +108,28 @@ function updateData() {
     
     document.getElementById("pv_Furigana").textContent = furigana;
     document.getElementById("pv_Simei").textContent = simei;
-    document.getElementById("pv_birthday_nenrei").textContent = seinengappi.substr(0, 4) + "年　" + seinengappi.substr(5, 2) + "月　" + seinengappi.substr(8, 2) + "日　" + "（満　" + nenrei + "歳）";
+    let seinengappiary = seinengappi.split('/');
+    document.getElementById("pv_birthday_nenrei").textContent = seinengappiary[0] + "年　" + seinengappiary[1] + "月　" + seinengappiary[2] + "日　" + "（満　" + nenrei + "歳）";
     document.getElementById("pv_jyusho_Furigana").textContent = jyusho_furigana;
     document.getElementById("pv_jyusho_Number").textContent = "〒" + yubinbango.substr(0, 3) + "-" + yubinbango.substr(3, 4);
+    // let yubinbangoary = yubinbango.split('-');
+    // document.getElementById("pv_jyusho_Number").textContent = "〒" + yubinbangoary[0] + "-" + yubinbangoary[1];
     document.getElementById("pv_jyusho").textContent = jyusho;
     document.getElementById("pv_Mail").textContent = email;
     document.getElementById("pv_renrakusaki_Furigana").textContent = renrakusaki_furigana;
     document.getElementById("pv_renrakusaki_Number").textContent = "〒" + renrakusaki_yubinbango.substr(0, 3) + "-" + renrakusaki_yubinbango.substr(3, 4);
+    // let renrakusaki_yubinbangoary = renrakusaki_yubinbango.split('-');
+    // document.getElementById("pv_renrakusaki_Number").textContent = "〒" + renrakusaki_yubinbangoary[0] + "-" + renrakusaki_yubinbangoary[1];
     document.getElementById("pv_renrakusaki").textContent = renrakusaki;
     document.getElementById("pv_denwa_Number").textContent = denwabango.substr(0, 4) + "-" + denwabango.substr(4, 2) + "-" + denwabango.substr(6, 4);
     document.getElementById("pv_keitai_Number").textContent = keitaibango.substr(0, 3) + "-" + keitaibango.substr(4, 4) + "-" + keitaibango.substr(7, 4);
-    document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango.substr(0, 4) + "-" + renrakusaki_denwabango.substr(4, 2) + "-" + renrakusaki_denwabango.substr(6, 4);;
+    document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango.substr(0, 4) + "-" + renrakusaki_denwabango.substr(4, 2) + "-" + renrakusaki_denwabango.substr(6, 4);
+    // let denwabangoary = denwabango.split('-');
+    // document.getElementById("pv_denwa_Number").textContent = denwabangoary[0] + "-" + denwabangoary[1] + "-" + denwabango[2];
+    // let keitaibangoary = keitaibango.spit('-');
+    // document.getElementById("pv_keitai_Number").textContent = keitaibangoary[0] + "-" + keitaibangoary[1] + "-" + keitaibangoary[2];
+    // let renrakusaki_denwabangoary = renrakusaki_denwabango.split('-');
+    // document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabangoary[0] + "-" + renrakusaki_denwabango[1] + "-" + renrakusaki_denwabango[2];
     document.getElementById("pv_history_Nen1").textContent = gakureki_toshi1;
     document.getElementById("pv_history_Nen2").textContent = gakureki_toshi2;
     document.getElementById("pv_history_Nen3").textContent = gakureki_toshi3;
@@ -199,7 +210,9 @@ function updateData() {
     document.getElementById("pv_sikaku_Name5").textContent = shikaku_name5;
     document.getElementById("pv_sikaku_Name6").textContent = shikaku_name6;
     document.getElementById("pv_biko").textContent = "　" + biko;
-    document.getElementById("pv_hizuke").textContent = hizuke.substr(0, 4) + "年 " + hizuke.substr(5, 2) + "月 " + hizuke.substr(8, 2) + "日 " + "現在";
+    // document.getElementById("pv_hizuke").textContent = hizuke.substr(0, 4) + "年 " + hizuke.substr(5, 2) + "月 " + hizuke.substr(8, 2) + "日 " + "現在";
+    let hizukeary = hizuke.split('/');
+    document.getElementById("pv_hizuke").textContent = hizukeary[0] + "年 " + hizukeary[1] + "月 " + hizukeary[2] + "日 " + "現在";
 
     if (renrakusaki == "同上"){
     document.getElementById("pv_renrakusaki_Furigana").textContent = "";
