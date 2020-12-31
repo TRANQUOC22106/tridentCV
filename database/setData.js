@@ -93,17 +93,22 @@ function updateData() {
     if (seibetu == "男性") {
         seibetu_Id_true = "pv_seibetu_Man";
         seibetu_Id_false = "pv_seibetu_Woman";
-    } else {
+        document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
+        document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
+        document.getElementById(seibetu_Id_false).style.border = 'none';
+        document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
+    } else if(seibetu == "女性"){
         seibetu_Id_true = "pv_seibetu_Woman";
         seibetu_Id_false = "pv_seibetu_Man";
+        document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
+        document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
+        document.getElementById(seibetu_Id_false).style.border = 'none';
+        document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
     }
+    
     document.getElementById("pv_Furigana").textContent = furigana;
     document.getElementById("pv_Simei").textContent = simei;
     document.getElementById("pv_birthday_nenrei").textContent = seinengappi.substr(0, 4) + "年　" + seinengappi.substr(5, 2) + "月　" + seinengappi.substr(8, 2) + "日　" + "（満　" + nenrei + "歳）";
-    document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
-    document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
-    document.getElementById(seibetu_Id_false).style.border = 'none';
-    document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
     document.getElementById("pv_jyusho_Furigana").textContent = jyusho_furigana;
     document.getElementById("pv_jyusho_Number").textContent = "〒" + yubinbango.substr(0, 3) + "-" + yubinbango.substr(3, 4);
     document.getElementById("pv_jyusho").textContent = jyusho;
@@ -196,6 +201,16 @@ function updateData() {
     document.getElementById("pv_biko").textContent = "　" + biko;
     document.getElementById("pv_hizuke").textContent = hizuke.substr(0, 4) + "年 " + hizuke.substr(5, 2) + "月 " + hizuke.substr(8, 2) + "日 " + "現在";
 
+    if (renrakusaki == "同上"){
+    document.getElementById("pv_renrakusaki_Furigana").textContent = "";
+    document.getElementById("pv_renrakusaki_Number").textContent = "〒";
+    document.getElementById("pv_renrakusaki").textContent = renrakusaki;
+    document.getElementById("pv_renrakusaki").style.display = "flex";
+    document.getElementById("pv_renrakusaki").style.justifyContent = "center";
+    document.getElementById("pv_renrakusaki").style.alignItems = "center";
+    document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango;
+    }
+
     let gakureki_rann = [[gakureki_toshi1, gakureki_tuki1, gakureki_rann1],
     [gakureki_toshi2, gakureki_tuki2, gakureki_rann2],
     [gakureki_toshi3, gakureki_tuki3, gakureki_rann3],
@@ -211,21 +226,6 @@ function updateData() {
     [gakureki_toshi13, gakureki_tuki13, gakureki_rann13],
     [gakureki_toshi14, gakureki_tuki14, gakureki_rann14]];
 
-    // let pv_history = [[pv_history_Nen1,pv_history_Tuki1,pv_history_Reki1],
-    // [pv_history_Nen2,pv_history_Tuki2,pv_history_Reki2],
-    // [pv_history_Nen3,pv_history_Tuki3,pv_history_Reki3],
-    // [pv_history_Nen4,pv_history_Tuki4,pv_history_Reki4],
-    // [pv_history_Nen5,pv_history_Tuki5,pv_history_Reki5],
-    // [pv_history_Nen6,pv_history_Tuki6,pv_history_Reki6],
-    // [pv_history_Nen7,pv_history_Tuki7,pv_history_Reki7],
-    // [pv_history_Nen8,pv_history_Tuki8,pv_history_Reki8],
-    // [pv_history_Nen9,pv_history_Tuki9,pv_history_Reki9],
-    // [pv_history_Nen10,pv_history_Tuki10,pv_history_Reki10],
-    // [pv_history_Nen11,pv_history_Tuki11,pv_history_Reki11],
-    // [pv_history_Nen12,pv_history_Tuki12,pv_history_Reki12],
-    // [pv_history_Nen13,pv_history_Tuki13,pv_history_Reki13],
-    // [pv_history_Nen14,pv_history_Tuki14,pv_history_Reki14]];
-
     let shikaku = [[shikaku_toshi1, shikaku_tuki1, shikaku_name1],
     [shikaku_toshi2, shikaku_tuki2, shikaku_name2],
     [shikaku_toshi3, shikaku_tuki3, shikaku_name3],
@@ -235,9 +235,6 @@ function updateData() {
 
     var userId = firebase.auth().currentUser.uid;
 
-    // if(simei == "" || furigana == ""){
-    //     alert("Please enter the fields");
-    // }else{
     //make the object
     var data = {
         simei: simei,
@@ -261,25 +258,53 @@ function updateData() {
         shikaku: shikaku,
         biko: biko,
         hizuke: hizuke
-        //プロジェクトに必要なデータ
-
-        //        gakuseiID:gakuseiID,
-        //        hizuke:hizuke,
-        //        seibetu:seibetu,						
-        //        renrakusaki_yubinbango:renrakusaki_yubinbango,
-        //        renrakusaki_jyusho:renrakusaki_jyusho,
-        //        gakureki_nengappi:gakureki_nengappi,
-        //        gakuseiseikatu:gakuseiseikatu,
-        //        siboudouki:siboudouki,
-        //        sikaku_hiduke:sikaku_hiduke,
-        //        biko:biko,
-        //        sibousaki:sibousaki
     }
 
     //save the data to the firebase
     var database = firebase.database();
 
     //which gets the database
-    // var ref = database.ref(userId + '/nyuryokufomu').set(data);
     firebase.database().ref(userId + '/nyuryokufomu').update(data);
+}
+function readData(){
+    var userId = firebase.auth().currentUser.uid;
+    
+    var rootRef = database.ref(userId + '/nyuryokufomu');
+    rootRef.on("value", function(snapshot) {
+          var childData = snapshot.val();
+          document.getElementById("simei").value = childData.simei;
+          document.getElementById("biko").value = childData.biko;
+          document.getElementById("email").value = childData.email;
+          document.getElementById("furigana").value = childData.furigana;
+          document.getElementById("gakuseiseikatu").value = childData.gakuseiseikatu;
+          document.getElementById("hizuke").value = childData.hizuke;
+          document.getElementById("jyusho").value = childData.jyusho;
+          document.getElementById("jyusho_furigana").value = childData.jyusho_furigana;
+          document.getElementById("kamoku1").value = childData.kamoku1;
+          document.getElementById("kamoku2").value = childData.kamoku2;
+          document.getElementById("keitaibango").value = childData.keitaibango;
+          document.getElementById("nenrei_rirekisho").value = childData.nenrei;
+          document.getElementById("renrakusaki_denwabango").value = childData.renrakusaki_denwabango;
+          document.getElementById("datepicker").value = childData.seinengappi;
+          document.getElementById("shiboudouki").value = childData.shiboudouki;
+          document.getElementById("shumi").value = childData.shumi;
+          document.getElementById("tokutyo").value = childData.tokutyo;
+          document.getElementById("p-postal-code").value = childData.yubinbango;
+            let array1 = childData.gakureki_rann[0];
+            document.getElementById('gakureki_toshi1').value = array1[0];
+            document.getElementById('gakureki_tuki1').value = array1[1];
+            document.getElementById('gakureki_rann1').value = array1[2];
+            let array2 = childData.gakureki_rann[1];
+            document.getElementById('gakureki_toshi2').value = array2[0];
+            document.getElementById('gakureki_tuki2').value = array2[1];
+            document.getElementById('gakureki_rann2').value = array2[2];
+            let shikaku1 = childData.shikaku[0];
+            document.getElementById('shikaku_toshi1').value = shikaku1[0];
+            document.getElementById('shikaku_tuki1').value = shikaku1[1];
+            document.getElementById('shikaku_name1').value = shikaku1[2];
+            let shikaku2 = childData.shikaku[0];
+            document.getElementById('shikaku_toshi2').value = shikaku2[0];
+            document.getElementById('shikaku_tuki2').value = shikaku2[1];
+            document.getElementById('shikaku_name2').value = shikaku2[2];
+        });
 }
