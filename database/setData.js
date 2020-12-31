@@ -16,8 +16,8 @@ function updateData() {
     let keitaibango = document.getElementById("keitaibango").value;
     let email = document.getElementById("email").value;
     let renrakusaki_yubinbango = document.getElementById("renrakusaki-p-postal-code").value;
-    let renrakusaki_furigana = document.getElementById("renrakusaki_furigana").value;
     let renrakusaki = document.getElementById("renrakusaki").value;
+    let renrakusaki_furigana = document.getElementById("renrakusaki_furigana").value;
     let renrakusaki_denwabango = document.getElementById("renrakusaki_denwabango").value;
     let gakureki_toshi1 = document.getElementById("gakureki_toshi1").value;
     let gakureki_toshi2 = document.getElementById("gakureki_toshi2").value;
@@ -254,12 +254,15 @@ function updateData() {
         furigana: furigana,
         seinengappi: seinengappi,
         nenrei: nenrei,
+        seibetu: seibetu,
         yubinbango: yubinbango,
         jyusho: jyusho,
         jyusho_furigana: jyusho_furigana,
         keitaibango: keitaibango,
-        seibetu: seibetu,
         email: email,
+        renrakusaki_yubinbango:renrakusaki_yubinbango,
+        renrakusaki:renrakusaki,
+        renrakusaki_furigana:renrakusaki_furigana,
         renrakusaki_denwabango: renrakusaki_denwabango,
         gakureki_rann: gakureki_rann,
         kamoku1: kamoku1,
@@ -286,23 +289,27 @@ function readData(){
     rootRef.on("value", function(snapshot) {
           var childData = snapshot.val();
           document.getElementById("simei").value = childData.simei;
-          document.getElementById("biko").value = childData.biko;
-          document.getElementById("email").value = childData.email;
           document.getElementById("furigana").value = childData.furigana;
-          document.getElementById("gakuseiseikatu").value = childData.gakuseiseikatu;
-          document.getElementById("hizuke").value = childData.hizuke;
+          document.getElementById("datepicker").value = childData.seinengappi;
+          document.getElementById("nenrei_rirekisho").value = childData.nenrei;
+        //   seibetu
+          document.getElementById("p-postal-code").value = childData.yubinbango;
           document.getElementById("jyusho").value = childData.jyusho;
           document.getElementById("jyusho_furigana").value = childData.jyusho_furigana;
+          document.getElementById("keitaibango").value = childData.keitaibango;
+          document.getElementById("email").value = childData.email;
+          document.getElementById("renrakusaki-p-postal-code").value = childData.renrakusaki_yubinbango;
+          document.getElementById("renrakusaki").value = childData.renrakusaki;
+          document.getElementById("renrakusaki_furigana").value = childData.renrakusaki_furigana;
+          document.getElementById("renrakusaki_denwabango").value = childData.renrakusaki_denwabango;
           document.getElementById("kamoku1").value = childData.kamoku1;
           document.getElementById("kamoku2").value = childData.kamoku2;
-          document.getElementById("keitaibango").value = childData.keitaibango;
-          document.getElementById("nenrei_rirekisho").value = childData.nenrei;
-          document.getElementById("renrakusaki_denwabango").value = childData.renrakusaki_denwabango;
-          document.getElementById("datepicker").value = childData.seinengappi;
-          document.getElementById("shiboudouki").value = childData.shiboudouki;
           document.getElementById("shumi").value = childData.shumi;
           document.getElementById("tokutyo").value = childData.tokutyo;
-          document.getElementById("p-postal-code").value = childData.yubinbango;
+          document.getElementById("gakuseiseikatu").value = childData.gakuseiseikatu;
+          document.getElementById("shiboudouki").value = childData.shiboudouki;
+          document.getElementById("biko").value = childData.biko;
+          document.getElementById("hizuke").value = childData.hizuke;
             let array1 = childData.gakureki_rann[0];
             document.getElementById('gakureki_toshi1').value = array1[0];
             document.getElementById('gakureki_tuki1').value = array1[1];
@@ -311,13 +318,77 @@ function readData(){
             document.getElementById('gakureki_toshi2').value = array2[0];
             document.getElementById('gakureki_tuki2').value = array2[1];
             document.getElementById('gakureki_rann2').value = array2[2];
+            let array3 = childData.gakureki_rann[2];
+            document.getElementById('gakureki_toshi3').value = array3[0];
+            document.getElementById('gakureki_tuki3').value = array3[1];
+            document.getElementById('gakureki_rann3').value = array3[2];
+            let array4 = childData.gakureki_rann[3];
+            document.getElementById('gakureki_toshi4').value = array4[0];
+            document.getElementById('gakureki_tuki4').value = array4[1];
+            document.getElementById('gakureki_rann4').value = array4[2];
+            let array5 = childData.gakureki_rann[4];
+            document.getElementById('gakureki_toshi5').value = array5[0];
+            document.getElementById('gakureki_tuki5').value = array5[1];
+            document.getElementById('gakureki_rann5').value = array5[2];
+            let array6 = childData.gakureki_rann[5];
+            document.getElementById('gakureki_toshi6').value = array6[0];
+            document.getElementById('gakureki_tuki6').value = array6[1];
+            document.getElementById('gakureki_rann6').value = array6[2];
+            let array7 = childData.gakureki_rann[6];
+            document.getElementById('gakureki_toshi7').value = array7[0];
+            document.getElementById('gakureki_tuki7').value = array7[1];
+            document.getElementById('gakureki_rann7').value = array7[2];
+            let array8 = childData.gakureki_rann[7];
+            document.getElementById('gakureki_toshi8').value = array8[0];
+            document.getElementById('gakureki_tuki8').value = array8[1];
+            document.getElementById('gakureki_rann8').value = array8[2];
+            let array9 = childData.gakureki_rann[8];
+            document.getElementById('gakureki_toshi9').value = array9[0];
+            document.getElementById('gakureki_tuki9').value = array9[1];
+            document.getElementById('gakureki_rann9').value = array9[2];
+            let array10 = childData.gakureki_rann[9];
+            document.getElementById('gakureki_toshi10').value = array10[0];
+            document.getElementById('gakureki_tuki10').value = array10[1];
+            document.getElementById('gakureki_rann10').value = array10[2];
+            let array11 = childData.gakureki_rann[10];
+            document.getElementById('gakureki_toshi11').value = array11[0];
+            document.getElementById('gakureki_tuki11').value = array11[1];
+            document.getElementById('gakureki_rann11').value = array11[2];
+            let array12 = childData.gakureki_rann[11];
+            document.getElementById('gakureki_toshi12').value = array12[0];
+            document.getElementById('gakureki_tuki12').value = array12[1];
+            document.getElementById('gakureki_rann12').value = array12[2];
+            let array13 = childData.gakureki_rann[12];
+            document.getElementById('gakureki_toshi13').value = array13[0];
+            document.getElementById('gakureki_tuki13').value = array13[1];
+            document.getElementById('gakureki_rann13').value = array13[2];
+            let array14 = childData.gakureki_rann[13];
+            document.getElementById('gakureki_toshi14').value = array14[0];
+            document.getElementById('gakureki_tuki14').value = array14[1];
+            document.getElementById('gakureki_rann14').value = array14[2];
             let shikaku1 = childData.shikaku[0];
             document.getElementById('shikaku_toshi1').value = shikaku1[0];
             document.getElementById('shikaku_tuki1').value = shikaku1[1];
             document.getElementById('shikaku_name1').value = shikaku1[2];
-            let shikaku2 = childData.shikaku[0];
+            let shikaku2 = childData.shikaku[1];
             document.getElementById('shikaku_toshi2').value = shikaku2[0];
             document.getElementById('shikaku_tuki2').value = shikaku2[1];
             document.getElementById('shikaku_name2').value = shikaku2[2];
+            let shikaku3 = childData.shikaku[2];
+            document.getElementById('shikaku_toshi3').value = shikaku3[0];
+            document.getElementById('shikaku_tuki3').value = shikaku3[1];
+            document.getElementById('shikaku_name3').value = shikaku3[2];
+            let shikaku4 = childData.shikaku[3];
+            document.getElementById('shikaku_toshi4').value = shikaku4[0];
+            document.getElementById('shikaku_tuki4').value = shikaku4[1];
+            document.getElementById('shikaku_name4').value = shikaku4[2];
+            let shikaku5 = childData.shikaku[4];
+            document.getElementById('shikaku_toshi5').value = shikaku5[0];
+            document.getElementById('shikaku_tuki5').value = shikaku5[1];
+            document.getElementById('shikaku_name5').value = shikaku5[2];
+            let shikaku6 = childData.shikaku[5];
+            document.getElementById('shikaku_toshi6').value = shikaku6[0];
+            document.getElementById('shikaku_tuki6').value = shikaku6[1];
+            document.getElementById('shikaku_name6').value = shikaku6[2];
         });
 }
