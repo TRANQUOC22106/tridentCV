@@ -398,14 +398,14 @@ function readData(){
           document.getElementById('shikaku_tuki6').value = shikaku6[1];
           document.getElementById('shikaku_name6').value = shikaku6[2];
         //   // プレビューに挿入
-        //   if (seibetu == "男性") {
+        //   if (childData.seibetu == "男性") {
         //       seibetu_Id_true = "pv_seibetu_Man";
         //       seibetu_Id_false = "pv_seibetu_Woman";
         //       document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
         //       document.getElementById(seibetu_Id_true).style.borderRadius = '50%';
         //       document.getElementById(seibetu_Id_false).style.border = 'none';
         //       document.getElementById(seibetu_Id_false).style.borderRadius = 'none';
-        //     } else if(seibetu == "女性"){
+        //     } else if(childData.seibetu == "女性"){
         //         seibetu_Id_true = "pv_seibetu_Woman";
         //         seibetu_Id_false = "pv_seibetu_Man";
         //         document.getElementById(seibetu_Id_true).style.border = 'solid 1px';
