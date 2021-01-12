@@ -289,17 +289,17 @@ function readData(){
     rootRef.on("value", function(snapshot) {
           var childData = snapshot.val();
           document.getElementById("simei").value = childData.simei;
+          document.getElementById("pv_Simei").textContent = simei;
           document.getElementById("furigana").value = childData.furigana;
           document.getElementById("datepicker").value = childData.seinengappi;
           document.getElementById("nenrei_rirekisho").value = childData.nenrei;
-        //   seibetu
-        // if (childData.seibetu == "男性") {
-        //     document.getElementById("seibetu").seibetu[0].checked = true;
-        //     document.getElementById("seibetu").seibetu[1].checked = false;
-        // } else if(childData.seibetu == "女性"){
-        //     document.getElementById("seibetu").seibetu[0].checked = false;
-        //     document.getElementById("seibetu").seibetu[1].checked = true;
-        // }
+          if (childData.seibetu == "男性") {
+              document.getElementById("seibetuMan").checked = true;
+              document.getElementById("seibetuWoman").checked = false;
+            } else if(childData.seibetu == "女性"){
+                document.getElementById("seibetuMan").checked = false;
+                document.getElementById("seibetuWoman").checked = true;
+            }
           document.getElementById("p-postal-code").value = childData.yubinbango;
           document.getElementById("jyusho").value = childData.jyusho;
           document.getElementById("jyusho_furigana").value = childData.jyusho_furigana;
