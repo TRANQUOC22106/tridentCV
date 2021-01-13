@@ -110,6 +110,7 @@ function updateData() {
     document.getElementById("pv_Simei").textContent = simei;
     let seinengappiary = seinengappi.split('/');
     document.getElementById("pv_birthday_nenrei").textContent = seinengappiary[0] + "年　" + seinengappiary[1] + "月　" + seinengappiary[2] + "日　" + "（満　" + nenrei + "歳）";
+    // document.getElementById("pv_birthday_nenrei").textContent = seinengappi.substr(0,4) + "年　" + seinengappi.substr(5,2) + "月　" + seinengappi.substr(8,2) + "日　" + "（満　" + nenrei + "歳）";
     document.getElementById("pv_jyusho_Furigana").textContent = jyusho_furigana;
     document.getElementById("pv_jyusho_Number").textContent = "〒" + yubinbango.substr(0, 3) + "-" + yubinbango.substr(3, 4);
     // let yubinbangoary = yubinbango.split('-');
@@ -121,7 +122,7 @@ function updateData() {
     // let renrakusaki_yubinbangoary = renrakusaki_yubinbango.split('-');
     // document.getElementById("pv_renrakusaki_Number").textContent = "〒" + renrakusaki_yubinbangoary[0] + "-" + renrakusaki_yubinbangoary[1];
     document.getElementById("pv_renrakusaki").textContent = renrakusaki;
-    document.getElementById("pv_denwa_Number").textContent = denwabango.substr(0, 4) + "-" + denwabango.substr(4, 2) + "-" + denwabango.substr(6, 4);
+    document.getElementById("pv_denwa_Number").textContent = denwabango.substr(0, 3) + "-" + denwabango.substr(4, 4) + "-" + denwabango.substr(6, 4);
     document.getElementById("pv_keitai_Number").textContent = keitaibango.substr(0, 3) + "-" + keitaibango.substr(4, 4) + "-" + keitaibango.substr(7, 4);
     document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango.substr(0, 4) + "-" + renrakusaki_denwabango.substr(4, 2) + "-" + renrakusaki_denwabango.substr(6, 4);
     // let denwabangoary = denwabango.split('-');
