@@ -1,13 +1,4 @@
 @charset "utf-8";
-/* 
-A3 size
-height:297mm
-width:420mm 
-.X {
-  height:calc((x/297*100)%);
-  width: calc((y/420*100)%);
-}
-*/
 @page {
   size: A3 landscape; 
   margin: 0;

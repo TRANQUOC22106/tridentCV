@@ -59,31 +59,6 @@ $("#shiboudouki").on("input", function () {
     $(".now_cnt_4").text(cnt);
 
 });
-// 志望動機の文字数カウント
-
-// $("#clone_1").click(function () {
-
-//     $("#gakureki_form").eq(0).clone().insertAfter("#gakureki_form");
-
-
-// });
-// 学歴入力欄追加
-
-// $("#clone_2").click(function () {
-
-//     $("#kamoku_form").eq(0).clone().insertAfter("#kamoku_form");
-
-
-// });
-// 好きな科目入力欄追加
-
-// $("#clone_3").click(function () {
-
-//     $("#shikaku_form").eq(0).clone().insertAfter("#shikaku_form");
-
-
-// });
-// // 免許・資格入力欄追加
 
 $("#datepicker").datepicker({
 
@@ -106,25 +81,6 @@ $(function () {
         katakana: true  //true：カタカナ、false：ひらがな（デフォルト）
     });
 });
-
-// 氏名 フリガナ 自動入力
-// https://www.aiship.jp/knowhow/archives/26817
-
-// $(function () {
-//     $.fn.autoKana('#jyusho', '#jyusho_furigana', {
-//         katakana: true  //true：カタカナ、false：ひらがな（デフォルト）
-//     });
-// });
-
-// $("#kyou_button").click(function () {
-//     var nowdate = new Date();
-//     var year = nowdate.getFullYear();     // 年(4桁の西暦)
-//     var mon = nowdate.getMonth() + 1;    // 月(1～12)
-//     var date = nowdate.getDate();
-
-//     $("#hizuke").text(year + "/" + mon + "/" + date);
-
-// });
 
 $("#hizuke").datepicker({
 
