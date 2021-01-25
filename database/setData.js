@@ -272,6 +272,8 @@ function updateData() {
     //which gets the database
     firebase.database().ref(userId + '/nyuryokufomu').update(data);
 }
+
+ /*Firebaseのデータを呼び出す*/
 function readData(){
     var userId = firebase.auth().currentUser.uid;
     
