@@ -7,7 +7,13 @@ function updateData() {
     // get the values which the user types
     let simei = document.getElementById("simei").value;
     let furigana = document.getElementById("furigana").value;
-    let seinengappi = document.getElementById("datepicker").value;
+    // let seinengappi = document.getElementById("datepicker").value;
+    if (document.getElementById("datepicker").value != ""){
+        seinengappi = document.getElementById("datepicker").value;
+    }else{
+        seinengappi = "0/0/0";
+    }
+
     let nenrei = document.getElementById("nenrei_rirekisho").value;
     let yubinbango = document.getElementById("p-postal-code").value;
     let jyusho = document.getElementById("jyusho").value;
@@ -92,7 +98,12 @@ function updateData() {
     let shikaku_name5 = document.getElementById("shikaku_name5").value;
     let shikaku_name6 = document.getElementById("shikaku_name6").value;
     let biko = document.getElementById("biko").value;
-    let hizuke = document.getElementById("hizuke").value;
+    // let hizuke = document.getElementById("hizuke").value;
+    if (document.getElementById("hizuke").value != ""){
+        hizuke = document.getElementById("hizuke").value;
+    }else{
+        hizuke = "0/0/0";
+    }
 
     // プレビューに挿入
 
@@ -300,7 +311,12 @@ function readData(){
           var childData = snapshot.val();
           document.getElementById("simei").value = childData.simei;
           document.getElementById("furigana").value = childData.furigana;
-          document.getElementById("datepicker").value = childData.seinengappi;
+        //   document.getElementById("datepicker").value = childData.seinengappi;
+          if (childData.seinengappi != ""){
+            datepicker = childData.seinengappi;
+        }else{
+            datapicker = "0/0/0";
+        }
           document.getElementById("nenrei_rirekisho").value = childData.nenrei;
           if (childData.seibetu == "男性") {
               document.getElementById("seibetuMan").checked = true;
@@ -332,7 +348,12 @@ function readData(){
           document.getElementById("gakuseiseikatu").value = childData.gakuseiseikatu;
           document.getElementById("shiboudouki").value = childData.shiboudouki;
           document.getElementById("biko").value = childData.biko;
-          document.getElementById("hizuke").value = childData.hizuke;
+        //   document.getElementById("hizuke").value = childData.hizuke;
+        if (childData.hizuke != ""){
+            hizuke = childData.hizuke;
+        }else{
+            hizuke = "0/0/0";
+        }
           let array1 = childData.gakureki_rann[0];
           document.getElementById('gakureki_toshi1').value = array1[0];
           document.getElementById('gakureki_tuki1').value = array1[1];
