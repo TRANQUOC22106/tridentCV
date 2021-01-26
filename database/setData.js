@@ -12,7 +12,13 @@ function updateData() {
     let yubinbango = document.getElementById("p-postal-code").value;
     let jyusho = document.getElementById("jyusho").value;
     let jyusho_furigana = document.getElementById("jyusho_furigana").value;
-    let denwabango = document.getElementById("denwabango").value;
+    // let denwabango = document.getElementById("denwabango").value;
+    
+    let denwabango1 = document.getElementById("denwabango1").value;
+    let denwabango2 = document.getElementById("denwabango2").value;
+    let denwabango3 = document.getElementById("denwabango3").value;
+    let denwabango = denwabango1 + "-" + denwabango2 + "-" + denwabango3;
+
     let keitaibango = document.getElementById("keitaibango").value;
     let email = document.getElementById("email").value;
     let renrakusaki_yubinbango = document.getElementById("renrakusaki-p-postal-code").value;
@@ -121,7 +127,10 @@ function updateData() {
     // let renrakusaki_yubinbangoary = renrakusaki_yubinbango.split('-');
     // document.getElementById("pv_renrakusaki_Number").textContent = "〒" + renrakusaki_yubinbangoary[0] + "-" + renrakusaki_yubinbangoary[1];
     document.getElementById("pv_renrakusaki").textContent = renrakusaki;
-    document.getElementById("pv_denwa_Number").textContent = denwabango.substr(0, 4) + "-" + denwabango.substr(4, 2) + "-" + denwabango.substr(6, 4);
+    // document.getElementById("pv_denwa_Number").textContent = denwabango.substr(0, 4) + "-" + denwabango.substr(4, 2) + "-" + denwabango.substr(6, 4);
+    
+    document.getElementById("pv_denwa_Number").textContent = denwabango;
+
     document.getElementById("pv_keitai_Number").textContent = keitaibango.substr(0, 3) + "-" + keitaibango.substr(4, 4) + "-" + keitaibango.substr(7, 4);
     document.getElementById("pv_subdenwa_Number").textContent = renrakusaki_denwabango.substr(0, 4) + "-" + renrakusaki_denwabango.substr(4, 2) + "-" + renrakusaki_denwabango.substr(6, 4);
     // let denwabangoary = denwabango.split('-');
@@ -303,7 +312,13 @@ function readData(){
           document.getElementById("p-postal-code").value = childData.yubinbango;
           document.getElementById("jyusho").value = childData.jyusho;
           document.getElementById("jyusho_furigana").value = childData.jyusho_furigana;
-          document.getElementById("denwabango").value = childData.denwabango;
+        //   document.getElementById("denwabango").value = childData.denwabango;
+
+          let denwabangoary = childData.denwabango.split('-');
+          document.getElementById("denwabango1").textContent = denwabangoary[0];
+          document.getElementById("denwabango2").textContent = denwabangoary[1];
+          document.getElementById("denwabango3").textContent = denwabangoary[2];
+
           document.getElementById("keitaibango").value = childData.keitaibango;
           document.getElementById("email").value = childData.email;
           document.getElementById("renrakusaki-p-postal-code").value = childData.renrakusaki_yubinbango;
@@ -429,7 +444,10 @@ function readData(){
             // let renrakusaki_yubinbangoary = renrakusaki_yubinbango.split('-');
             // document.getElementById("pv_renrakusaki_Number").textContent = "〒" + renrakusaki_yubinbangoary[0] + "-" + renrakusaki_yubinbangoary[1];
             document.getElementById("pv_renrakusaki").textContent = childData.renrakusaki;
-            document.getElementById("pv_denwa_Number").textContent = childData.denwabango.substr(0, 4) + "-" + childData.denwabango.substr(4, 2) + "-" + childData.denwabango.substr(6, 4);
+            // document.getElementById("pv_denwa_Number").textContent = childData.denwabango.substr(0, 4) + "-" + childData.denwabango.substr(4, 2) + "-" + childData.denwabango.substr(6, 4);
+            
+            document.getElementById("pv_denwa_Number").textContent = denwabangoary[0] + "-" + denwabangoary[1] + "-" +denwabangoary[2];
+            
             document.getElementById("pv_keitai_Number").textContent = childData.keitaibango.substr(0, 3) + "-" + childData.keitaibango.substr(4, 4) + "-" + childData.keitaibango.substr(7, 4);
             document.getElementById("pv_subdenwa_Number").textContent = childData.renrakusaki_denwabango.substr(0, 4) + "-" + childData.renrakusaki_denwabango.substr(4, 2) + "-" + childData.renrakusaki_denwabango.substr(6, 4);
             // let denwabangoary = denwabango.split('-');
