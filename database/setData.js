@@ -11,7 +11,7 @@ function updateData() {
     if (document.getElementById("datepicker").value != ""){
         seinengappi = document.getElementById("datepicker").value;
     }else{
-        seinengappi = "0/0/0";
+        seinengappi = " / / ";
     }
     let nenrei = document.getElementById("nenrei_rirekisho").value;
     let yubinbango = document.getElementById("p-postal-code").value;
@@ -107,7 +107,7 @@ function updateData() {
     if (document.getElementById("hizuke").value != ""){
         hizuke = document.getElementById("hizuke").value;
     }else{
-        hizuke = "0/0/0";
+        hizuke = " / / ";
     }
 
     // プレビューに挿入
@@ -311,7 +311,7 @@ function readData(){
         if (childData.seinengappi != ""){
             datepicker = childData.seinengappi;
         }else{
-            datapicker = "0/0/0";
+            datapicker = " / / ";
         }
           document.getElementById("nenrei_rirekisho").value = childData.nenrei;
           if (childData.seibetu == "男性") {
@@ -354,7 +354,7 @@ function readData(){
         if (childData.hizuke != ""){
             hizuke = childData.hizuke;
         }else{
-            hizuke = "0/0/0";
+            hizuke = " / / ";
         }
           let array1 = childData.gakureki_rann[0];
           document.getElementById('gakureki_toshi1').value = array1[0];
